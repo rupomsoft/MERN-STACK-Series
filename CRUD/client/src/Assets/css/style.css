@@ -1,0 +1,25 @@
+.ProcessingDiv {
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10000 !important;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
+
+
+.loader-size {
+    width: 140px;
+}
