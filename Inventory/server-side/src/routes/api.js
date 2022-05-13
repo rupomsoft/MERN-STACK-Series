@@ -3,6 +3,11 @@ const UsersController=require("../controllers/UsersController");
 const BrandController = require("../controllers/BrandController");
 const AuthVerifyMiddleware=require("../middleware/AuthVerifyMiddleware");
 const CategoryController = require("../controllers/CategoryController");
+const CustomerController = require("../controllers/CustomerController");
+const SupplierController=require("../controllers/SupplierController")
+
+
+
 
 const router =express.Router();
 
@@ -27,6 +32,27 @@ router.post("/CreateCategoryType",AuthVerifyMiddleware,CategoryController.Create
 router.post("/UpdateCategoryType/:CategoryID",AuthVerifyMiddleware,CategoryController.UpdateCategoryType);
 router.get("/DeleteCategoryType/:CategoryID",AuthVerifyMiddleware,CategoryController.DeleteCategoryType);
 router.get("/ReadCategoryType",AuthVerifyMiddleware,CategoryController.ReadCategoryType);
+
+
+
+//Customer
+router.post("/CreateCustomer",AuthVerifyMiddleware,CustomerController.CreateCustomer);
+router.post("/UpdateCustomer/:CustomerID",AuthVerifyMiddleware,CustomerController.UpdateCustomer);
+router.get("/DeleteCustomer/:CustomerID",AuthVerifyMiddleware,CustomerController.DeleteCustomer);
+router.get("/ReadCustomer",AuthVerifyMiddleware,CustomerController.ReadCustomer);
+
+
+//Supplier
+router.post("/CreateSupplier",AuthVerifyMiddleware,SupplierController.CreateSupplier);
+router.post("/UpdateSupplier/:SupplierID",AuthVerifyMiddleware,SupplierController.UpdateSupplier);
+router.get("/DeleteSupplier/:SupplierID",AuthVerifyMiddleware,SupplierController.DeleteSupplier);
+router.get("/ReadSupplier",AuthVerifyMiddleware,SupplierController.ReadSupplier);
+
+
+
+
+
+
 
 
 
