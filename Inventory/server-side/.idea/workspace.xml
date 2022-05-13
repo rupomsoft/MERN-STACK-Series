@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e903ed6-fab1-488e-927f-b8aa2163a461" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controllers/BrandController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/CategoryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/CustomerController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/DashboardController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ExpenseListController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ExpenseTypeController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ProductController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/PurchaseController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ReportController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/ReturnController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/SellController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/StockController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/SupplierController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/UsersController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/AuthVerifyMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/BrandModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/CategoryModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/CustomerModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ExpenseListModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ExpenseTypeModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ProductModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PurchaseModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PurchaseProductModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ReturnModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/ReturnProductModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/SellModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/SellProductModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/SupplierModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/UsersModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD/client/src/Assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD/client/src/Assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD/client/src/Components/Read/ListTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD/client/src/Components/Read/ListTable.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2976UbCCtAdDdOmcboRHmigBNpI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/models" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\server-side\src\models" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e903ed6-fab1-488e-927f-b8aa2163a461" name="Changes" comment="" />
+      <created>1652451793691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652451793691</updated>
+      <workItem from="1652451794895" duration="9937000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
