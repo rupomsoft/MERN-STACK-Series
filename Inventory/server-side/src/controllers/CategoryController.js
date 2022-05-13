@@ -1,6 +1,5 @@
 const CategoryModel = require("../models/CategoryModel");
 
-
 exports.CreateCategoryType=(req,res)=>{
     let reqBody=req.body;
     CategoryModel.create(reqBody,(err,data)=>{

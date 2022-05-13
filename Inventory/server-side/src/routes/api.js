@@ -5,8 +5,8 @@ const AuthVerifyMiddleware=require("../middleware/AuthVerifyMiddleware");
 const CategoryController = require("../controllers/CategoryController");
 const CustomerController = require("../controllers/CustomerController");
 const SupplierController=require("../controllers/SupplierController")
-
-
+const ExpenseTypeController=require("../controllers/ExpenseTypeController")
+const ExpenseListController = require("../controllers/ExpenseListController");
 
 
 const router =express.Router();
@@ -49,8 +49,20 @@ router.get("/DeleteSupplier/:SupplierID",AuthVerifyMiddleware,SupplierController
 router.get("/ReadSupplier",AuthVerifyMiddleware,SupplierController.ReadSupplier);
 
 
+// Expense Type
+router.post("/CreateExpenseType",AuthVerifyMiddleware,ExpenseTypeController.CreateExpenseType);
+router.post("/UpdateExpenseType/:TypeID",AuthVerifyMiddleware,ExpenseTypeController.UpdateExpenseType);
+router.get("/DeleteExpenseType/:TypeID",AuthVerifyMiddleware,ExpenseTypeController.DeleteExpenseType);
+router.get("/ReadExpenseType",AuthVerifyMiddleware,ExpenseTypeController.ReadExpenseType);
 
 
+
+
+// Expense List
+router.post("/CreateExpenseList",AuthVerifyMiddleware,ExpenseListController.CreateExpenseList);
+router.post("/UpdateExpenseList/:ExpenseID",AuthVerifyMiddleware,ExpenseListController.UpdateExpenseList);
+router.get("/DeleteExpenseList/:ExpenseID",AuthVerifyMiddleware,ExpenseListController.DeleteExpenseList);
+router.get("/ReadExpenseList",AuthVerifyMiddleware,ExpenseListController.ReadExpenseList);
 
 
 
