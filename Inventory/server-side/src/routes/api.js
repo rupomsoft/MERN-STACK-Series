@@ -7,7 +7,9 @@ const CustomerController = require("../controllers/CustomerController");
 const SupplierController=require("../controllers/SupplierController")
 const ExpenseTypeController=require("../controllers/ExpenseTypeController")
 const ExpenseListController = require("../controllers/ExpenseListController");
-
+const ProductController = require("../controllers/ProductController");
+const PurchaseController = require("../controllers/PurchaseController");
+const SellController = require("../controllers/SellController");
 
 const router =express.Router();
 
@@ -65,17 +67,28 @@ router.get("/DeleteExpenseList/:ExpenseID",AuthVerifyMiddleware,ExpenseListContr
 router.get("/ReadExpenseList",AuthVerifyMiddleware,ExpenseListController.ReadExpenseList);
 
 
+// Product
+router.get("/ReadProduct",AuthVerifyMiddleware,ProductController.ReadProduct);
+router.get("/DeleteProduct/:ProductID",AuthVerifyMiddleware,ProductController.DeleteProduct);
+router.post("/CreateProduct",AuthVerifyMiddleware,ProductController.CreateProduct);
+router.post("/UpdateProduct/:ProductID",AuthVerifyMiddleware,ProductController.UpdateProduct);
 
 
 
 
+//Purchase
+router.post("/CreatePurchase",AuthVerifyMiddleware,PurchaseController.CreatePurchase);
+router.get("/ReadPurchase",AuthVerifyMiddleware,PurchaseController.ReadPurchase);
+router.get("/ReadPurchaseProducts/:PurchaseID",AuthVerifyMiddleware,PurchaseController.ReadPurchaseProducts);
+router.get("/DeletePurchase/:PurchaseID",AuthVerifyMiddleware,PurchaseController.DeletePurchase);
 
 
 
-
-
-
-
+//Sell
+router.post("/CreateSell",AuthVerifyMiddleware,SellController.CreateSell);
+router.get("/ReadSell",AuthVerifyMiddleware,SellController.ReadSell);
+router.get("/ReadSellProducts/:SellID",AuthVerifyMiddleware,SellController.ReadSellProducts);
+router.get("/DeleteSell/:SellID",AuthVerifyMiddleware,SellController.DeleteSell);
 
 
 
