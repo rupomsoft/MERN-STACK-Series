@@ -11,7 +11,7 @@ const ProductController = require("../controllers/ProductController");
 const PurchaseController = require("../controllers/PurchaseController");
 const SellController = require("../controllers/SellController");
 const ReturnController = require("../controllers/ReturnController");
-
+const DashboardController = require("../controllers/DashboardController");
 
 
 const router =express.Router();
@@ -101,7 +101,10 @@ router.get("/ReadReturnProducts/:ReturnID",AuthVerifyMiddleware,ReturnController
 router.get("/DeleteReturn/:ReturnID",AuthVerifyMiddleware,ReturnController.DeleteReturn);
 
 
-
-
+// Dashboard
+router.get("/TotalSell",AuthVerifyMiddleware,DashboardController.TotalSell);
+router.get("/TotalPurchase",AuthVerifyMiddleware,DashboardController.TotalPurchase);
+router.get("/TotalExpense",AuthVerifyMiddleware,DashboardController.TotalExpense);
+router.get("/TotalReturn",AuthVerifyMiddleware,DashboardController.TotalReturn);
 
 module.exports=router;
