@@ -1,3 +1,22 @@
+.navbar{
+    margin-bottom: 30px;
+}
+.list-card{
+    overflow-y: auto;
+    height: 80vh !important;
+}
+.nav-logo{
+    height: 30px;
+}
+.nav-link{
+    font-size: 16px !important;
+}
+.ct-flex-bottom {
+    margin-bottom: 50px !important;
+}
+body{
+    background-color: #f8f9fa !important;
+}
 .ProcessingDiv {
     top: 0 !important;
     bottom: 0 !important;
@@ -21,11 +40,11 @@
 
 
 .loader-size {
-    width: 140px;
+    width: 180px;
 }
 
 
 .list-img{
     width: auto;
-    height: 80px;
+    height: 40px;
 }

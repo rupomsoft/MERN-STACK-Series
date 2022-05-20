@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Read} from "../../APIServices/CRUDServices";
+import {Delete, Read} from "../../APIServices/CRUDServices";
 import FullScreenLoader from "../Common/FullScreenLoader";
-
-const ListTable = () => {
+import {ErrorToast, SuccessToast} from "../../Helper/ValidationHelper";
+import {withRouter} from "react-router";
+const ListTable = (props) => {
 
     let [DataList,SetDataList]=useState([]);
 
@@ -13,44 +14,88 @@ const ListTable = () => {
     },[])
 
 
-    if(DataList.length>0){
+    const DeleteItem=(id)=>{
+        Delete(id).then((result)=>{
+            if(result===true){
+                SuccessToast("Delete Success")
+                props.history.push("/")
+            }
+            else{
+                ErrorToast("Request Fail Try Again");
+            }
+        })
+    }
+
+    const UpdateItem=(id)=>{
+        props.history.push("/update/"+id)
+    }
+
+
+    if(DataList.length>=0){
         return (
-            <div>
-                <table className="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Product Name</th>
-                        <th>Product Code</th>
-                        <th>Image</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Total Price</th>
-                        <th>Action</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
-                        DataList.map((item,i)=>{
-                            return(
-                                <tr>
-                                    <td>{item.ProductName}</td>
-                                    <td>{item.ProductCode}</td>
-                                    <td><img className="list-img" src={item.Img} alt=""/></td>
-                                    <td>{item.UnitPrice}</td>
-                                    <td>{item.Qty}</td>
-                                    <td>{item.TotalPrice}</td>
-                                    <td>
-                                        <button className="btn btn-danger mx-1">Delete</button>
-                                        <button className="btn btn-primary mx-1">Update</button>
-                                    </td>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-md-12">
+                        <div className="card list-card">
+                            <div className="card-header pb-0">
+                                <h4>Product List</h4>
+                            </div>
+                            <div className="card-body">
+                                <table className="table">
+                                    <thead>
+                                    <tr>
+                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Product</th>
+                                        <th className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Unit Price</th>
+                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Qty</th>
+                                        <th className="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Total Price</th>
+                                        <th className="text-secondary opacity-7">Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {
+                                        DataList.map((item,i)=>{
+                                            return(
+                                                <tr>
+                                                    <td>
+                                                        <div className="d-flex  animated fadeInUp px-2 py-1">
+                                                            <div>
+                                                                <img src={item.Img} className="avatar avatar-sm me-3" alt="user1"/>
+                                                            </div>
+                                                            <div className="d-flex flex-column justify-content-center">
+                                                                <h6 className="mb-0 text-sm">{item.ProductName}</h6>
+                                                                <p className="text-xs text-secondary mb-0">{item.ProductCode}</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <h6 className="mb-0 animated fadeInUp text-sm"> {item.UnitPrice}</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 className="mb-0 animated fadeInUp text-sm"> {item.Qty}</h6>
+                                                    </td>
 
-                                </tr>
-                            )
-                        })
+                                                    <td>
+                                                        <h6 className="mb-0 animated fadeInUp text-sm">  {item.TotalPrice}</h6>
 
-                    }
-                    </tbody>
-                </table>
+                                                    </td>
+                                                    <td>
+                                                        <div className="btn-group animated fadeInUp" role="group" aria-label="Basic example">
+                                                            <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-danger "><i className="fa fa-trash-alt"/></button>
+                                                            <button onClick={UpdateItem.bind(this,item._id)} className="btn  btn-success "><i className="fa fa-edit"/></button>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                            )
+                                        })
+
+                                    }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
@@ -65,4 +110,4 @@ const ListTable = () => {
 
 };
 
-export default ListTable;
+export default withRouter(ListTable);

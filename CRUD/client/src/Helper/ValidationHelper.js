@@ -12,10 +12,10 @@ class ValidationHelper{
     }
 
     SuccessToast(msg){
-        cogoToast.success(msg)
+        cogoToast.success(msg, {position:"bottom-center"})
     }
     ErrorToast(msg){
-        cogoToast.error(msg)
+        cogoToast.error(msg, {position:"bottom-center"})
     }
 
 

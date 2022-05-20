@@ -10,9 +10,9 @@ class App extends Component {
         <Fragment>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={ReadPage}/>
-                    <Route exact path="/create" component={CreatePage}/>
-                    <Route exact path="/update" component={UpdatePage}/>
+                    <Route exact path="/" render={(props)=><ReadPage {...props} key={Date.now()} />}/>
+                    <Route exact path="/create" render={(props)=><CreatePage {...props} key={Date.now()} />}/>
+                    <Route exact path="/update/:id" render={(props)=><UpdatePage {...props} key={Date.now()} />}/>
                 </Switch>
             </BrowserRouter>
         </Fragment>

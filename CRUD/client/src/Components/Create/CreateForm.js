@@ -1,9 +1,9 @@
-import React, {Fragment, useRef, useState} from 'react';
+import React, {Fragment, useRef} from 'react';
 import {ErrorToast, isEmpty, SuccessToast} from "../../Helper/ValidationHelper";
 import {Create} from "../../APIServices/CRUDServices";
 import FullScreenLoader from "../Common/FullScreenLoader";
-
-const CreateForm = () => {
+import {withRouter} from "react-router";
+const CreateForm = (props) => {
     let ProductName,ProductCode,Img,UnitPrice,Qty,TotalPrice,Loader=useRef();
     const SaveData = () => {
       let Product_Name=ProductName.value;
@@ -38,12 +38,7 @@ const CreateForm = () => {
                   Loader.classList.add("d-none")
                   if(Result===true){
                       SuccessToast("Data Save Success")
-                      ProductName.value="";
-                      ProductCode.value="";
-                      Img.value="";
-                      UnitPrice.value="";
-                      Qty.value="";
-                      TotalPrice.value="";
+                      props.history.push("/");
                   }
                   else {
                       ErrorToast("Request Fail Try Again");
@@ -51,41 +46,50 @@ const CreateForm = () => {
               })
       }
     }
-
-
     return (
         <Fragment>
         <div className="container">
-            <div className="row">
-                <div className="col-md-4 p-2">
-                    <label>Product Name</label>
-                    <input ref={(input)=>ProductName=input} type="text" className="form-control"/>
-                </div>
-                <div className="col-md-4 p-2">
-                    <label>Product Code</label>
-                    <input ref={(input)=>ProductCode=input} type="text" className="form-control"/>
-                </div>
-                <div className="col-md-4 p-2">
-                    <label> Image</label>
-                    <input ref={(input)=>Img=input} type="text" className="form-control"/>
-                </div>
-                <div className="col-md-4 p-2">
-                    <label> Unit Price</label>
-                    <input ref={(input)=>UnitPrice=input}  type="text" className="form-control"/>
-                </div>
-                <div className="col-md-4 p-2">
-                    <label> Qty</label>
-                    <input ref={(input)=>Qty=input} type="text" className="form-control"/>
-                </div>
-                <div className="col-md-4 p-2">
-                    <label> Total Price</label>
-                    <input  ref={(input)=>TotalPrice=input} type="text" className="form-control"/>
-                </div>
-            </div>
-            <br/>
-            <div className="row">
-                <div className="col-md-4 p-2">
-                    <button onClick={SaveData} className="btn btn-primary w-100">Save</button>
+            <div className="row justify-content-center">
+                <div className="col-md-10">
+                    <div className="card">
+                        <div className="card-header pb-0">
+                            <h4 className="animated fadeInUp">Create Product</h4>
+                        </div>
+                        <div className="card-body">
+                            <div className="row">
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp">Product Name</label>
+                                    <input ref={(input)=>ProductName=input} type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp">Product Code</label>
+                                    <input ref={(input)=>ProductCode=input} type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp"> Image</label>
+                                    <input ref={(input)=>Img=input} type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp"> Unit Price</label>
+                                    <input ref={(input)=>UnitPrice=input}  type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp"> Qty</label>
+                                    <input ref={(input)=>Qty=input} type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                                <div className="col-md-4  p-2">
+                                    <label className="animated fadeInUp"> Total Price</label>
+                                    <input  ref={(input)=>TotalPrice=input} type="text" className="form-control animated fadeInUp"/>
+                                </div>
+                            </div>
+                            <br/>
+                            <div className="row">
+                                <div className="col-md-4  p-2">
+                                    <button onClick={SaveData} className="btn btn-primary  animated fadeInUp w-100">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,4 +99,4 @@ const CreateForm = () => {
         </Fragment>
     );
 };
-export default CreateForm;
+export default withRouter(CreateForm);
