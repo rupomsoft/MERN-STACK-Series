@@ -1,0 +1,22 @@
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#ffffff;
+    width: 260px;
+    right: 0;
+    transition: 0.3s;
+    border: 1px solid rgba(0,0,0,.075);
+    box-shadow: 0 1px 2px  rgba(0,0,0,.075);
+    z-index: 1;
+}
+.user-dropdown:hover .user-dropdown-content {
+    display: block;
+    transition: 0.3s;
+}
+.user-dropdown-divider{
+    background: #a2a2a2;
+}

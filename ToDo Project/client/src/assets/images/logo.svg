@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1546" height="534" viewBox="0 0 1546 534">
+    <g id="Group_2379" data-name="Group 2379" transform="translate(388 -5618)">
+        <rect id="Rectangle_1080" data-name="Rectangle 1080" width="1546" height="512" transform="translate(-388 5640)" fill="none"/>
+        <g id="Group_2378" data-name="Group 2378">
+            <text id="Inventory" transform="translate(73 6029)" fill="#363b64" font-size="392" font-family="RobotoCondensed-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Todo</tspan></text>
+            <g id="list-6246" transform="translate(-155.04 5871.957)">
+                <g id="Group_2377" data-name="Group 2377" transform="translate(-126.036 -126.036)">
+                    <path id="Path_3868" data-name="Path 3868" d="M265.105,314.152H49.046A49.1,49.1,0,0,1,0,265.105V49.046A49.1,49.1,0,0,1,49.046,0H265.105a49.1,49.1,0,0,1,49.046,49.046V265.105A49.1,49.1,0,0,1,265.105,314.152ZM49.046,27.925A21.143,21.143,0,0,0,27.925,49.046V265.105a21.146,21.146,0,0,0,21.121,21.121H265.105a21.148,21.148,0,0,0,21.121-21.121V49.046a21.146,21.146,0,0,0-21.121-21.121Z" fill="#cb0c9f"/>
+                    <path id="Path_3869" data-name="Path 3869" d="M231.164,87.951H60.206a13.962,13.962,0,0,1,0-27.925H231.164a13.962,13.962,0,0,1,0,27.925Z" transform="translate(11.389 14.783)" fill="#cb0c9f"/>
+                    <path id="Path_3870" data-name="Path 3870" d="M231.164,142.757H60.206a13.962,13.962,0,0,1,0-27.925H231.164a13.962,13.962,0,0,1,0,27.925Z" transform="translate(11.389 28.281)" fill="#cb0c9f"/>
+                    <path id="Path_3871" data-name="Path 3871" d="M231.164,197.563H60.206a13.962,13.962,0,1,1,0-27.925H231.164a13.962,13.962,0,0,1,0,27.925Z" transform="translate(11.389 41.778)" fill="#cb0c9f"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+

@@ -1,0 +1,42 @@
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca03"), 
+    "name" : "Rabbil", 
+    "designation" : "Asst Engineer", 
+    "salary" : 35000.0, 
+    "city" : "Dhaka"
+}
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca04"), 
+    "name" : "Rain", 
+    "designation" : "Sub Asst Engineer", 
+    "salary" : 30000.0, 
+    "city" : "Rangpur"
+}
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca05"), 
+    "name" : "Rakib", 
+    "designation" : "Engineer", 
+    "salary" : 40000.0, 
+    "city" : "Rangpur"
+}
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca06"), 
+    "name" : "Jamil", 
+    "designation" : "Engineer", 
+    "salary" : 40000.0, 
+    "city" : "Khulna"
+}
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca07"), 
+    "name" : "Kamal", 
+    "designation" : "Engineer", 
+    "salary" : 60000.0, 
+    "city" : "Sylet"
+}
+{ 
+    "_id" : ObjectId("628bc6bd3bd530e0b325ca08"), 
+    "name" : "Akmal", 
+    "designation" : "Sr Engineer", 
+    "salary" : 70000.0, 
+    "city" : "Dhaka"
+}
