@@ -102,7 +102,7 @@ class MasterLayout extends Component {
                           </NavLink>
                           <NavLink exact={true} activeClassName="side-bar-item-active" to="/All" className="side-bar-item mt-2">
                               <BsListNested className="side-bar-item-icon" />
-                              <span className="side-bar-item-caption">All Task</span>
+                              <span className="side-bar-item-caption">New Task</span>
                           </NavLink>
                           <NavLink exact={true} activeClassName="side-bar-item-active" to="/Progress" className="side-bar-item mt-2">
                               <BsHourglass className="side-bar-item-icon" />

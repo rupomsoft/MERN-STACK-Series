@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage";
 import CreatePage from "./pages/CreatePage";
-import AllTaskPage from "./pages/AllTaskPage";
+import NewTaskPage from "./pages/NewTaskPage";
 import ProgressPage from "./pages/ProgressPage";
 import CompletedPage from "./pages/CompletedPage";
 import CanceledPage from "./pages/CanceledPage";
@@ -16,7 +16,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" render={(props) => <DashboardPage {...props} key={Date.now()} />}/>
                     <Route exact path="/Create" render={(props) => <CreatePage {...props} key={Date.now()} />}/>
-                    <Route exact path="/All" render={(props) => <AllTaskPage {...props} key={Date.now()} />}/>
+                    <Route exact path="/All" render={(props) => <NewTaskPage {...props} key={Date.now()} />}/>
                     <Route exact path="/Progress" render={(props) => <ProgressPage {...props} key={Date.now()} />}/>
                     <Route exact path="/Completed" render={(props) => <CompletedPage {...props} key={Date.now()} />}/>
                     <Route exact path="/Canceled" render={(props) => <CanceledPage {...props} key={Date.now()} />}/>

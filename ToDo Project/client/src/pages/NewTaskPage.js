@@ -5,7 +5,7 @@ import {AiOutlineCalendar, AiOutlineDelete} from "react-icons/all";
 import {AiOutlineEdit} from "react-icons/ai";
 import Swal from 'sweetalert2';
 
-const CompletedPage = () => {
+const NewTaskPage = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => {
@@ -61,7 +61,7 @@ const CompletedPage = () => {
                                         <AiOutlineCalendar/> 22/03/3022
                                         <a onClick={handleShow} className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                         <a onClick={DeleteAlert} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                        <a className="badge float-end bg-success">Completed</a>
+                                        <a className="badge float-end bg-info">New</a>
                                     </p>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ const CompletedPage = () => {
                                         <AiOutlineCalendar/> 22/03/3022
                                         <a onClick={handleShow}  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                         <a onClick={DeleteAlert} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                        <a className="badge float-end bg-success">Completed</a>
+                                        <a className="badge float-end bg-info">New</a>
                                     </p>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ const CompletedPage = () => {
                                         <AiOutlineCalendar/> 22/03/3022
                                         <a onClick={handleShow}  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                         <a onClick={DeleteAlert} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                        <a className="badge float-end bg-success">Completed</a>
+                                        <a className="badge float-end bg-info">New</a>
                                     </p>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ const CompletedPage = () => {
                                         <AiOutlineCalendar/> 22/03/3022
                                         <a onClick={handleShow}  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                         <a onClick={DeleteAlert} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                        <a className="badge float-end bg-success">Completed</a>
+                                        <a className="badge float-end bg-info">New</a>
                                     </p>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ const CompletedPage = () => {
                                         <AiOutlineCalendar/> 22/03/3022
                                         <a onClick={handleShow}  className="icon-nav text-primary mx-1"><AiOutlineEdit /></a>
                                         <a onClick={DeleteAlert} className="icon-nav text-danger mx-1"><AiOutlineDelete /></a>
-                                        <a className="badge float-end bg-success">Completed</a>
+                                        <a className="badge float-end bg-info">New</a>
                                     </p>
                                 </div>
                             </div>
@@ -153,4 +153,4 @@ const CompletedPage = () => {
     );
 };
 
-export default CompletedPage;
+export default NewTaskPage;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a751eac1-1b13-4525-84c9-c0ff7392b81b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9f6bccad-e5a9-48c5-bba9-d5cde3088720" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Inventory Project/server-side/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inventory Project/server-side/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Master.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mongo-Advance/Master.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Query/1 Insert.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Query/10 find by projection.js" beforeDir="false" />
@@ -31,6 +31,18 @@
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Query/7 find last and first 5 document.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Query/8 find by where query.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/Query/9 find by where AND OR Operator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Mongo-Advance/demo json/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Mongo-Advance/demo json/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/masterLayout/masterLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/masterLayout/masterLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AllTaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewTaskPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CanceledPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CanceledPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CompletedPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CompletedPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CreatePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreatePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/DashboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/DashboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProgressPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProgressPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="2A6PurNpkUyrCqAsbyaWmf3MCGD" />
+  <component name="ProjectId" id="2AJCtbl7MIORpiFxhHzjLzdXNEV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,19 +62,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a751eac1-1b13-4525-84c9-c0ff7392b81b" name="Changes" comment="" />
-      <created>1654327286607</created>
+      <changelist id="9f6bccad-e5a9-48c5-bba9-d5cde3088720" name="Changes" comment="" />
+      <created>1654718518216</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1654327286607</updated>
-      <workItem from="1654327287852" duration="2451000" />
-      <workItem from="1654460015848" duration="133000" />
+      <updated>1654718518216</updated>
+      <workItem from="1654718521444" duration="1971000" />
     </task>
     <servers />
   </component>

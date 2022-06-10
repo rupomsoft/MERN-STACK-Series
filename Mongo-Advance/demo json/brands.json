@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "627ec104bd2cbc8150345033"
+  },
+  "Name": "Samsung",
+  "CreatedDate": {
+    "$date": "2022-05-13T20:33:30.072Z"
+  },
+  "BrandID": 1652474116
+},{
+  "_id": {
+    "$oid": "629b088b43c8ce4c37191388"
+  },
+  "Name": "Walton",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.007Z"
+  },
+  "BrandID": 1654327435
+},{
+  "_id": {
+    "$oid": "629b089143c8ce4c3719138a"
+  },
+  "Name": "LG",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.007Z"
+  },
+  "BrandID": 1654327441
+},{
+  "_id": {
+    "$oid": "629b089743c8ce4c3719138c"
+  },
+  "Name": "Singer",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.007Z"
+  },
+  "BrandID": 1654327447
+},{
+  "_id": {
+    "$oid": "629b08a443c8ce4c3719138e"
+  },
+  "Name": "Vision",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.007Z"
+  },
+  "BrandID": 1654327460
+}]

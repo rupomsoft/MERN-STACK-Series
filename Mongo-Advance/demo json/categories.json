@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "627ec44dfb611734ae00f2c3"
+  },
+  "Name": "TV",
+  "CreatedDate": {
+    "$date": "2022-05-13T20:48:22.139Z"
+  },
+  "CategoryID": 1652474957
+},{
+  "_id": {
+    "$oid": "629b0a1143c8ce4c37191390"
+  },
+  "Name": "Fan",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.016Z"
+  },
+  "CategoryID": 1654327825
+},{
+  "_id": {
+    "$oid": "629b0a2543c8ce4c37191392"
+  },
+  "Name": "Refrigerator",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.016Z"
+  },
+  "CategoryID": 1654327845
+},{
+  "_id": {
+    "$oid": "629b0a2c43c8ce4c37191394"
+  },
+  "Name": "Water Heater",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.016Z"
+  },
+  "CategoryID": 1654327852
+},{
+  "_id": {
+    "$oid": "629b0a4443c8ce4c37191396"
+  },
+  "Name": "AC",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.016Z"
+  },
+  "CategoryID": 1654327876
+},{
+  "_id": {
+    "$oid": "629b0a4d43c8ce4c37191398"
+  },
+  "Name": "Oven",
+  "CreatedDate": {
+    "$date": "2022-06-04T07:21:51.016Z"
+  },
+  "CategoryID": 1654327885
+}]

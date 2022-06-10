@@ -2,15 +2,21 @@
 body {
   background:#F9F8F8;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif ;
+  font-family: 'Poppins', sans-serif !important;
 }
+h1,h2,h3,h4,h5,h6,button,input,textarea{
+  font-family: 'Poppins', sans-serif !important;
+}
+
 p{
   font-size: 14px;
+  font-family: 'Poppins', sans-serif !important;
 }
 a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif !important;
 }
 a:hover {
   color: inherit;
