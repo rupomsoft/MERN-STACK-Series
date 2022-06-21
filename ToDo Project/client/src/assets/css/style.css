@@ -7,7 +7,13 @@ body {
 h1,h2,h3,h4,h5,h6,button,input,textarea{
   font-family: 'Poppins', sans-serif !important;
 }
-
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 p{
   font-size: 14px;
   font-family: 'Poppins', sans-serif !important;
