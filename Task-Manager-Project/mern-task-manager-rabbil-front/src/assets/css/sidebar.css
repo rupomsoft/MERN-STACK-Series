@@ -20,6 +20,9 @@
     height: 45px ;
     object-fit: cover;
 }
+
+
+
 .side-nav-open {
     padding-top: 70px;
     height: 100%;
@@ -72,6 +75,10 @@
     border-radius: 4px;
     background: #CCCCCC;
 }
+
+
+
+
 .content {
     transition: 0.3s;
     margin-top: 80px;
@@ -82,10 +89,15 @@
     transition: 0.3s;
     margin-left: 0;
 }
+
+
+
 .nav-logo {
     width: auto;
     height: 30px;
 }
+
+
 .side-bar-item{
     display: inline-block;
     padding: 12px 5px 12px 5px;
