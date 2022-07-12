@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Create/Create.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Create/Create.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/New/New.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/New.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/masterLayout/Fullscreen-Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/masterLayout/Fullscreen-Loader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/FormHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/FormHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/SessionHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/SessionHelper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/settings-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/settings-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657642639682</updated>
-      <workItem from="1657642640949" duration="1997000" />
+      <workItem from="1657642640949" duration="8730000" />
     </task>
     <servers />
   </component>

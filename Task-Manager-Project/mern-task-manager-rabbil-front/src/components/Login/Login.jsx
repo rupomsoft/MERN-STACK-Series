@@ -1,6 +1,28 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useRef} from 'react';
 import {Link} from "react-router-dom";
+import {ErrorToast, IsEmail, IsEmpty} from "../../helper/FormHelper";
+import {LoginRequest} from "../../APIRequest/APIRequest";
 const Login = () => {
+    let passRef,emailRef=useRef();
+
+    const SubmitLogin=()=>{
+        let email=emailRef.value;
+        let pass=passRef.value;
+        if(IsEmail(email)){
+            ErrorToast("Invalid Email Address")
+        }
+        else if(IsEmpty(pass)){
+            ErrorToast("Password Required")
+        }
+        else{
+            LoginRequest(email,pass).then((result)=>{
+                if(result===true){
+                    window.location.href="/"
+                }
+            })
+        }
+    }
+
     return (
         <Fragment>
             <div className="container">
@@ -10,11 +32,11 @@ const Login = () => {
                             <div className="card-body">
                                 <h5>Sign In</h5>
                                 <br/>
-                                <input placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
+                                <input ref={(input)=>emailRef=input} placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
                                 <br/>
-                                <input  placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
+                                <input ref={(input)=>passRef=input} placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
-                                <button className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={SubmitLogin} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                                 <div className="text-center w-100">
                                     <Link className="text-center animated fadeInUp" to="/Registration">Sign Up</Link>
                                     <br/>
