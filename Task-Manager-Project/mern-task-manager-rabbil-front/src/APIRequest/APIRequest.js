@@ -3,10 +3,11 @@ import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import store from "../redux/store/store";
 import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import {getToken, setToken, setUserDetails} from "../helper/SessionHelper";
+import {SetCanceledTask, SetCompletedTask, SetNewTask, SetProgressTask} from "../redux/state-slice/task-slice";
+import {SetSummary} from "../redux/state-slice/summary-slice";
 const BaseURL="https://mern-task-manager-rabbil.herokuapp.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
-
 
 export function NewTaskRequest(title,description){
     store.dispatch(ShowLoader())
@@ -55,6 +56,7 @@ export function LoginRequest(email,password){
         return false;
     });
 }
+
 export function RegistrationRequest(email,firstName,lastName,mobile,password,photo){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/registration";
@@ -87,3 +89,53 @@ export function RegistrationRequest(email,firstName,lastName,mobile,password,pho
         return false;
     })
 }
+
+export function TaskListByStatus(Status){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/listTaskByStatus/"+Status;
+    axios.get(URL,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            if(Status==="New"){
+                store.dispatch(SetNewTask(res.data['data']))
+            }
+            else if(Status==="Completed"){
+                store.dispatch(SetCompletedTask(res.data['data']))
+            }
+            else if(Status==="Canceled"){
+                store.dispatch(SetCanceledTask(res.data['data']))
+            }
+            else if(Status==="Progress"){
+                debugger;
+                store.dispatch(SetProgressTask(res.data['data']))
+            }
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}
+
+
+export function SummaryRequest(){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/taskStatusCount";
+    axios.get(URL,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            store.dispatch(SetSummary(res.data['data']))
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}
+
+
+
