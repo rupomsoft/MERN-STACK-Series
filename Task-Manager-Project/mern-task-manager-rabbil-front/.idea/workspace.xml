@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/New/New.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/New.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/summary-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/summary-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/task-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/task-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-    </list>
+    <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +31,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657642639682</updated>
-      <workItem from="1657642640949" duration="10725000" />
+      <workItem from="1657642640949" duration="10955000" />
     </task>
     <servers />
   </component>
