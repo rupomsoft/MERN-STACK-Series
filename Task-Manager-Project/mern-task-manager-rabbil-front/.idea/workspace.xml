@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="" />
+    <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/state-slice/profile-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Canceled/Canceled.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Completed/Completed.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/New/New.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/New/New.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Progress/Progress.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/masterLayout/Master-Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/masterLayout/Master-Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/DeleteAlert.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/DeleteAlert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/FormHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/FormHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/SessionHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/SessionHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/UpdateAlert.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/UpdateAlert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-rabbil/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mern-task-manager-rabbil/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/controllers/UsersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/controllers/UsersController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/routes/api.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -32,6 +59,12 @@
       <option name="presentableId" value="Default" />
       <updated>1657642639682</updated>
       <workItem from="1657642640949" duration="10955000" />
+      <workItem from="1657722810907" duration="478000" />
+      <workItem from="1657725563327" duration="12000" />
+      <workItem from="1657735285116" duration="855000" />
+      <workItem from="1657802900247" duration="1083000" />
+      <workItem from="1657809813382" duration="3801000" />
+      <workItem from="1657813896474" duration="2259000" />
     </task>
     <servers />
   </component>

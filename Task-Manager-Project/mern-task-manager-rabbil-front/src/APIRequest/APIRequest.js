@@ -5,6 +5,7 @@ import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import {getToken, setToken, setUserDetails} from "../helper/SessionHelper";
 import {SetCanceledTask, SetCompletedTask, SetNewTask, SetProgressTask} from "../redux/state-slice/task-slice";
 import {SetSummary} from "../redux/state-slice/summary-slice";
+import {SetProfile} from "../redux/state-slice/profile-slice";
 const BaseURL="https://mern-task-manager-rabbil.herokuapp.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
@@ -119,7 +120,6 @@ export function TaskListByStatus(Status){
     });
 }
 
-
 export function SummaryRequest(){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/taskStatusCount";
@@ -136,6 +136,97 @@ export function SummaryRequest(){
         store.dispatch(HideLoader())
     });
 }
+
+export function DeleteRequest(id){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/deleteTask/"+id;
+    return axios.get(URL,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            SuccessToast("Delete Successful")
+            return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+            return false;
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+        return false;
+    });
+}
+
+export function UpdateStatusRequest(id,status){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/updateTaskStatus/"+id+"/"+status;
+    return axios.get(URL,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            SuccessToast("Status Updated")
+            return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+            return false;
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+        return false;
+    });
+}
+
+
+export function GetProfileDetails(){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/profileDetails";
+    axios.get(URL,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            store.dispatch(SetProfile(res.data['data'][0]))
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}
+
+
+
+
+export function ProfileUpdateRequest(email,firstName,lastName,mobile,password,photo){
+
+    store.dispatch(ShowLoader())
+
+    let URL=BaseURL+"/profileUpdate";
+
+    let PostBody={email:email,firstName:firstName,lastName:lastName,mobile:mobile,password:password,photo:photo}
+    let UserDetails={email:email,firstName:firstName,lastName:lastName,mobile:mobile,photo:photo}
+
+    return axios.post(URL,PostBody,AxiosHeader).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+
+            SuccessToast("Profile Update Success")
+            setUserDetails(UserDetails)
+
+            return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+            return  false;
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+        return false;
+    });
+}
+
 
 
 

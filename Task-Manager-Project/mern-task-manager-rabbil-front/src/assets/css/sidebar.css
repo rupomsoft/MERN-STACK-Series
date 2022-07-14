@@ -20,6 +20,12 @@
     height: 45px ;
     object-fit: cover;
 }
+.icon-nav-img-lg{
+    border-radius: 50%;
+    width: 85px ;
+    height: 85px ;
+    object-fit: cover;
+}
 
 
 

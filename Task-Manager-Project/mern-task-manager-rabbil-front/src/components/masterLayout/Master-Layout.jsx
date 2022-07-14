@@ -5,6 +5,7 @@ import {AiOutlineCheckCircle, AiOutlineEdit, AiOutlineLogout, AiOutlineMenuUnfol
 import {BsHourglass, BsListNested} from "react-icons/bs";
 import logo from "../../assets/images/logo.svg";
 import {MdOutlineCancelPresentation, RiDashboardLine} from "react-icons/all";
+import {getUserDetails, removeSessions} from "../../helper/SessionHelper";
 
 
 
@@ -13,7 +14,7 @@ const MasterLayout = (props) => {
     let contentRef,sideNavRef=useRef();
 
     const onLogout=()=>{
-
+        removeSessions();
     }
 
     const MenuBarClickHandler = () => {
@@ -47,11 +48,11 @@ const MasterLayout = (props) => {
 
                     <div className="float-right h-auto d-flex">
                         <div className="user-dropdown">
-                            <img className="icon-nav-img icon-nav" src="https://yt3.ggpht.com/ytc/AKedOLRNgeV2pOHHLhb-uNlo95HH3yF3U_htLbT8_iWr=s48-c-k-c0x00ffffff-no-rj" alt=""/>
+                            <img className="icon-nav-img icon-nav" src={getUserDetails()['photo']} alt=""/>
                             <div className="user-dropdown-content ">
                                 <div className="mt-4 text-center">
-                                    <img className="icon-nav-img" src="https://yt3.ggpht.com/ytc/AKedOLRNgeV2pOHHLhb-uNlo95HH3yF3U_htLbT8_iWr=s48-c-k-c0x00ffffff-no-rj" alt=""/>
-                                    <h6>Rabbil Hasan</h6>
+                                    <img className="icon-nav-img" src={getUserDetails()['photo']} alt=""/>
+                                    <h6>{getUserDetails()['firstName']}</h6>
                                     <hr className="user-dropdown-divider  p-0"/>
                                 </div>
                                 <NavLink to="/Profile" className="side-bar-item">
