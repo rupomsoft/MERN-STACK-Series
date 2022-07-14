@@ -30,18 +30,25 @@ const Login = () => {
                     <div className="col-md-7 col-lg-6 center-screen">
                         <div className="card w-90  p-4">
                             <div className="card-body">
-                                <h5>Sign In</h5>
+                                <h4>SIGN IN</h4>
                                 <br/>
                                 <input ref={(input)=>emailRef=input} placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
                                 <br/>
                                 <input ref={(input)=>passRef=input} placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
                                 <button onClick={SubmitLogin} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
-                                <div className="text-center w-100">
-                                    <Link className="text-center animated fadeInUp" to="/Registration">Sign Up</Link>
-                                    <br/>
-                                    <Link className="text-center animated fadeInUp" to="/Forgetpass">Forget Password</Link>
+                                <hr/>
+                                <div className="float-end mt-3">
+
+                                    <span>
+                                        <Link className="text-center ms-3 h6 animated fadeInUp" to="/Registration">Sign Up </Link>
+                                        <span className="ms-1">|</span>
+                                        <Link className="text-center ms-3 h6 animated fadeInUp" to="/SendOTP">Forget Password</Link>
+                                    </span>
+
                                 </div>
+
+
                             </div>
                         </div>
                     </div>

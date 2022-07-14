@@ -1,6 +1,6 @@
 import React, {Fragment, lazy, Suspense} from 'react';
 import LazyLoader from "../components/masterLayout/LazyLoader";
-const Forgetpass =lazy(() => import('../components/Forgetpass/Forgetpass'));
+const Forgetpass =lazy(() => import('../components/AccountRecover/Send-OTP'));
 const ForgetpassPage = () => {
     return (
         <Fragment>

@@ -17,7 +17,6 @@ h1,h2,h3,h4,h5,h6,button,input,textarea{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   min-height: 85vh;
 }
 
