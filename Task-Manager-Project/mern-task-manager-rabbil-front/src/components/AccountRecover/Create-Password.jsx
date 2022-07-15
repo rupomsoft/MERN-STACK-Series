@@ -1,5 +1,30 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useRef} from 'react';
+import {ErrorToast, IsEmpty} from "../../helper/FormHelper";
+import {RecoverResetPassRequest} from "../../APIRequest/APIRequest";
 const CreatePassword = () => {
+
+    let PasswordRef,ConfirmPasswordRef=useRef();
+
+
+    const ResetPass = () => {
+        let Password = PasswordRef.value;
+        let ConfirmPassword =  ConfirmPasswordRef.value;
+        if(IsEmpty(Password)){
+            ErrorToast("Password Required")
+        }
+        else if(IsEmpty(ConfirmPassword)){
+            ErrorToast("Confirm Password Required")
+        }
+        else if(Password!==ConfirmPassword){
+            ErrorToast("Password & Confirm Password Should be Same")
+        }
+        else{
+            RecoverResetPassRequest().then((res)=>{
+
+            })
+        }
+    }
+
     return (
         <Fragment>
             <div className="container">
@@ -13,12 +38,12 @@ const CreatePassword = () => {
                                 <input placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
                                 <br/>
                                 <label>New Password</label>
-                                <input placeholder="New Password" className="form-control animated fadeInUp" type="password"/>
+                                <input ref={(input)=>PasswordRef=input} placeholder="New Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
                                 <label>Confirm Password</label>
-                                <input placeholder="Confirm Password" className="form-control animated fadeInUp" type="password"/>
+                                <input  ref={(input)=>ConfirmPasswordRef=input} placeholder="Confirm Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
-                                <button  className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={ResetPass} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                             </div>
                         </div>
                     </div>

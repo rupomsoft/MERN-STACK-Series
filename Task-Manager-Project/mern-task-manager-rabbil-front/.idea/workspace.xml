@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AccountRecover/Create-Password.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AccountRecover/Verify-OTP.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AccountRecover/Create-Password-Page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AccountRecover/Send-OTP-Page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AccountRecover/Verify-OTP-Page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Forgetpass/Forgetpass.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Send-OTP.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Registration/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Forgetpass-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Forgetpass-Page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Create-Password.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Create-Password.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Send-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Send-OTP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Verify-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Verify-OTP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/SessionHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/SessionHelper.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +60,8 @@
       <workItem from="1657735285116" duration="855000" />
       <workItem from="1657802900247" duration="1083000" />
       <workItem from="1657809813382" duration="3801000" />
-      <workItem from="1657813896474" duration="8532000" />
+      <workItem from="1657813896474" duration="8751000" />
+      <workItem from="1657869220558" duration="3869000" />
     </task>
     <servers />
   </component>

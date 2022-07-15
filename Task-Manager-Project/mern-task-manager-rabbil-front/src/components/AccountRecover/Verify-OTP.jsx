@@ -1,8 +1,11 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import ReactCodeInput from "react-code-input";
+import {ErrorToast} from "../../helper/FormHelper";
+import {RecoverVerifyOTPRequest} from "../../APIRequest/APIRequest";
 
 
 const VerifyOTP = () => {
+
 
     let  defaultInputStyle= {
             fontFamily: "monospace",
@@ -20,6 +23,24 @@ const VerifyOTP = () => {
             borderColor: "lightgrey"
         }
 
+
+    let [OTP,SetOTP]=useState("")
+
+        
+        
+        
+    const SubmitOTP = () => {
+      if(OTP.length===6){
+          RecoverVerifyOTPRequest().then((res)=>{
+
+          })
+      }
+      else {
+          ErrorToast("Enter 6 Digit Code")
+      }
+    }    
+
+
     return (
         <Fragment>
             <div className="container">
@@ -29,9 +50,9 @@ const VerifyOTP = () => {
                             <div className="card-body">
                                 <h4>OTP VERIFICATION </h4>
                                 <p>A 6 Digit verification code has been sent to your email address. </p>
-                                <ReactCodeInput inputStyle={defaultInputStyle}  fields={6}/>
+                                <ReactCodeInput onChange={(value)=>SetOTP(value)} inputStyle={defaultInputStyle}  fields={6}/>
                                 <br/>  <br/>
-                                <button  className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={SubmitOTP} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                             </div>
                         </div>
                     </div>

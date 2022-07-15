@@ -9,7 +9,6 @@ import {SetProfile} from "../redux/state-slice/profile-slice";
 const BaseURL="https://mern-task-manager-rabbil.herokuapp.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
-
 export function NewTaskRequest(title,description){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/createTask";
@@ -34,7 +33,6 @@ export function NewTaskRequest(title,description){
 
 
 }
-
 export function LoginRequest(email,password){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/login";
@@ -57,7 +55,6 @@ export function LoginRequest(email,password){
         return false;
     });
 }
-
 export function RegistrationRequest(email,firstName,lastName,mobile,password,photo){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/registration";
@@ -90,7 +87,6 @@ export function RegistrationRequest(email,firstName,lastName,mobile,password,pho
         return false;
     })
 }
-
 export function TaskListByStatus(Status){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/listTaskByStatus/"+Status;
@@ -119,7 +115,6 @@ export function TaskListByStatus(Status){
         store.dispatch(HideLoader())
     });
 }
-
 export function SummaryRequest(){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/taskStatusCount";
@@ -136,7 +131,6 @@ export function SummaryRequest(){
         store.dispatch(HideLoader())
     });
 }
-
 export function DeleteRequest(id){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/deleteTask/"+id;
@@ -156,7 +150,6 @@ export function DeleteRequest(id){
         return false;
     });
 }
-
 export function UpdateStatusRequest(id,status){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/updateTaskStatus/"+id+"/"+status;
@@ -176,8 +169,6 @@ export function UpdateStatusRequest(id,status){
         return false;
     });
 }
-
-
 export function GetProfileDetails(){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/profileDetails";
@@ -194,10 +185,6 @@ export function GetProfileDetails(){
         store.dispatch(HideLoader())
     });
 }
-
-
-
-
 export function ProfileUpdateRequest(email,firstName,lastName,mobile,password,photo){
 
     store.dispatch(ShowLoader())
@@ -230,3 +217,63 @@ export function ProfileUpdateRequest(email,firstName,lastName,mobile,password,ph
 
 
 
+// Recover Password Step 01 Send OTP
+export function RecoverVerifyEmailRequest(email){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/RecoverVerifyEmail/"+email;
+    return axios.get(URL).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+
+            // Message....
+           return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}
+
+// Recover Password Step 02 Verify OTP
+export function RecoverVerifyOTPRequest(email,OTP){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/RecoverVerifyOTP/"+email+"/"+OTP;
+    return axios.get(URL).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+
+            // Message....
+            return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}
+
+// Recover Password Step 03 Reset Pass
+export function RecoverResetPassRequest(email,OTP,Password){
+    store.dispatch(ShowLoader())
+    let URL=BaseURL+"/RecoverResetPass";
+    let PostBody={email:email,OTP:OTP,Password:Password}
+
+    return axios.post(URL,PostBody).then((res)=>{
+        store.dispatch(HideLoader())
+        if(res.status===200){
+            // Message....
+            return true;
+        }
+        else{
+            ErrorToast("Something Went Wrong")
+        }
+    }).catch((err)=>{
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    });
+}

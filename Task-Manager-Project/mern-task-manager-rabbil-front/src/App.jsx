@@ -9,13 +9,11 @@ import CanceledPage from "./pages/Canceled-Page";
 import ProfilePage from "./pages/Profile-Page";
 import LoginPage from "./pages/Login-Page";
 import RegistrationPage from "./pages/Registration-Page";
-import ForgetpassPage from "./pages/Forgetpass-Page";
 import Page404 from "./pages/Page-404";
 import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
 import {getToken} from "./helper/SessionHelper";
 import SendOTPPage from "./pages/AccountRecover/Send-OTP-Page";
 import VerifyOTPPage from "./pages/AccountRecover/Verify-OTP-Page";
-import CreatePassword from "./components/AccountRecover/Create-Password";
 import CreatePasswordPage from "./pages/AccountRecover/Create-Password-Page";
 
 const App = () => {

@@ -1,6 +1,24 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useRef} from 'react';
+import {ErrorToast, IsEmail} from "../../helper/FormHelper";
+import {RecoverVerifyEmailRequest} from "../../APIRequest/APIRequest";
 
 const SendOTP = () => {
+    let emailRef=useRef();
+
+    const VerifyEmail=()=>{
+        let email=emailRef.value;
+        if(IsEmail(email)){
+            ErrorToast("Valid Email Address Required !")
+        }
+        else{
+            RecoverVerifyEmailRequest(email).then((result)=>{
+
+            })
+        }
+    }
+
+
+
     return (
         <Fragment>
             <div className="container">
@@ -11,9 +29,9 @@ const SendOTP = () => {
                                 <h4>EMAIL ADDRESS</h4>
                                 <br/>
                                 <label>Your email address</label>
-                                <input placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
+                                <input ref={(input)=>emailRef=input}  placeholder="User Email" className="form-control animated fadeInUp" type="email"/>
                                 <br/>
-                                <button  className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={VerifyEmail}  className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
                             </div>
                         </div>
                     </div>
