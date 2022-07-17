@@ -109,7 +109,7 @@ exports.RecoverVerifyOTP=async (req,res)=>{
             })
             res.status(200).json({status: "success", data: OTPUpdate})
         } else {
-            res.status(200).json({status: "success", data: "Invalid OTP Code"})
+            res.status(200).json({status: "fail", data: "Invalid OTP Code"})
         }
     }
     catch (e) {
@@ -134,7 +134,7 @@ exports.RecoverResetPass=async (req,res)=>{
             })
             res.status(200).json({status: "success", data: PassUpdate})
         } else {
-            res.status(200).json({status: "success", data: "Invalid OTP Code"})
+            res.status(200).json({status: "fail", data: "Invalid Request"})
         }
     }
     catch (e) {

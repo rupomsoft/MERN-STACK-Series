@@ -2,10 +2,12 @@ import React, {Fragment, useState} from 'react';
 import ReactCodeInput from "react-code-input";
 import {ErrorToast} from "../../helper/FormHelper";
 import {RecoverVerifyOTPRequest} from "../../APIRequest/APIRequest";
+import {getEmail} from "../../helper/SessionHelper";
+import {useNavigate} from "react-router-dom";
 
 
 const VerifyOTP = () => {
-
+    let navigate=useNavigate();
 
     let  defaultInputStyle= {
             fontFamily: "monospace",
@@ -31,8 +33,10 @@ const VerifyOTP = () => {
         
     const SubmitOTP = () => {
       if(OTP.length===6){
-          RecoverVerifyOTPRequest().then((res)=>{
-
+          RecoverVerifyOTPRequest(getEmail(),OTP).then((result)=>{
+              if(result===true){
+                  navigate("/CreatePassword")
+              }
           })
       }
       else {

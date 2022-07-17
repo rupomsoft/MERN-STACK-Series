@@ -1,10 +1,11 @@
 import React, {Fragment, useRef} from 'react';
 import {ErrorToast, IsEmail} from "../../helper/FormHelper";
 import {RecoverVerifyEmailRequest} from "../../APIRequest/APIRequest";
+import {useNavigate} from "react-router-dom";
 
 const SendOTP = () => {
     let emailRef=useRef();
-
+    let navigate=useNavigate();
     const VerifyEmail=()=>{
         let email=emailRef.value;
         if(IsEmail(email)){
@@ -12,13 +13,12 @@ const SendOTP = () => {
         }
         else{
             RecoverVerifyEmailRequest(email).then((result)=>{
-
+                if(result===true){
+                    navigate("/VerifyOTP")
+                }
             })
         }
     }
-
-
-
     return (
         <Fragment>
             <div className="container">
