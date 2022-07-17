@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/NotFound/NotFound.jsx"],"names":["NotFound"],"mappings":"yJAAA,uBAUeA,UARE,WACb,OACI,uBAIP,C","file":"static/js/17.c4680964.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nconst NotFound = () => {\r\n    return (\r\n        <div>\r\n\r\n        </div>\r\n    );\r\n};\r\n\r\nexport default NotFound;"],"sourceRoot":""}

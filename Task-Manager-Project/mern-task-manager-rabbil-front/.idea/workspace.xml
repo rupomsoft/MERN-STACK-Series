@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc515fee-8083-49a9-968b-3dcca046b5b8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Create-Password.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Create-Password.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Send-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Send-OTP.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AccountRecover/Verify-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AccountRecover/Verify-OTP.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/controllers/UsersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../mern-task-manager-rabbil/src/controllers/UsersController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +56,7 @@
       <workItem from="1657809813382" duration="3801000" />
       <workItem from="1657813896474" duration="8751000" />
       <workItem from="1657869220558" duration="3869000" />
-      <workItem from="1658082244120" duration="2811000" />
+      <workItem from="1658082244120" duration="4411000" />
     </task>
     <servers />
   </component>
