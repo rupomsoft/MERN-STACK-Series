@@ -1,0 +1,67 @@
+{
+  "name": "helmet",
+  "author": "Adam Baldwin <adam@npmjs.com> (https://evilpacket.net)",
+  "contributors": [
+    "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
+    "Ameen Abdeen <ameen.abdeen.se@gmail.com>"
+  ],
+  "description": "help secure Express/Connect apps with various HTTP headers",
+  "version": "5.1.0",
+  "keywords": [
+    "express",
+    "security",
+    "headers"
+  ],
+  "homepage": "https://helmetjs.github.io/",
+  "bugs": {
+    "url": "https://github.com/helmetjs/helmet/issues",
+    "email": "me@evanhahn.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/helmet.git"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/connect": "^3.4.35",
+    "@types/jest": "^27.5.1",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "connect": "^3.7.0",
+    "eslint": "^8.15.0",
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2",
+    "rollup": "^2.73.0",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "pretest": "npm run lint",
+    "prepublishOnly": "npm run build-helmet",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "format": "prettier --write .",
+    "clean": "node ./bin/clean.js",
+    "build-helmet": "npm run clean && node ./bin/build-helmet.js && prettier --write --config .prettierrc-dist.cjs --ignore-path /dev/null dist",
+    "build-middleware-package": "npm run clean && tsc --emitDeclarationOnly -p tsconfig-types.json && node ./bin/build-middleware-package.js",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
+}
