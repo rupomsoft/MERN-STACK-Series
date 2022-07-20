@@ -3,7 +3,6 @@ const ProductsModel=require('../models/ProductsModel');
 exports.ProductList=async (req, res) => {
 
     try{
-
         let pageNo = Number(req.params.pageNo);
         let perPage = Number(req.params.perPage);
         let searchValue = req.params.searchKeyword;
