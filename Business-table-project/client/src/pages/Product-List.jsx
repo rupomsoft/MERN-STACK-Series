@@ -1,40 +1,38 @@
-import React, {Fragment, useEffect, useRef, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import ReactPaginate from "react-paginate";
 import {GetProductList} from "../APIRequest/APIRequest";
 
 const ProductList = () => {
 
-    let [searchKey,setSearchKey]=useState("0");
-    let [perPageKey,setPerPageKey]=useState(5);
+    let [searchKeyword,setSearchKeyword]=useState("0");
+    let [perPage,setPerPage]=useState(5);
 
     useEffect(()=>{
-        GetProductList(1,perPageKey,searchKey);
+        GetProductList(1,perPage,searchKeyword);
     },[])
 
     let ALLProduct=useSelector((state)=>(state.product.ALLProduct));
     let Total=useSelector((state)=>(state.product.Total))
 
     const handlePageClick = (event) => {
-        GetProductList(event.selected+1,perPageKey,searchKey)
+        GetProductList(event.selected+1,perPage,searchKeyword)
     };
 
     const searchData=()=>{
-        GetProductList(1,perPageKey,searchKey)
+        GetProductList(1,perPage,searchKeyword)
     }
-    const PageKeyOnChange=(e)=>{
-        setPerPageKey(parseInt(e.target.value))
-        GetProductList(1,e.target.value,searchKey)
+    const perPageOnChange=(e)=>{
+        setPerPage(parseInt(e.target.value))
+        GetProductList(1,e.target.value,searchKeyword)
     }
 
-    const searchOnChange=(e)=>{
-
-        setSearchKey(e.target.value)
+    const searchKeywordOnChange=(e)=>{
+        setSearchKeyword(e.target.value)
         if((e.target.value).length===0){
-            setSearchKey("0")
-            GetProductList(1,perPageKey,"0")
+            setSearchKeyword("0")
+            GetProductList(1,perPage,"0")
         }
-
     }
 
 
@@ -52,7 +50,7 @@ const ProductList = () => {
                                           <h5>My Product List</h5>
                                       </div>
                                       <div className="col-2">
-                                          <select onChange={PageKeyOnChange} className="form-control mx-2 form-select-sm form-select form-control-sm" >
+                                          <select onChange={perPageOnChange} className="form-control mx-2 form-select-sm form-select form-control-sm" >
                                               <option value="5">5 Per Page</option>
                                               <option value="10">10 Per Page</option>
                                               <option value="20">20 Per Page</option>
@@ -63,7 +61,7 @@ const ProductList = () => {
                                       </div>
                                       <div className="col-4">
                                           <div className="input-group mb-3">
-                                              <input onChange={searchOnChange} type="text" className="form-control form-control-sm" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                              <input onChange={searchKeywordOnChange} type="text" className="form-control form-control-sm" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2"/>
                                               <button onClick={searchData} className="btn  btn-outline-primary btn-sm mb-0" type="button">Search</button>
                                           </div>
                                       </div>
@@ -128,7 +126,7 @@ const ProductList = () => {
                                                   breakLabel="..."
                                                   breakClassName="page-item"
                                                   breakLinkClassName="page-link"
-                                                  pageCount={Total/perPageKey}
+                                                  pageCount={Total/perPage}
                                                   marginPagesDisplayed={2}
                                                   pageRangeDisplayed={5}
                                                   onPageChange={handlePageClick}
