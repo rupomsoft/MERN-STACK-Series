@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296" height="103" viewBox="0 0 296 103">
+    <g id="Group_5" data-name="Group 5" transform="translate(-684 744)">
+        <g id="Group_4" data-name="Group 4">
+            <rect id="Rectangle_1" data-name="Rectangle 1" width="296" height="95" transform="translate(684 -744)" fill="#fff"/>
+            <g id="Group_3" data-name="Group 3">
+                <g id="box-11387" transform="translate(832.037 -626.861)">
+                    <g id="Group_2" data-name="Group 2" transform="translate(-126.037 -102.229)">
+                        <path id="Path_8" data-name="Path 8" d="M59.7,141.924a1.841,1.841,0,0,1-.693-.135L28.126,129.315a1.851,1.851,0,0,1-1.158-1.716V103.38a1.851,1.851,0,0,1,3.7,0v22.97L57.848,137.33V101.175a1.851,1.851,0,0,1,3.7,0v38.9a1.851,1.851,0,0,1-1.851,1.851Z" transform="translate(-18.059 -74.375)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                        <path id="Path_9" data-name="Path 9" d="M32.728,88.823a1.84,1.84,0,0,1-.693-.135L1.157,76.213a1.851,1.851,0,0,1-.75-2.876l8.91-11.081a1.852,1.852,0,0,1,2.136-.556L42.332,74.175a1.851,1.851,0,0,1,.75,2.876L34.171,88.13A1.847,1.847,0,0,1,32.728,88.823ZM4.854,73.714,32.148,84.74l6.487-8.067L11.341,65.647Z" transform="translate(0.001 -49.091)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                        <path id="Path_10" data-name="Path 10" d="M122.285,141.924a1.851,1.851,0,0,1-1.851-1.851v-38.9a1.851,1.851,0,0,1,3.7,0V137.33l27.177-10.979V103.38a1.851,1.851,0,0,1,3.7,0V127.6a1.85,1.85,0,0,1-1.158,1.716l-30.878,12.474A1.824,1.824,0,0,1,122.285,141.924Z" transform="translate(-80.645 -74.375)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                        <path id="Path_11" data-name="Path 11" d="M131.2,88.826a1.851,1.851,0,0,1-1.444-.691l-8.911-11.08a1.851,1.851,0,0,1,.75-2.876L152.47,61.7a1.854,1.854,0,0,1,2.136.556l8.911,11.081a1.851,1.851,0,0,1-.75,2.876L131.889,88.691A1.849,1.849,0,0,1,131.2,88.826Zm-5.908-12.149,6.488,8.067L159.07,73.717l-6.488-8.067Z" transform="translate(-80.645 -49.094)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                        <path id="Path_12" data-name="Path 12" d="M90.573,39.984a1.846,1.846,0,0,1-.692-.135L59.7,27.654,29.51,39.849a1.851,1.851,0,0,1-1.387-3.432L59,23.943a1.851,1.851,0,0,1,1.386,0L91.267,36.417a1.851,1.851,0,0,1-.694,3.567Z" transform="translate(-18.056 -23.808)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                        <path id="Path_13" data-name="Path 13" d="M122.285,52.458a1.851,1.851,0,0,1-1.851-1.851V25.657a1.851,1.851,0,0,1,3.7,0v24.95A1.851,1.851,0,0,1,122.285,52.458Z" transform="translate(-80.645 -23.807)" fill="#4f67ff" stroke="#4f67ff" stroke-width="1"/>
+                    </g>
+                </g>
+                <text id="INVO" transform="translate(871 -673)" fill="#686868" font-size="64" font-family="HindSiliguri-Bold, Hind Siliguri" font-weight="700"><tspan x="-76.672" y="0">INVO</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>
+
