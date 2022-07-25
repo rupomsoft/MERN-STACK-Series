@@ -2728,9 +2728,9 @@ progress {
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #8d9bff;
+    border-color: #e293d3;
     outline: 0;
-    box-shadow: 0 0 0 2px #97a5ff;
+    box-shadow: 0 0 0 2px #e9aede;
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -3586,22 +3586,22 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #4F67FF;
-    border-color: #4F67FF;
+    background-color: #cb0c9f;
+    border-color: #cb0c9f;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #3f56e9;
-    border-color:#3f56e9;
+    background-color: #ad0a87;
+    border-color: #a20a7f;
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #7084FF;
-    border-color:#7084FF;
-    box-shadow: 0 0 0 0.2rem rgba(112, 132, 255, 0.5);
+    background-color: #ad0a87;
+    border-color: #a20a7f;
+    box-shadow: 0 0 0 0.2rem rgba(211, 48, 173, 0.5);
 }
 
 .btn-check:checked+.btn-primary,
@@ -3610,8 +3610,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color:#7084FF;
-    border-color: #7084FF;
+    background-color: #a20a7f;
+    border-color: #980977;
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -3619,14 +3619,14 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(112, 132, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(211, 48, 173, 0.5);
 }
 
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #fff;
-    background-color:#7084FF;
-    border-color:#7084FF;
+    background-color: #cb0c9f;
+    border-color: #cb0c9f;
 }
 
 .btn-secondary {
@@ -20081,13 +20081,13 @@ fieldset:disabled .btn {
 
 .btn-primary:hover,
 .btn.bg-gradient-primary:hover {
-    background-color: #7084FF;
-    border-color: #7084FF;
+    background-color: #cb0c9f;
+    border-color: #cb0c9f;
 }
 
 .btn-primary .btn.bg-outline-primary,
 .btn.bg-gradient-primary .btn.bg-outline-primary {
-    border: 1px solid #7084FF;
+    border: 1px solid #cb0c9f;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -20096,8 +20096,8 @@ fieldset:disabled .btn {
 .btn.bg-gradient-primary:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-primary:not(:disabled):not(.disabled):active,
 .show>.btn.bg-gradient-primary.dropdown-toggle {
-    color: color-yiq(#7084FF);
-    background-color: #7084FF;
+    color: color-yiq(#cb0c9f);
+    background-color: #cb0c9f;
 }
 
 .btn-primary.focus,
@@ -20115,7 +20115,7 @@ fieldset:disabled .btn {
     background-color: transparent;
     opacity: .75;
     box-shadow: none;
-    color: #7084FF;
+    color: #cb0c9f;
 }
 
 .btn-secondary:hover,
@@ -21160,8 +21160,8 @@ fieldset:disabled .btn {
 }
 
 .input-group .form-control:focus {
-    border-left: 1px solid #4F67FF !important;
-    border-right: 1px solid #4F67FF !important;
+    border-left: 1px solid #e293d3 !important;
+    border-right: 1px solid #e293d3 !important;
 }
 
 .input-group .form-control:not(:first-child) {
@@ -21206,7 +21206,7 @@ fieldset:disabled .btn {
 }
 
 .focused {
-    box-shadow: 0 0 0 2px #4F67FF;
+    box-shadow: 0 0 0 2px #e9aede;
     transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
@@ -21215,7 +21215,7 @@ fieldset:disabled .btn {
 }
 
 .focused .input-group-text {
-    border-color: #4F67FF;
+    border-color: #e293d3;
 }
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"],

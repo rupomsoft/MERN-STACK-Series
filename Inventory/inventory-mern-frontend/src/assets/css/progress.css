@@ -12,7 +12,7 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 .Line-Progress .indeterminate {
-    background-color:#4F67FF;
+    background-color: #cb0c9f;
 }
 .Line-Progress .indeterminate:before {
        z-index: -100 !important;
