@@ -1,14 +1,12 @@
-const UpdateService= async (Request,DataModel) => {
+const DeleteService= async (Request,DataModel) => {
     try{
         let UserEmail=Request.headers['email'];
         let id=Request.params.id;
-        let PostBody=Request.body;
-        let data = await DataModel.updateOne({_id:id,UserEmail:UserEmail},PostBody);
+        let data = await DataModel.remove({_id:id,UserEmail:UserEmail});
         return {status: "success", data: data}
     }
     catch (error) {
         return {status: "fail", data: error}
     }
 }
-module.exports=UpdateService
-
+module.exports=DeleteService

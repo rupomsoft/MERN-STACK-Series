@@ -1,127 +1,49 @@
-const UsersModel = require("../models/UsersModel");
+const DataModel = require("../models/UsersModel");
 const OTPSModel = require("../models/OTPSModel");
-const SendEmailUtility = require("../utility/SendEmailUtility");
-const CreateToken = require("../utility/CreateToken");
+const UserCreateService = require("../services/user/UserCreateService");
+const UserLoginService = require("../services/user/UserLoginService");
+const UserUpdateService = require("../services/user/UserUpdateService");
+const UserDetailsService = require("../services/user/UserDetailsService");
+const UserResetPassService = require("../services/user/UserResetPassService");
+const UserVerifyOtpService = require("../services/user/UserVerifyOtpService");
+const UserVerifyEmailService = require("../services/user/UserVerifyEmailService");
 
 
 exports.Registration=async (req, res) => {
-    try{
-        let data= await UsersModel.create(req.body)
-        res.status(200).json({status: "success", data: data})
-    }
-    catch (e) {
-        res.status(200).json({status: "fail", data: e})
-    }
+    let Result=await UserCreateService(req,DataModel)
+    res.status(200).json(Result)
 }
-
-
 
 exports.Login=async(req,res)=>{
-    try {
-        let data =await UsersModel.aggregate([{$match:req.body}, {$project:{_id:0,email:1,firstName:1,lastName:1,mobile:1,photo:1}}])
-        if(data.length>0){
-          let token = await CreateToken(data[0]['email'])
-          res.status(200).json({status:"success",token:token,data:data[0]})
-        }
-        else {
-            res.status(401).json({status:"unauthorized"})
-        }
-  }
-  catch (e) {
-      res.status(200).json({status: "fail", data: e})
-  }
+    let Result=await UserLoginService(req,DataModel)
+    res.status(200).json(Result)
 }
-
-
 
 exports.ProfileUpdate=async (req, res) => {
-    try {
-        let data = await UsersModel.updateOne({email: req.headers['email']}, req.body)
-        res.status(200).json({status: "success", data: data})
-    } catch (e) {
-        res.status(200).json({status: "fail", data: e})
-    }
+    let Result=await UserUpdateService(req,DataModel)
+    res.status(200).json(Result)
 }
-
-
 
 exports.ProfileDetails=async (req, res) => {
-    try {
-        let data = await UsersModel.aggregate([{$match: {email: req.headers['email']}}])
-        res.status(200).json({status: "success", data: data})
-    } catch (e) {
-        res.status(200).json({status: "fail", data: e})
-    }
+    let Result=await UserDetailsService(req,DataModel)
+    res.status(200).json(Result)
 }
-
 
 
 exports.RecoverVerifyEmail=async (req,res)=>{
-    try {
-        // Email Account Query
-        let email = req.params.email;
-        let OTPCode = Math.floor(100000 + Math.random() * 900000)
-
-        let UserCount = (await UsersModel.aggregate([{$match: {email: email}}, {$count: "total"}]))
-
-        if(UserCount.length>0){
-            // OTP Insert
-            await OTPSModel.create({email: email, otp: OTPCode})
-            // Email Send
-            let SendEmail = await SendEmailUtility(email,"Your PIN Code is= "+OTPCode,"Task Manager PIN Verification")
-            res.status(200).json({status: "success", data: SendEmail})
-        }
-        else{
-            res.status(200).json({status: "fail", data: "No User Found"})
-        }
-    }catch (e) {
-        res.status(200).json({status: "fail", data:e})
-    }
+    let Result=await UserVerifyEmailService(req,DataModel)
+    res.status(200).json(Result)
 }
 
 
 exports.RecoverVerifyOTP=async (req,res)=>{
-    try {
-
-        let email = req.params.email;
-        let OTPCode = req.params.otp;
-        let status=0;
-        let statusUpdate=1;
-
-        let OTPCount = await OTPModel.aggregate([{$match: {email: email, otp: OTPCode, status: status}}, {$count: "total"}])
-
-        if (OTPCount.length>0) {
-            let OTPUpdate = await OTPModel.updateOne({email: email, otp: OTPCode, status: status}, {email: email, otp: OTPCode, status: statusUpdate})
-            res.status(200).json({status: "success", data: OTPUpdate})
-        } else {
-            res.status(200).json({status: "fail", data: "Invalid OTP Code"})
-        }
-    }
-    catch (e) {
-        res.status(200).json({status: "fail", data:e})
-    }
+    let Result=await UserVerifyOtpService(req,OTPSModel)
+    res.status(200).json(Result)
 }
 
-
 exports.RecoverResetPass=async (req,res)=>{
-
-    let email = req.body['email'];
-    let OTPCode = req.body['OTP'];
-    let NewPass =  req.body['password'];
-    let statusUpdate=1;
-
-    try {
-        let OTPUsedCount = await OTPModel.aggregate([{$match: {email: email, otp: OTPCode, status: statusUpdate}}, {$count: "total"}])
-        if (OTPUsedCount.length>0) {
-            let PassUpdate = await UsersModel.updateOne({email: email}, {password: NewPass})
-            res.status(200).json({status: "success", data: PassUpdate})
-        } else {
-            res.status(200).json({status: "fail", data: "Invalid Request"})
-        }
-    }
-    catch (e) {
-        res.status(200).json({status: "fail", data:e})
-    }
+    let Result=await UserResetPassService(req,DataModel)
+    res.status(200).json(Result)
 }
 
 
