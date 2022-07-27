@@ -1,4 +1,5 @@
 const CustomersModel = require("../models/CustomersModel");
+const CategoriesModel = require("../models/CategoriesModel");
 
 exports.CreateCustomers=async (req, res) => {
     try{
@@ -63,3 +64,15 @@ exports.CustomersList=async (req, res) => {
 }
 
 
+exports.CustomersDropDown=async (req, res) => {
+    try{
+        let data = await CustomersModel.aggregate([
+            {$match:{}},
+            {$project:{_id:1,CustomerName:1} }
+        ])
+        res.status(200).json({status: "success",data})
+    }
+    catch (error) {
+        res.status(200).json({status: "fail",error:error})
+    }
+}

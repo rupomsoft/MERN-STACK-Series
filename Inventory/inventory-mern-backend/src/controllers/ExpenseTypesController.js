@@ -1,4 +1,5 @@
 const ExpenseTypesModel = require("../models/ExpenseTypesModel");
+const CategoriesModel = require("../models/CategoriesModel");
 
 exports.CreateExpenseTypes=async (req, res) => {
     try{
@@ -56,6 +57,19 @@ exports.ExpenseTypesList=async (req, res) => {
         }
         res.status(200).json({status: "success",data})
 
+    }
+    catch (error) {
+        res.status(200).json({status: "fail",error:error})
+    }
+}
+
+exports.ExpenseTypesDropDown=async (req, res) => {
+    try{
+        let data = await ExpenseTypesModel.aggregate([
+            {$match:{}},
+            {$project:{_id:1,Name:1} }
+        ])
+        res.status(200).json({status: "success",data})
     }
     catch (error) {
         res.status(200).json({status: "fail",error:error})

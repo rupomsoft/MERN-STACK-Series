@@ -1,4 +1,5 @@
 const CategoriesModel = require("../models/CategoriesModel");
+const BrandsModel = require("../models/BrandsModel");
 
 exports.CreateCategories=async (req, res) => {
     try{
@@ -56,6 +57,21 @@ exports.CategoriesList=async (req, res) => {
         }
         res.status(200).json({status: "success",data})
 
+    }
+    catch (error) {
+        res.status(200).json({status: "fail",error:error})
+    }
+}
+
+
+
+exports.CategoriesDropDown=async (req, res) => {
+    try{
+        let data = await CategoriesModel.aggregate([
+            {$match:{}},
+            {$project:{_id:1,Name:1} }
+        ])
+        res.status(200).json({status: "success",data})
     }
     catch (error) {
         res.status(200).json({status: "fail",error:error})

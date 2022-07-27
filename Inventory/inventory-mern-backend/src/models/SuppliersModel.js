@@ -1,5 +1,6 @@
 const  mongoose=require('mongoose');
 const DataSchema=mongoose.Schema({
+    UserEmail:{type:String},
     Name:{type:String},
     Address:{type:String},
     Phone:{type:String,unique:true},
