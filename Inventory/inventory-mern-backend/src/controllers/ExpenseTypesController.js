@@ -2,7 +2,6 @@ const DataModel = require("../models/ExpenseTypesModel");
 const CreateService = require("../services/common/CreateService");
 const UpdateService = require("../services/common/UpdateService");
 const ListService = require("../services/common/ListService");
-const DeleteService = require("../services/common/DeleteService");
 const DropDownService = require("../services/common/DropDownService");
 
 exports.CreateExpenseTypes=async (req, res) => {
@@ -12,11 +11,6 @@ exports.CreateExpenseTypes=async (req, res) => {
 
 exports.UpdateExpenseTypes=async (req, res) => {
     let Result=await UpdateService(req,DataModel)
-    res.status(200).json(Result)
-}
-
-exports.DeleteExpenseTypes=async (req, res) => {
-    let Result=await DeleteService(req,DataModel)
     res.status(200).json(Result)
 }
 

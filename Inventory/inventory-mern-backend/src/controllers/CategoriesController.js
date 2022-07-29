@@ -2,7 +2,6 @@ const DataModel = require("../models/CategoriesModel");
 const CreateService = require("../services/common/CreateService");
 const UpdateService = require("../services/common/UpdateService");
 const ListService = require("../services/common/ListService");
-const DeleteService = require("../services/common/DeleteService");
 const DropDownService = require("../services/common/DropDownService");
 
 exports.CreateCategories=async (req, res) => {
@@ -15,10 +14,6 @@ exports.UpdateCategories=async (req, res) => {
     res.status(200).json(Result)
 }
 
-exports.DeleteCategories=async (req, res) => {
-    let Result=await DeleteService(req,DataModel)
-    res.status(200).json(Result)
-}
 
 exports.CategoriesList=async (req, res) => {
     let SearchRgx = {"$regex": req.params.searchKeyword, "$options": "i"}

@@ -2,7 +2,6 @@ const DataModel = require("../models/BrandsModel");
 const CreateService = require("../services/common/CreateService");
 const UpdateService = require("../services/common/UpdateService");
 const ListService = require("../services/common/ListService");
-const DeleteService = require("../services/common/DeleteService");
 const DropDownService = require("../services/common/DropDownService");
 
 exports.CreateBrand=async (req, res) => {
@@ -10,10 +9,6 @@ exports.CreateBrand=async (req, res) => {
     res.status(200).json(Result)
 }
 
-exports.DeleteBrand=async (req,res) => {
-    let Result=await DeleteService(req,DataModel)
-    res.status(200).json(Result)
-}
 
 exports.UpdateBrand=async (req, res) => {
     let Result=await UpdateService(req,DataModel)
