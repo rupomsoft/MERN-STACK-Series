@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/Dashboard/DashboardController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/Reports/ReportsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Returns/ReturnProductsModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Returns/ReturnsModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Sales/SaleProductsModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Sales/SalesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BrandsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Brands/BrandsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CategoriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Categories/CategoriesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CustomersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Customers/CustomersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ExpenseTypesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpenseTypesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/PurchasesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/SuppliersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Suppliers/SuppliersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/UsersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Users/UsersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/BrandsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Brands/BrandsModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/CategoriesModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Categories/CategoriesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/CustomersModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Customers/CustomersModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ExpenseTypesModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Expenses/ExpenseTypesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ExpensesModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Expenses/ExpensesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/OTPSModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Users/OTPSModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/ProductsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Products/ProductsModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PurchaseProductsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Purchases/PurchaseProductsModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/PurchasesModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Purchases/PurchasesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SuppliersModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Suppliers/SuppliersModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/UsersModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Users/UsersModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserResetPassService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserResetPassService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserVerifyEmailService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserVerifyEmailService.js" afterDir="false" />
-    </list>
+    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +58,7 @@
       <workItem from="1659033630474" duration="2982000" />
       <workItem from="1659078662779" duration="3683000" />
       <workItem from="1659106555670" duration="14693000" />
-      <workItem from="1659193279806" duration="5679000" />
+      <workItem from="1659193279806" duration="6041000" />
     </task>
     <servers />
   </component>
