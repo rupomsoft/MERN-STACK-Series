@@ -1,4 +1,4 @@
-const OTPSModel = require("../../models/OTPSModel");
+const OTPSModel = require("../../models/Users/OTPSModel");
 const SendEmailUtility = require("../../utility/SendEmailUtility");
 
 

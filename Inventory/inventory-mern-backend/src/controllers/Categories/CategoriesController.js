@@ -1,8 +1,8 @@
-const DataModel = require("../models/CategoriesModel");
-const CreateService = require("../services/common/CreateService");
-const UpdateService = require("../services/common/UpdateService");
-const ListService = require("../services/common/ListService");
-const DropDownService = require("../services/common/DropDownService");
+const DataModel = require("../../models/Categories/CategoriesModel");
+const CreateService = require("../../services/common/CreateService");
+const UpdateService = require("../../services/common/UpdateService");
+const ListService = require("../../services/common/ListService");
+const DropDownService = require("../../services/common/DropDownService");
 
 exports.CreateCategories=async (req, res) => {
     let Result= await CreateService(req,DataModel)

@@ -1,7 +1,7 @@
-const DataModel = require("../models/ExpensesModel");
-const CreateService = require("../services/common/CreateService");
-const UpdateService = require("../services/common/UpdateService");
-const ListOneJoinService = require("../services/common/ListOneJoinService");
+const DataModel = require("../../models/Expenses/ExpensesModel");
+const CreateService = require("../../services/common/CreateService");
+const UpdateService = require("../../services/common/UpdateService");
+const ListOneJoinService = require("../../services/common/ListOneJoinService");
 
 exports.CreateExpenses=async (req, res) => {
     let Result= await CreateService(req,DataModel);

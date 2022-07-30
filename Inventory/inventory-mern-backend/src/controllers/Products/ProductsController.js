@@ -1,7 +1,7 @@
-const DataModel = require("../models/ProductsModel");
-const CreateService = require("../services/common/CreateService");
-const UpdateService = require("../services/common/UpdateService");
-const ListTwoJoinService = require("../services/common/ListTwoJoinService");
+const DataModel = require("../../models/Products/ProductsModel");
+const CreateService = require("../../services/common/CreateService");
+const UpdateService = require("../../services/common/UpdateService");
+const ListTwoJoinService = require("../../services/common/ListTwoJoinService");
 
 
 exports.CreateProducts=async (req, res) => {

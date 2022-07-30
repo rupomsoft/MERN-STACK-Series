@@ -1,8 +1,8 @@
-const DataModel = require("../models/CustomersModel");
-const CreateService = require("../services/common/CreateService");
-const UpdateService = require("../services/common/UpdateService");
-const ListService = require("../services/common/ListService");
-const DropDownService = require("../services/common/DropDownService");
+const DataModel = require("../../models/Customers/CustomersModel");
+const CreateService = require("../../services/common/CreateService");
+const UpdateService = require("../../services/common/UpdateService");
+const ListService = require("../../services/common/ListService");
+const DropDownService = require("../../services/common/DropDownService");
 
 exports.CreateCustomers=async (req, res) => {
     let Result= await CreateService(req,DataModel)

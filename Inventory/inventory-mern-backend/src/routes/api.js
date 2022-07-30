@@ -1,16 +1,20 @@
 const express =require('express');
-const UsersController=require("../controllers/UsersController");
-const BrandsController=require("../controllers/BrandsController");
 const AuthVerifyMiddleware=require("../middlewares/AuthVerifyMiddleware");
-const CategoriesController = require("../controllers/CategoriesController");
-const CustomersController = require("../controllers/CustomersController");
-const SuppliersController = require("../controllers/SuppliersController");
-const ExpenseTypesController = require("../controllers/ExpenseTypesController");
-const ExpensesController = require("../controllers/ExpensesController");
-const ProductsController = require("../controllers/ProductsController");
-const PurchasesController = require("../controllers/PurchasesController");
+
+const UsersController=require("../controllers/Users/UsersController");
+const BrandsController=require("../controllers/Brands/BrandsController");
+const CategoriesController = require("../controllers/Categories/CategoriesController");
+const CustomersController = require("../controllers/Customers/CustomersController");
+const SuppliersController = require("../controllers/Suppliers/SuppliersController");
+const ExpenseTypesController = require("../controllers/Expenses/ExpenseTypesController");
+const ExpensesController = require("../controllers/Expenses/ExpensesController");
+const ProductsController = require("../controllers/Products/ProductsController");
+const PurchasesController = require("../controllers/Purchases/PurchasesController");
+const SalesController = require("../controllers/Sales/SalesController");
+const ReturnsController = require("../controllers/Returns/ReturnsController");
 
 const router =express.Router();
+
 
 // User Profile
 router.post("/Registration",UsersController.Registration);
@@ -28,11 +32,13 @@ router.post("/UpdateBrand/:id",AuthVerifyMiddleware,BrandsController.UpdateBrand
 router.get("/BrandList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,BrandsController.BrandList);
 router.get("/BrandDropDown",AuthVerifyMiddleware,BrandsController.BrandDropDown);
 
+
 // Categories
 router.post("/CreateCategories",AuthVerifyMiddleware,CategoriesController.CreateCategories);
 router.post("/UpdateCategories/:id",AuthVerifyMiddleware,CategoriesController.UpdateCategories);
 router.get("/CategoriesList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,CategoriesController.CategoriesList);
 router.get("/CategoriesDropDown",AuthVerifyMiddleware,CategoriesController.CategoriesDropDown);
+
 
 
 // Customers
@@ -42,6 +48,7 @@ router.get("/CustomersList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware
 router.get("/CustomersDropDown",AuthVerifyMiddleware,CustomersController.CustomersDropDown);
 
 
+
 // Suppliers
 router.post("/CreateSuppliers",AuthVerifyMiddleware,SuppliersController.CreateSuppliers);
 router.post("/UpdateSuppliers/:id",AuthVerifyMiddleware,SuppliersController.UpdateSuppliers);
@@ -49,12 +56,12 @@ router.get("/SuppliersList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware
 router.get("/SuppliersDropDown",AuthVerifyMiddleware,SuppliersController.SuppliersDropDown);
 
 
+
 // ExpenseTypes
 router.post("/CreateExpenseTypes",AuthVerifyMiddleware,ExpenseTypesController.CreateExpenseTypes);
 router.post("/UpdateExpenseTypes/:id",AuthVerifyMiddleware,ExpenseTypesController.UpdateExpenseTypes);
 router.get("/ExpenseTypesList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,ExpenseTypesController.ExpenseTypesList);
 router.get("/ExpenseTypesDropDown",AuthVerifyMiddleware,ExpenseTypesController.ExpenseTypesDropDown);
-
 
 
 // Expenses
@@ -71,6 +78,15 @@ router.get("/ProductsList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,
 
 //Purchases
 router.post("/CreatePurchases",AuthVerifyMiddleware,PurchasesController.CreatePurchases);
+
+
+//Sales
+router.post("/CreateSales",AuthVerifyMiddleware,SalesController.CreateSales);
+
+
+
+//Return
+router.post("/CreateReturns",AuthVerifyMiddleware,ReturnsController.CreateReturns);
 
 
 
