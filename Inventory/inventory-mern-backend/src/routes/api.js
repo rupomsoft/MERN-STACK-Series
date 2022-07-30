@@ -8,6 +8,7 @@ const SuppliersController = require("../controllers/SuppliersController");
 const ExpenseTypesController = require("../controllers/ExpenseTypesController");
 const ExpensesController = require("../controllers/ExpensesController");
 const ProductsController = require("../controllers/ProductsController");
+const PurchasesController = require("../controllers/PurchasesController");
 
 const router =express.Router();
 
@@ -67,6 +68,9 @@ router.post("/CreateProducts",AuthVerifyMiddleware,ProductsController.CreateProd
 router.post("/UpdateProducts/:id",AuthVerifyMiddleware,ProductsController.UpdateProducts);
 router.get("/ProductsList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,ProductsController.ProductsList);
 
+
+//Purchases
+router.post("/CreatePurchases",AuthVerifyMiddleware,PurchasesController.CreatePurchases);
 
 
 

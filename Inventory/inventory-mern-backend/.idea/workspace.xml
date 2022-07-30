@@ -2,36 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/ProductsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/ProductsModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/common/ListTwoJoinService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BrandsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BrandsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CategoriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CategoriesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CustomersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/CustomersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ExpenseTypesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ExpenseTypesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ExpensesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/SuppliersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SuppliersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/UsersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UsersController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/PurchasesController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PurchaseProductsModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/PurchasesModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/ProductsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ProductsModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/CreateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/DeleteService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/DropDownService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/DropDownService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/ListService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/UpdateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/UpdateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserCreateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserCreateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserDetailsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserDetailsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserLoginService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserLoginService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserResetPassService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserResetPassService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserUpdateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserUpdateService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserVerifyEmailService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserVerifyEmailService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user/UserVerifyOtpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/UserVerifyOtpService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/CreateToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/CreateToken.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -46,16 +36,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.js" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\purchases" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\common" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\controllers" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\common" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,11 +65,138 @@
       <option name="presentableId" value="Default" />
       <updated>1659033629263</updated>
       <workItem from="1659033630474" duration="2982000" />
-      <workItem from="1659078662779" duration="3094000" />
+      <workItem from="1659078662779" duration="3683000" />
+      <workItem from="1659106555670" duration="14232000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>20</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>21</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
