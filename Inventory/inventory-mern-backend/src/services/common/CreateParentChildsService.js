@@ -1,4 +1,4 @@
-const CreateParentChildsService= async (Request, ParentModel, ChildsModel) => {
+const CreateParentChildsService= async (Request, ParentModel, ChildsModel,JoinID) => {
     try{
         // Parent Creation
         let Parent=Request.body['Parent'];
@@ -11,8 +11,8 @@ const CreateParentChildsService= async (Request, ParentModel, ChildsModel) => {
             try {
                 let Childs=Request.body['Childs'];
                 await Childs.forEach((element) => {
-                    element.PurchaseID =ParentCreation['_id'];
-                    element.UserEmail =Request.headers['email'];
+                    element[JoinID] =ParentCreation['_id'];
+                    element['UserEmail']=Request.headers['email'];
                 });
                 let ChildsCreation = await ChildsModel.insertMany(Childs);
                 return {status: "success", Parent: ParentCreation,Childs:ChildsCreation}

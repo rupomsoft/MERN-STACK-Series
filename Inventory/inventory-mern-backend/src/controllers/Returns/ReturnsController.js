@@ -4,7 +4,7 @@ const CreateParentChildsService = require("../../services/common/CreateParentChi
 const ListOneJoinService = require("../../services/common/ListOneJoinService");
 
 exports.CreateReturns=async (req, res) => {
-    let Result= await CreateParentChildsService(req,ParentModel,ChildsModel);
+    let Result= await CreateParentChildsService(req,ParentModel,ChildsModel,'ReturnID');
     res.status(200).json(Result)
 }
 

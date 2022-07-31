@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/services/common/DeleteParentChildsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/ListOneJoinService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListOneJoinService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/ListService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/ListTwoJoinService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListTwoJoinService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,17 +42,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/controllers/Returns" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.js" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\common" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\controllers\Returns" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\controllers" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\purchases" />
-      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models\Suppliers" />
@@ -66,6 +61,11 @@
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models\Products" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models\Users" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,11 +79,36 @@
       <workItem from="1659078662779" duration="3683000" />
       <workItem from="1659106555670" duration="14693000" />
       <workItem from="1659193279806" duration="6257000" />
-      <workItem from="1659275677775" duration="7067000" />
+      <workItem from="1659275677775" duration="8369000" />
+      <workItem from="1659294052254" duration="2298000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/services/common/CreateParentChildsService.js</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
