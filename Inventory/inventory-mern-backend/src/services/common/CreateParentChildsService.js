@@ -18,7 +18,7 @@ const CreateParentChildsService= async (Request, ParentModel, ChildsModel,JoinID
                 return {status: "success", Parent: ParentCreation,Childs:ChildsCreation}
             }
             catch (e) {
-                await ParentModel.remove(ParentCreation['_id'])
+                await ParentModel.remove({_id:ParentCreation['_id']})
                 return {status: "fail", data: "Child Creation Failed"}
             }
         }
