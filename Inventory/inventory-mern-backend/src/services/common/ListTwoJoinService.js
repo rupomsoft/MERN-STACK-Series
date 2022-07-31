@@ -6,25 +6,33 @@ const ListTwoJoinService= async (Request, DataModel, SearchArray, JoinStage1,Joi
         let UserEmail=Request.headers['email'];
         let skipRow = (pageNo - 1) * perPage;
         let data;
-
         if (searchValue!=="0") {
-            let SearchQuery = {$or: SearchArray,$and:[{UserEmail:UserEmail}]}
-
-            data = await DataModel.aggregate([{
-                $facet:{
-                    Total:[{$match: SearchQuery},{$count: "count"}],
-                    Rows:[JoinStage1,JoinStage2,{$skip: skipRow}, {$limit: perPage}],
+            data = await DataModel.aggregate([
+                {$match: {UserEmail:UserEmail}},
+                JoinStage1,JoinStage2,
+                {$match: {$or: SearchArray}},
+                {
+                    $facet:{
+                        Total:[{$count: "count"}],
+                        Rows:[{$skip: skipRow}, {$limit: perPage}],
+                    }
                 }
-            }])
+            ])
 
         }
         else {
-            data = await DataModel.aggregate([{
+
+            data = await DataModel.aggregate([
+                {$match: {UserEmail:UserEmail}},
+                JoinStage1,JoinStage2,
+                {
                 $facet:{
-                    Total:[{$match: {UserEmail:UserEmail}},{$count: "count"}],
-                    Rows:[JoinStage1,JoinStage2,{$skip: skipRow}, {$limit: perPage}],
+                    Total:[{$count: "count"}],
+                    Rows:[{$skip: skipRow}, {$limit: perPage}],
                 }
-            }])
+                }
+            ])
+
         }
         return {status: "success", data: data}
     }

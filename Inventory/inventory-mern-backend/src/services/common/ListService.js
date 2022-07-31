@@ -1,6 +1,5 @@
 const ListService= async (Request,DataModel,SearchArray) => {
     try{
-
         let pageNo = Number(Request.params.pageNo);
         let perPage = Number(Request.params.perPage);
         let searchValue = Request.params.searchKeyword;
@@ -10,21 +9,28 @@ const ListService= async (Request,DataModel,SearchArray) => {
         let data;
 
         if (searchValue!=="0") {
-            let SearchQuery = {$or: SearchArray,$and:[{UserEmail:UserEmail}]}
-            data = await DataModel.aggregate([{
-                $facet:{
-                    Total:[{$match: SearchQuery},{$count: "count"}],
-                    Rows:[{$match: SearchQuery},{$skip: skipRow}, {$limit: perPage}],
+            let SearchQuery = {$or:SearchArray}
+            data = await DataModel.aggregate([
+                    {$match: {UserEmail:UserEmail}},
+                    {$match: SearchQuery},
+                    {
+                    $facet:{
+                        Total:[{$count: "count"}],
+                        Rows:[{$skip: skipRow}, {$limit: perPage}],
+                    }
                 }
-            }])
+            ])
         }
         else {
-            data = await DataModel.aggregate([{
-                $facet:{
-                    Total:[{$match: {UserEmail:UserEmail}},{$count: "count"}],
-                    Rows:[{$match: {UserEmail:UserEmail}},{$skip: skipRow}, {$limit: perPage}],
+            data = await DataModel.aggregate([
+                {$match: {UserEmail:UserEmail}},
+                {
+                    $facet:{
+                        Total:[{$count: "count"}],
+                        Rows:[{$skip: skipRow}, {$limit: perPage}],
+                    }
                 }
-            }])
+            ])
 
         }
         return {status: "success", data: data}

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="" />
+    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common/ListOneJoinService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListOneJoinService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common/ListService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common/ListTwoJoinService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/ListTwoJoinService.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +28,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2CaHA5Ozuf65ipeZ2CsJFaCRlNu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +78,8 @@
       <workItem from="1659033630474" duration="2982000" />
       <workItem from="1659078662779" duration="3683000" />
       <workItem from="1659106555670" duration="14693000" />
-      <workItem from="1659193279806" duration="6041000" />
+      <workItem from="1659193279806" duration="6257000" />
+      <workItem from="1659275677775" duration="7067000" />
     </task>
     <servers />
   </component>
