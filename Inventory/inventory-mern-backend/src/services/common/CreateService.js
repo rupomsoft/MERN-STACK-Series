@@ -6,7 +6,7 @@ const CreateService= async (Request,DataModel) => {
         return {status: "success", data: data}
     }
     catch (error) {
-        return {status: "fail", data: error}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=CreateService

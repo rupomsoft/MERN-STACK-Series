@@ -11,7 +11,7 @@ const UserLoginService= async (Request,DataModel) => {
         }
     }
     catch (error) {
-        return {status:"unauthorized",data:error}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=UserLoginService

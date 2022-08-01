@@ -37,7 +37,7 @@ const ListTwoJoinService= async (Request, DataModel, SearchArray, JoinStage1,Joi
         return {status: "success", data: data}
     }
     catch (error) {
-        return {status: "fail", data: error}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=ListTwoJoinService

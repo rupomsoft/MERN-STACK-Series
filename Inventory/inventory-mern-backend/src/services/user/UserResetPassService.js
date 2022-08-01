@@ -15,7 +15,7 @@ const UserResetPassService= async (Request,DataModel) => {
         }
     }
     catch (e) {
-        return {status: "fail", data:e}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=UserResetPassService

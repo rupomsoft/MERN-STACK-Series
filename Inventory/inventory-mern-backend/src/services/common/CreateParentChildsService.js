@@ -27,7 +27,7 @@ const CreateParentChildsService= async (Request, ParentModel, ChildsModel,JoinPr
         }
     }
     catch (error) {
-        return {status: "fail", data: error}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=CreateParentChildsService

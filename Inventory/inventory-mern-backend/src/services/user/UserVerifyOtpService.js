@@ -17,9 +17,8 @@ const UserVerifyOtpService= async (Request, DataModel) => {
              return  {status: "fail", data: "Invalid OTP Code"}
         }
     }
-    catch (e) {
-
-        return {status: "fail", data:e}
+    catch (error) {
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=UserVerifyOtpService

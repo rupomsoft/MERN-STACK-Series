@@ -18,9 +18,9 @@ const UserVerifyEmailService= async (Request, DataModel) => {
         else{
             return {status: "fail", data: "No User Found"}
         }
-    }catch (e) {
+    }catch (error) {
 
-        return  {status: "fail", data:e}
+        return {status: "fail", data: error.toString()}
     }
 }
 module.exports=UserVerifyEmailService
