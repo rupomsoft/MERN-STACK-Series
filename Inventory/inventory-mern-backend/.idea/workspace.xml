@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/CreateParentChildsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common/DeleteParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/DeleteParentChildsService.js" afterDir="false" />
-    </list>
+    <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +73,7 @@
       <workItem from="1659106555670" duration="14693000" />
       <workItem from="1659193279806" duration="6257000" />
       <workItem from="1659275677775" duration="8369000" />
-      <workItem from="1659294052254" duration="4194000" />
+      <workItem from="1659294052254" duration="4374000" />
     </task>
     <servers />
   </component>
