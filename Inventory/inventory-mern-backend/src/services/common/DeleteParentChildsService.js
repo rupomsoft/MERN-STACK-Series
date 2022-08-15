@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const DeleteParentChildsService= async (Request, ParentModel,ChildsModel,JoinPropertyName) => {
 
     const session = await mongoose.startSession();
+
     try{
 
         // Begin Transaction
         await session.startTransaction();
-
 
         // Parent Creation
         let DeleteID=Request.params.id;
@@ -22,7 +22,10 @@ const DeleteParentChildsService= async (Request, ParentModel,ChildsModel,JoinPro
         ParentQueryObject[UserEmail]=UserEmail;
 
 
+        // First Process
         let ChildsDelete=  await ChildsModel.remove(ChildQueryObject).session(session);
+
+        // Second Process
         let ParentDelete= await ParentModel.remove(ParentQueryObject).session(session)
 
 

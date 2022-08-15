@@ -12,13 +12,13 @@ exports.CreateSales=async (req, res) => {
 exports.SalesList=async (req, res) => {
     let SearchRgx = {"$regex": req.params.searchKeyword, "$options": "i"}
     let JoinStage={$lookup: {from: "customers", localField: "CustomerID", foreignField: "_id", as: "customers"}};
-    let SearchArray=[{VatTax: SearchRgx},{Discount: SearchRgx},{OtherCost: SearchRgx},{GrandTotal: SearchRgx},{ShippingCost: SearchRgx},{Note: SearchRgx},{'customers.CustomerName': SearchRgx},{'customers.Address': SearchRgx},{'customers.Phone': SearchRgx},{'customers.Email': SearchRgx}]
+    let SearchArray=[{Note: SearchRgx},{'customers.CustomerName': SearchRgx},{'customers.Address': SearchRgx},{'customers.Phone': SearchRgx},{'customers.Email': SearchRgx}]
     let Result=await ListOneJoinService(req,ParentModel,SearchArray,JoinStage);
     res.status(200).json(Result)
 }
 
-exports.DeleteSales=async (req, res) => {
-    let Result= await DeleteParentChildsService(req,ParentModel,ChildsModel,'SaleID');
+
+exports.SaleDelete=async (req, res) => {
+    let Result=DeleteParentChildsService(req,ParentModel,ChildsModel,'SaleID')
     res.status(200).json(Result)
 }
-
