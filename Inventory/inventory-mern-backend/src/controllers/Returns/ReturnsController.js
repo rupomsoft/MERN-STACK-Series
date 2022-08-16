@@ -18,6 +18,6 @@ exports.ReturnsList=async (req, res) => {
 }
 
 exports.ReturnDelete=async (req, res) => {
-    let Result=DeleteParentChildsService(req,ParentModel,ChildsModel,'ReturnID')
+    let Result=await  DeleteParentChildsService(req,ParentModel,ChildsModel,'ReturnID')
     res.status(200).json(Result)
 }

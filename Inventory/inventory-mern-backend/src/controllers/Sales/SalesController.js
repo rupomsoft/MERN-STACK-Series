@@ -19,6 +19,6 @@ exports.SalesList=async (req, res) => {
 
 
 exports.SaleDelete=async (req, res) => {
-    let Result=DeleteParentChildsService(req,ParentModel,ChildsModel,'SaleID')
+    let Result=await DeleteParentChildsService(req,ParentModel,ChildsModel,'SaleID')
     res.status(200).json(Result)
 }

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../PPT.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../PPT.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Purchases/PurchasesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Sales/SalesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/common/DeleteParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common/DeleteParentChildsService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil/src/controllers/TasksController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil/src/controllers/TasksController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
       <workItem from="1659465758422" duration="6068000" />
       <workItem from="1660230366428" duration="1325000" />
       <workItem from="1660324616591" duration="2558000" />
+      <workItem from="1660554765639" duration="1788000" />
     </task>
     <servers />
   </component>

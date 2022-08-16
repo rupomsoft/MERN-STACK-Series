@@ -23,10 +23,10 @@ const DeleteParentChildsService= async (Request, ParentModel,ChildsModel,JoinPro
 
 
         // First Process
-        let ChildsDelete=  await ChildsModel.remove(ChildQueryObject).session(session);
+        let ChildsDelete=  await ChildsModel.deleteMany(ChildQueryObject).session(session);
 
         // Second Process
-        let ParentDelete= await ParentModel.remove(ParentQueryObject).session(session)
+        let ParentDelete= await ParentModel.deleteMany(ParentQueryObject).session(session)
 
 
         // Commit Transaction
