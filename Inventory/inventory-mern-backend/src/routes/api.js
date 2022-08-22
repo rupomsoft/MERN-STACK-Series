@@ -11,7 +11,7 @@ const ProductsController = require("../controllers/Products/ProductsController")
 const PurchasesController = require("../controllers/Purchases/PurchasesController");
 const SalesController = require("../controllers/Sales/SalesController");
 const ReturnsController = require("../controllers/Returns/ReturnsController");
-
+const ReportController = require("../controllers/Report/ReportController");
 
 const router =express.Router();
 
@@ -95,6 +95,13 @@ router.get("/SaleDelete/:id",AuthVerifyMiddleware,SalesController.SaleDelete);
 router.post("/CreateReturns",AuthVerifyMiddleware,ReturnsController.CreateReturns);
 router.get("/ReturnsList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,ReturnsController.ReturnsList);
 router.get("/ReturnDelete/:id",AuthVerifyMiddleware,ReturnsController.ReturnDelete);
+
+//Report
+router.post("/ExpensesByDate",AuthVerifyMiddleware,ReportController.ExpensesByDate);
+router.post("/ReturnByDate",AuthVerifyMiddleware,ReportController.ReturnByDate);
+router.post("/PurchaseByDate",AuthVerifyMiddleware,ReportController.PurchaseByDate);
+router.post("/SalesByDate",AuthVerifyMiddleware,ReportController.SalesByDate);
+
 
 module.exports=router;
 

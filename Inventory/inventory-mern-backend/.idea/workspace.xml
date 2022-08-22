@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e71d138b-d9bd-48dc-8bf8-15dca7375918" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/common/CheckAssociateService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/common/DeleteService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/Report/ReportController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/report/ExpenseReportService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/report/PurchaseReportService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/report/ReturnReportService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/report/SalesReportService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Brands/BrandsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Brands/BrandsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Categories/CategoriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Categories/CategoriesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Customers/CustomersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Customers/CustomersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Expenses/ExpenseTypesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpenseTypesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Expenses/ExpensesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Products/ProductsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Returns/ReturnsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/Suppliers/SuppliersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/Suppliers/SuppliersController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +43,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/report" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\report" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\common" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\controllers\Returns" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models" />
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\controllers" />
-      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\services\purchases" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-backend\src\models\Suppliers" />
@@ -96,7 +89,8 @@
       <workItem from="1660230366428" duration="1325000" />
       <workItem from="1660324616591" duration="2558000" />
       <workItem from="1660554765639" duration="1788000" />
-      <workItem from="1661095486169" duration="6253000" />
+      <workItem from="1661095486169" duration="6856000" />
+      <workItem from="1661181672068" duration="4052000" />
     </task>
     <servers />
   </component>
