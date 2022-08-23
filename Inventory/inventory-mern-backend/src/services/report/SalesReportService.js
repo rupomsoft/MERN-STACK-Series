@@ -1,4 +1,4 @@
-const SalesModel = require("../../models/Sales/SalesModel");
+const SaleProductsModel = require("../../models/Sales/SaleProductsModel");
 const SalesReportService= async (Request) => {
     try{
 
@@ -6,7 +6,7 @@ const SalesReportService= async (Request) => {
         let FormDate=  Request.body['FormDate']
         let ToDate=  Request.body['ToDate']
 
-        let data=await SalesModel.aggregate([
+        let data=await SaleProductsModel.aggregate([
             {$match: {UserEmail:UserEmail,CreatedDate:{$gte:new Date(FormDate),$lte:new Date(ToDate)}}},
             {
                 $facet:{
@@ -17,8 +17,11 @@ const SalesReportService= async (Request) => {
                         }
                     }],
                     Rows:[
-                        {$lookup: {from: "customers", localField: "CustomerID", foreignField: "_id", as: "customers"}}
-                    ],
+                        {$lookup: {from: "products", localField: "ProductID", foreignField: "_id", as: "products"}},
+                        {$unwind : "$products" },
+                        {$lookup: {from: "brands", localField: "products.BrandID", foreignField: "_id", as: "brands"}},
+                        {$lookup: {from: "categories", localField: "products.CategoryID", foreignField: "_id", as: "categories"}}
+                    ]
                 }
             }
         ])

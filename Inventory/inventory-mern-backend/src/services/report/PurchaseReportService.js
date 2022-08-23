@@ -1,11 +1,11 @@
-const PurchasesModel = require("../../models/Purchases/PurchasesModel");
+const PurchaseProductsModel = require("../../models/Purchases/PurchaseProductsModel");
 const PurchasesReportService= async (Request) => {
     try{
         let UserEmail=Request.headers['email'];
         let FormDate=  Request.body['FormDate']
         let ToDate=  Request.body['ToDate']
 
-        let data=await  PurchasesModel.aggregate([
+        let data=await  PurchaseProductsModel.aggregate([
             {$match: {UserEmail:UserEmail,CreatedDate:{$gte:new Date(FormDate),$lte:new Date(ToDate)}}},
             {
                 $facet:{
@@ -16,7 +16,10 @@ const PurchasesReportService= async (Request) => {
                         }
                     }],
                     Rows:[
-                        {$lookup: {from: "suppliers", localField: "SupplierID", foreignField: "_id", as: "suppliers"}}
+                        {$lookup: {from: "products", localField: "ProductID", foreignField: "_id", as: "products"}},
+                        {$unwind : "$products" },
+                        {$lookup: {from: "brands", localField: "products.BrandID", foreignField: "_id", as: "brands"}},
+                        {$lookup: {from: "categories", localField: "products.CategoryID", foreignField: "_id", as: "categories"}}
                     ],
                 }
             }
