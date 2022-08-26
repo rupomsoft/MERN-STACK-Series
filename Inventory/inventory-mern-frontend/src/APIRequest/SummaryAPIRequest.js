@@ -10,7 +10,7 @@ import {
     SetReturnTotal, SetSaleChart, SetSaleTotal
 } from "../redux/state-slice/dashboard/dashboardSlice";
 const AxiosHeader={headers:{"token":getToken()}}
-const BaseURL="http://localhost:5000/api/v1"
+const BaseURL="https://inventory-mern-backend.herokuapp.com/api/v1"
 
 export async function ExpensesSummary(){
     try {

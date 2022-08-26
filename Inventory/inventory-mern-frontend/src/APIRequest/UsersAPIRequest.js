@@ -4,7 +4,7 @@ import store from "../redux/store/store";
 import {HideLoader, ShowLoader} from "../redux/state-slice/settings/settingsSlice";
 import {getToken, setEmail, setOTP, setToken, setUserDetails} from "../helper/SessionHelper";
 import {SetProfile} from "../redux/state-slice/users/profileSlice";
-const BaseURL="http://localhost:5000/api/v1"
+const BaseURL="https://inventory-mern-backend.herokuapp.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
 
