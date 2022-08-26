@@ -1,42 +1,38 @@
 import axios from "axios";
 import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import store from "../redux/store/store";
-import {HideLoader, ShowLoader} from "../redux/state-slice/settings/settings-slice";
+import {HideLoader, ShowLoader} from "../redux/state-slice/settings/settingsSlice";
 import {getToken, setEmail, setOTP, setToken, setUserDetails} from "../helper/SessionHelper";
-import {SetProfile} from "../redux/state-slice/users/profile-slice";
-const BaseURL="https://inventory-mern-backend.herokuapp.com/api/v1"
+import {SetProfile} from "../redux/state-slice/users/profileSlice";
+const BaseURL="http://localhost:5000/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
 
-export function LoginRequest(email,password){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/Login";
-    let PostBody={"email":email,"password":password}
-    return axios.post(URL,PostBody).then((res)=>{
-        store.dispatch(HideLoader())
-        if(res.status===200){
-            setToken(res.data['token']);
-            setUserDetails(res.data['data']);
-            SuccessToast("Login Success")
-            return true;
-        }
-        else{
-            ErrorToast("Invalid Email or Password")
-            return  false;
-        }
-    }).catch((err)=>{
-        ErrorToast("Something Went Wrong")
-        store.dispatch(HideLoader())
-        return false;
-    });
+export async function LoginRequest(email,password){
+   try {
+       store.dispatch(ShowLoader())
+       let URL=BaseURL+"/Login";
+       let PostBody={"email":email,"password":password}
+       let res =await axios.post(URL,PostBody);
+       setToken(res.data['token']);
+       setUserDetails(res.data['data']);
+       SuccessToast("Login Success")
+       store.dispatch(HideLoader())
+       return true;
+   }
+   catch (e) {
+       store.dispatch(HideLoader())
+       ErrorToast("Invalid Email or Password")
+       return  false;
+   }
 }
 
-export function RegistrationRequest(email,firstName,lastName,mobile,password,photo){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/Registration";
-    let PostBody={email:email,firstName:firstName,lastName:lastName,mobile:mobile,password:password, photo:photo}
-    return axios.post(URL,PostBody).then((res)=>{
-        store.dispatch(HideLoader())
+export async function RegistrationRequest(email,firstName,lastName,mobile,password,photo){
+    try {
+        store.dispatch(ShowLoader())
+        let URL=BaseURL+"/Registration";
+        let PostBody={email:email,firstName:firstName,lastName:lastName,mobile:mobile,password:password, photo:photo}
+        let res=await axios.post(URL,PostBody)
         if(res.status===200){
             if(res.data['status']==="fail"){
                 if(res.data['data']['keyPattern']['email']===1){
@@ -57,17 +53,19 @@ export function RegistrationRequest(email,firstName,lastName,mobile,password,pho
             ErrorToast("Something Went Wrong")
             return  false;
         }
-    }).catch((err)=>{
+    }
+    catch (e) {
         store.dispatch(HideLoader())
         ErrorToast("Something Went Wrong")
         return false;
-    })
+    }
 }
 
-export function GetProfileDetails(){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/ProfileDetails";
-    axios.get(URL,AxiosHeader).then((res)=>{
+export async function GetProfileDetails(){
+    try {
+        store.dispatch(ShowLoader())
+        let URL=BaseURL+"/ProfileDetails";
+        let res=await axios.get(URL,AxiosHeader)
         store.dispatch(HideLoader())
         if(res.status===200){
             store.dispatch(SetProfile(res.data['data'][0]))
@@ -75,44 +73,46 @@ export function GetProfileDetails(){
         else{
             ErrorToast("Something Went Wrong")
         }
-    }).catch((err)=>{
-        ErrorToast("Something Went Wrong")
+    }
+    catch (e){
         store.dispatch(HideLoader())
-    });
+        ErrorToast("Something Went Wrong")
+    }
 }
 
-export function ProfileUpdateRequest(email,firstName,lastName,mobile,password,photo){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/ProfileUpdate";
-    let PostBody={email:email,firstName:firstName,lastName:lastName,mobile:mobile,password:password,photo:photo}
-    let UserDetails={email:email,firstName:firstName,lastName:lastName,mobile:mobile,photo:photo}
-    return axios.post(URL,PostBody,AxiosHeader).then((res)=>{
+export async function ProfileUpdateRequest(email,firstName,lastName,mobile,password,photo){
+    try {
+        store.dispatch(ShowLoader())
+        let URL=BaseURL+"/ProfileUpdate";
+        let PostBody={email:email,firstName:firstName,lastName:lastName,mobile:mobile,password:password,photo:photo}
+        let UserDetails={email:email,firstName:firstName,lastName:lastName,mobile:mobile,photo:photo};
+        let res=await axios.post(URL,PostBody,AxiosHeader);
         store.dispatch(HideLoader())
         if(res.status===200){
-
             SuccessToast("Profile Update Success")
             setUserDetails(UserDetails)
-
             return true;
         }
         else{
             ErrorToast("Something Went Wrong")
             return  false;
         }
-    }).catch((err)=>{
+    }
+    catch (e){
         ErrorToast("Something Went Wrong")
         store.dispatch(HideLoader())
         return false;
-    });
+    }
+
 }
 
-export function RecoverVerifyEmailRequest(email){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/RecoverVerifyEmail/"+email;
-    return axios.get(URL).then((res)=>{
+export async function RecoverVerifyEmailRequest(email){
+    try {
+        store.dispatch(ShowLoader())
+        let URL=BaseURL+"/RecoverVerifyEmail/"+email;
+        let res=await axios.get(URL);
         store.dispatch(HideLoader())
         if(res.status===200){
-
             if(res.data['status']==="fail"){
                 ErrorToast("No user found");
                 return false;
@@ -127,21 +127,24 @@ export function RecoverVerifyEmailRequest(email){
             ErrorToast("Something Went Wrong");
             return false;
         }
-    }).catch((err)=>{
+    }
+    catch (e) {
         ErrorToast("Something Went Wrong")
         store.dispatch(HideLoader())
         return false;
-    });
+    }
 }
 
-export function RecoverVerifyOTPRequest(email,OTP){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/RecoverVerifyOTP/"+email+"/"+OTP;
-    return axios.get(URL).then((res)=>{
+export async function RecoverVerifyOTPRequest(email,OTP){
+    debugger;
+    try {
+        store.dispatch(ShowLoader());
+        let URL=BaseURL+"/RecoverVerifyOTP/"+email+"/"+OTP;
+        let res=await axios.get(URL);
         store.dispatch(HideLoader())
         if(res.status===200){
             if(res.data['status']==="fail"){
-                ErrorToast(res.data['data']);
+                ErrorToast("Code Verification Fail");
                 return false;
             }
             else{
@@ -154,21 +157,23 @@ export function RecoverVerifyOTPRequest(email,OTP){
             ErrorToast("Something Went Wrong")
             return false;
         }
-    }).catch((err)=>{
+    }
+    catch (e) {
         ErrorToast("Something Went Wrong")
         store.dispatch(HideLoader())
+        debugger;
         return false;
-    });
+    }
 }
 
-export function RecoverResetPassRequest(email,OTP,password){
-    store.dispatch(ShowLoader())
-    let URL=BaseURL+"/RecoverResetPass";
-    let PostBody={email:email,OTP:OTP,password:password}
-    return axios.post(URL,PostBody).then((res)=>{
+export async function RecoverResetPassRequest(email,OTP,password){
+    try {
+        store.dispatch(ShowLoader())
+        let URL=BaseURL+"/RecoverResetPass";
+        let PostBody={email:email,OTP:OTP,password:password};
+        let res=await axios.post(URL,PostBody);
         store.dispatch(HideLoader())
         if(res.status===200){
-
             if(res.data['status']==="fail"){
                 ErrorToast(res.data['data']);
                 return false;
@@ -183,9 +188,11 @@ export function RecoverResetPassRequest(email,OTP,password){
             ErrorToast("Something Went Wrong")
             return false;
         }
-    }).catch((err)=>{
+
+    }
+    catch (e) {
         ErrorToast("Something Went Wrong")
         store.dispatch(HideLoader())
         return false;
-    });
+    }
 }

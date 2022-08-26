@@ -1,14 +1,11 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 const LazyLoader = () => {
     return (
-        <Fragment>
-            <div  className="LoadingOverlay">
-                <div className="Line-Progress">
-                    <div className="indeterminate"></div>
-                </div>
+        <div className="LoadingOverlay">
+            <div className="Line-Progress">
+                <div className="indeterminate"/>
             </div>
-        </Fragment>
+        </div>
     );
 };
-
 export default LazyLoader;

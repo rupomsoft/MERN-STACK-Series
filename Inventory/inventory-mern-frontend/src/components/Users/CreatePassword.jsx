@@ -8,7 +8,7 @@ const CreatePassword = () => {
     let PasswordRef,ConfirmPasswordRef=useRef();
     let navigate=useNavigate();
 
-    const ResetPass = () => {
+    const ResetPass =async () => {
         let Password = PasswordRef.value;
         let ConfirmPassword =  ConfirmPasswordRef.value;
         if(IsEmpty(Password)){
@@ -21,11 +21,10 @@ const CreatePassword = () => {
             ErrorToast("Password & Confirm Password Should be Same")
         }
         else{
-            RecoverResetPassRequest(getEmail(),getOTP(),Password).then((result)=>{
-                if(result===true){
-                    navigate("/Login")
-                }
-            })
+            let result= await RecoverResetPassRequest(getEmail(),getOTP(),Password);
+            if(result===true){
+                navigate("/Login")
+            }
         }
     }
 
@@ -33,7 +32,7 @@ const CreatePassword = () => {
         <Fragment>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-7 col-lg-6 center-screen">
+                    <div className="col-md-7 text-start col-lg-6 center-screen">
                         <div className="card w-90 p-4">
                             <div className="card-body">
                                 <h4>SET NEW PASSWORD</h4>
@@ -47,7 +46,7 @@ const CreatePassword = () => {
                                 <label>Confirm Password</label>
                                 <input  ref={(input)=>ConfirmPasswordRef=input} placeholder="Confirm Password" className="form-control animated fadeInUp" type="password"/>
                                 <br/>
-                                <button onClick={ResetPass} className="btn w-100 animated fadeInUp float-end btn-primary">Next</button>
+                                <button onClick={ResetPass} className="btn w-100 btn-success">Next</button>
                             </div>
                         </div>
                     </div>

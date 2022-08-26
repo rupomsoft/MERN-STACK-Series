@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="545a917a-ce29-4d5b-8e63-31c102c9968f" name="Changes" comment="" />
+    <list default="true" id="545a917a-ce29-4d5b-8e63-31c102c9968f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/controllers/Summary/SummaryController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/services/summary/ExpenseSummaryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/services/summary/PurchaseSummaryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/services/summary/ReturnSummaryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/services/summary/SalesSummaryService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/APIRequest/SummaryAPIRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/scrollbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/close-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MasterLayout/MasterLayout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/state-slice/settings/settingsSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/inventory-mern-backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/UsersAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/UsersAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/progress.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/progress.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/sidebar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MasterLayout/Fullscreen-Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MasterLayout/FullscreenLoader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MasterLayout/LazyLoader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MasterLayout/LazyLoader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MasterLayout/Master-Layout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotFound/NotFound.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotFound/NotFound.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Create-Password.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/CreatePassword.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Send-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/SendOTP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Verify-OTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/VerifyOTP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/FormHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/FormHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/SessionHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/SessionHelper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/Dashboard-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/DashboardPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NotFound/Page-404.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NotFound/Page404.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Create-Password-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/CreatePasswordPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Forgetpass-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/ForgetpassPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Login-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Profile-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Registration-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/RegistrationPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Send-OTP-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/SendOTPPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Users/Verify-OTP-Page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users/VerifyOTPPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/settings/settings-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/dashboard/dashboardSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/users/profile-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/users/profileSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -20,10 +83,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux/state-slice/dashboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\redux\state-slice\dashboard" />
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\assets\css" />
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\helper" />
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\APIRequest" />
+      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,6 +107,12 @@
       <option name="presentableId" value="Default" />
       <updated>1658935304497</updated>
       <workItem from="1658935306690" duration="7000" />
+      <workItem from="1661279129419" duration="2337000" />
+      <workItem from="1661281532714" duration="1630000" />
+      <workItem from="1661342672611" duration="8553000" />
+      <workItem from="1661434934426" duration="12867000" />
+      <workItem from="1661490194877" duration="7903000" />
+      <workItem from="1661506803851" duration="4627000" />
     </task>
     <servers />
   </component>

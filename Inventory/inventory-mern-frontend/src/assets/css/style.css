@@ -1,45 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&amp;display=swap');
-
-.d-none{
-  display: none;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'scrollbar.css';
+@import 'sidebar.css';
+@import 'progress.css';
+@import 'modal.css';
+@import 'dropdownmenu.css';
 body {
-  background:#F9F8F8;
+  background: var(--bs-gray-100);
   font-size: 14px;
   font-family: 'Poppins', sans-serif !important;
 }
-h1,h2,h3,h4,h5,h6,button,input,textarea{
+h1, h2, h3, h4, h5, h6,p,b,i ,label,button, input, textarea,span {
   font-family: 'Poppins', sans-serif !important;
-}
-.center-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 85vh;
-}
-
-p{
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
 }
 a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+  font-family: 'Poppins', sans-serif !important;
+  cursor: pointer !important;
+}
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+.recharts-text {
+  color: var(--bs-gray-200);
+  font-weight: 300;
+  font-size: 10px;
   font-family: 'Poppins', sans-serif !important;
 }
-a:hover {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.swal2-styled:focus{
-  box-shadow: none !important;
-}
-
-@import "sidebar.css";
-@import "progress.css";
-@import "dropdownmenu.css";

@@ -1,0 +1,10 @@
+.modal-footer{
+    border: none;
+    padding: 10px 15px 10px 15px;
+}
+.modal-header{
+    padding: 10px 15px 10px 15px;
+}
+.modal-content{
+    padding: 2px;
+}

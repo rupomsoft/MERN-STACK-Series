@@ -1,4 +1,11 @@
-﻿/*Line Progress*/
+﻿.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
 .LoadingOverlay {
     position:absolute;
     display:block;
@@ -12,7 +19,7 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 .Line-Progress .indeterminate {
-    background-color: #cb0c9f;
+    background-color: var(--bs-dark);
 }
 .Line-Progress .indeterminate:before {
        z-index: -100 !important;
@@ -106,4 +113,3 @@
         right: -8%;
     }
 }
-

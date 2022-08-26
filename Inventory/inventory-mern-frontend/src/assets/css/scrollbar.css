@@ -1,0 +1,34 @@
+.modal{
+    scrollbar-color: var(--bs-green) var(--bs-gray-500);
+    scrollbar-width: thin;
+}
+.modal::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.modal::-webkit-scrollbar-track-piece  {
+    background-color:var(--bs-gray-500);
+}
+.modal::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    border-radius: 4px;
+    background: var(--bs-green);
+}
+html {
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    scrollbar-color: var(--bs-gray-500) var(--bs-gray-300);
+    scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+html::-webkit-scrollbar-track-piece {
+    background-color:var(--bs-gray-500);
+}
+html::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    border-radius: 4px;
+    background: var(--bs-green);
+}

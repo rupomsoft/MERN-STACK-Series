@@ -5,19 +5,19 @@ import {ErrorToast, getBase64, IsEmail, IsEmpty, IsMobile} from "../../helper/Fo
 import {useNavigate} from "react-router-dom";
 
 const Profile = () => {
+
     let emailRef,firstNameRef,lastNameRef,mobileRef,passwordRef,userImgRef,userImgView=useRef();
 
     useEffect(()=>{
-        GetProfileDetails()
+        (async () => {
+            await GetProfileDetails()
+        })();
     },[])
-
 
     const ProfileData = useSelector((state) => state.profile.value);
 
-
     let navigate=useNavigate();
-    
-    
+
     const PreviewImage = () => {
         let ImgFile = userImgRef.files[0];
         getBase64(ImgFile).then((base64Img)=>{
@@ -25,40 +25,31 @@ const Profile = () => {
         })
     }
 
-    
-    
-    const UpdateMyProfile = () => {
-        let email=emailRef.value;
-        let fastName=firstNameRef.value;
-        let lastName=lastNameRef.value;
-        let mobile=mobileRef.value;
-        let password= passwordRef.value;
-        let photo=userImgView.src
+    const UpdateMyProfile = async () => {
+        let email = emailRef.value;
+        let fastName = firstNameRef.value;
+        let lastName = lastNameRef.value;
+        let mobile = mobileRef.value;
+        let password = passwordRef.value;
+        let photo = userImgView.src
 
-        if(IsEmail(email)){
+        if (IsEmail(email)) {
             ErrorToast("Valid Email Address Required !")
-        }
-        else if(IsEmpty(fastName)){
+        } else if (IsEmpty(fastName)) {
             ErrorToast("First Name Required !")
-        }
-        else if(IsEmpty(lastName)){
+        } else if (IsEmpty(lastName)) {
             ErrorToast("Last Name Required !")
-        }
-        else if(!IsMobile(mobile)){
+        } else if (!IsMobile(mobile)) {
             ErrorToast("Valid Mobile  Required !")
-        }
-        else if(IsEmpty(password)){
+        } else if (IsEmpty(password)) {
             ErrorToast("Password Required !")
-        }
-        else{
-            ProfileUpdateRequest(email,fastName,lastName,mobile,password,photo).then((result)=>{
-                if(result===true){
-                    navigate("/")
-                }
-            })
+        } else {
+            let result = await ProfileUpdateRequest(email, fastName, lastName, mobile, password, photo)
+            if (result === true) {
+                navigate("/")
+            }
         }
     }
-
 
     return (
         <div className="container">
@@ -95,7 +86,7 @@ const Profile = () => {
                                         <input key={Date.now()} defaultValue={ProfileData['password']}  ref={(input)=>passwordRef=input} placeholder="User Password" className="form-control animated fadeInUp" type="password"/>
                                     </div>
                                     <div className="col-4 p-2">
-                                        <button onClick={UpdateMyProfile}  className="w-100 float-end btn btn-primary animated fadeInUp">Update</button>
+                                        <button onClick={UpdateMyProfile}  className="w-100  btn btn-success">Update</button>
                                     </div>
                                 </div>
                             </div>
@@ -106,5 +97,4 @@ const Profile = () => {
         </div>
     );
 };
-
 export default Profile;

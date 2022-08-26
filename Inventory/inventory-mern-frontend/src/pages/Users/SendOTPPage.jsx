@@ -1,12 +1,12 @@
 import React, {lazy, Suspense} from 'react';
 import LazyLoader from "../../components/MasterLayout/LazyLoader";
-const VerifyOTP =lazy(() => import('../../components/Users/Verify-OTP'));
-const VerifyOTPPage = () => {
+const SendOTP =lazy(() => import('../../components/Users/SendOTP'));
+const SendOTPPage = () => {
     return (
         <Suspense fallback={<LazyLoader/>}>
-            <VerifyOTP/>
+            <SendOTP/>
         </Suspense>
     );
 };
 
-export default VerifyOTPPage;
+export default SendOTPPage;

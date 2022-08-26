@@ -1,5 +1,5 @@
 import React, {Fragment, lazy, Suspense} from 'react';
-import MasterLayout from "../../components/MasterLayout/Master-Layout";
+import MasterLayout from "../../components/MasterLayout/MasterLayout";
 import LazyLoader from "../../components/MasterLayout/LazyLoader";
 const Profile =lazy(() => import('../../components/Users/Profile'));
 const ProfilePage = () => {
@@ -13,5 +13,4 @@ const ProfilePage = () => {
         </Fragment>
     );
 };
-
 export default ProfilePage;

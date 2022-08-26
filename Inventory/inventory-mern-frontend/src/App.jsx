@@ -1,32 +1,29 @@
-import React, {Fragment} from 'react';
-import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import DashboardPage from "./pages/Dashboard/Dashboard-Page";
-import ProfilePage from "./pages/Users/Profile-Page";
-import LoginPage from "./pages/Users/Login-Page";
-import RegistrationPage from "./pages/Users/Registration-Page";
-import Page404 from "./pages/NotFound/Page-404";
-import FullscreenLoader from "./components/MasterLayout/Fullscreen-Loader";
+import React,{Fragment} from 'react';
 import {getToken} from "./helper/SessionHelper";
-import SendOTPPage from "./pages/Users/Send-OTP-Page";
-import VerifyOTPPage from "./pages/Users/Verify-OTP-Page";
-import CreatePasswordPage from "./pages/Users/Create-Password-Page";
-
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import DashboardPage from "./pages/Dashboard/DashboardPage";
+import Page404 from "./pages/NotFound/Page404";
+import FullscreenLoader from "./components/MasterLayout/FullscreenLoader";
+import LoginPage from "./pages/Users/LoginPage";
+import RegistrationPage from "./pages/Users/RegistrationPage";
+import SendOTPPage from "./pages/Users/SendOTPPage";
+import VerifyOTPPage from "./pages/Users/VerifyOTPPage";
+import CreatePasswordPage from "./pages/Users/CreatePasswordPage";
+import ProfilePage from "./pages/Users/ProfilePage";
 const App = () => {
-
     if(getToken()){
         return (
             <Fragment>
                 <BrowserRouter>
                     <Routes>
-                        <Route exact path="/" element={<DashboardPage  />}  />}/>
-                        <Route exact path="/Profile" element={<ProfilePage />}/>}  />}/>
+                        <Route exact path="/" element={<DashboardPage />}/>}/>
+                        <Route exact path="/Profile" element={<ProfilePage/>}/>} />}/>
                         <Route path="*" element={<Page404/>}/>
                     </Routes>
                 </BrowserRouter>
                 <FullscreenLoader/>
             </Fragment>
         );
-
     }
     else {
         return (

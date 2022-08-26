@@ -12,7 +12,8 @@
     --bs-red: #F56565;
     --bs-orange: #fd7e14;
     --bs-yellow: #FBD38D;
-    --bs-green: #81E6D9;
+    --bs-green: #00A884;
+
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
@@ -29,7 +30,7 @@
     --bs-gray-900: #212529;
     --bs-primary: #cb0c9f;
     --bs-secondary: #8392AB;
-    --bs-success: #82d616;
+    --bs-success: #00A884;
     --bs-info: #17c1e8;
     --bs-warning: #fbcf33;
     --bs-danger: #ea0606;
@@ -266,7 +267,7 @@ a {
 }
 
 a:hover {
-    color: #830866;
+    color: var(--bs-green);
     text-decoration: none;
 }
 
@@ -2727,10 +2728,10 @@ progress {
 
 .form-control:focus {
     color: #495057;
-    background-color: #fff;
-    border-color: #e293d3;
+    background-color:  var(--bs-white);
+    border-color:  var(--bs-green);
     outline: 0;
-    box-shadow: 0 0 0 2px #e9aede;
+    box-shadow: 0 0 0 2px  var(--bs-green);
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -3355,7 +3356,7 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid,
 .form-control.is-valid {
-    border-color: #66d432;
+    border-color:  var(--bs-green);
     padding-right: unset;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 8'%3e%3cpath fill='%2366d432' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
@@ -3365,7 +3366,7 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid:focus,
 .form-control.is-valid:focus {
-    border-color: #66d432;
+    border-color:  var(--bs-green);
     box-shadow: 0 0 0 2px rgba(102, 212, 50, 0.25);
 }
 
@@ -3676,21 +3677,21 @@ fieldset:disabled .btn {
 
 .btn-success {
     color: #000;
-    background-color: #82d616;
-    border-color: #82d616;
+    background-color:var(--bs-green);
+    border-color:var(--bs-green);
 }
 
 .btn-success:hover {
     color: #000;
-    background-color: #95dc39;
-    border-color: #8fda2d;
+    background-color: var(--bs-green);;
+    border-color:var(--bs-green);;
 }
 
 .btn-check:focus+.btn-success,
 .btn-success:focus {
     color: #000;
-    background-color: #95dc39;
-    border-color: #8fda2d;
+    background-color: var(--bs-green);
+    border-color: var(--bs-green);
     box-shadow: 0 0 0 0.2rem rgba(111, 182, 19, 0.5);
 }
 
@@ -3700,8 +3701,8 @@ fieldset:disabled .btn {
 .btn-success.active,
 .show>.btn-success.dropdown-toggle {
     color: #000;
-    background-color: #9bde45;
-    border-color: #8fda2d;
+    background-color: var(--bs-green);
+    border-color: var(--bs-green);
 }
 
 .btn-check:checked+.btn-success:focus,
@@ -3715,8 +3716,8 @@ fieldset:disabled .btn {
 .btn-success:disabled,
 .btn-success.disabled {
     color: #000;
-    background-color: #82d616;
-    border-color: #82d616;
+    background-color:  var(--bs-green);
+    border-color:  var(--bs-green);
 }
 
 .btn-info {
@@ -20159,13 +20160,13 @@ fieldset:disabled .btn {
 
 .btn-success:hover,
 .btn.bg-gradient-success:hover {
-    background-color: #82d616;
-    border-color: #82d616;
+    background-color: var(--bs-green);
+    border-color:  var(--bs-green);
 }
 
 .btn-success .btn.bg-outline-success,
 .btn.bg-gradient-success .btn.bg-outline-success {
-    border: 1px solid #82d616;
+    border: 1px solid  var(--bs-green);
 }
 
 .btn-success:not(:disabled):not(.disabled).active,
@@ -20174,8 +20175,8 @@ fieldset:disabled .btn {
 .btn.bg-gradient-success:not(:disabled):not(.disabled).active,
 .btn.bg-gradient-success:not(:disabled):not(.disabled):active,
 .show>.btn.bg-gradient-success.dropdown-toggle {
-    color: color-yiq(#82d616);
-    background-color: #82d616;
+    color:  var(--bs-green);
+    background-color: var(--bs-green);
 }
 
 .btn-success.focus,
@@ -21160,8 +21161,8 @@ fieldset:disabled .btn {
 }
 
 .input-group .form-control:focus {
-    border-left: 1px solid #e293d3 !important;
-    border-right: 1px solid #e293d3 !important;
+    border-left: 1px solid  var(--bs-green) !important;
+    border-right: 1px solid  var(--bs-green) !important;
 }
 
 .input-group .form-control:not(:first-child) {
@@ -21206,7 +21207,7 @@ fieldset:disabled .btn {
 }
 
 .focused {
-    box-shadow: 0 0 0 2px #e9aede;
+    box-shadow: 0 0 0 2px  var(--bs-green);
     transition: box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
@@ -21215,7 +21216,7 @@ fieldset:disabled .btn {
 }
 
 .focused .input-group-text {
-    border-color: #e293d3;
+    border-color:  var(--bs-green);
 }
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"],
