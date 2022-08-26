@@ -1,14 +1,14 @@
 import axios from "axios";
 import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import store from "../redux/store/store";
-import {HideLoader, ShowLoader} from "../redux/state-slice/settings/settingsSlice";
+import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import {getToken} from "../helper/SessionHelper";
 import {
     SetExpenseChart,
     SetExpenseTotal, SetPurchaseChart, SetPurchaseTotal,
     SetReturnChart,
     SetReturnTotal, SetSaleChart, SetSaleTotal
-} from "../redux/state-slice/dashboard/dashboardSlice";
+} from "../redux/state-slice/dashboard-slice";
 const AxiosHeader={headers:{"token":getToken()}}
 const BaseURL="https://inventory-mern-backend.herokuapp.com/api/v1"
 
