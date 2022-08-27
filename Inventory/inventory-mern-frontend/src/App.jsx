@@ -33,6 +33,8 @@ import SalesCreateUpdatePage from "./pages/Sales/SalesCreateUpdatePage";
 import SalesListPage from "./pages/Sales/SalesListPage";
 import SupplierCreateUpdatePage from "./pages/Supplier/SupplierCreateUpdatePage";
 import SupplierListPage from "./pages/Supplier/SupplierListPage";
+import ExpenseTypeList from "./components/ExpenseType/ExpenseTypeList";
+import ExpenseTypeListPage from "./pages/ExpenseType/ExpenseTypeListPage";
 const App = () => {
     if(getToken()){
         return (
@@ -49,7 +51,7 @@ const App = () => {
                         <Route exact path="/CustomerListPage" element={<CustomerListPage />}/>}/>
 
                         <Route exact path="/ExpenseTypeCreateUpdatePage" element={<ExpenseTypeCreateUpdatePage />}/>}/>
-                        <Route exact path="/ExpenseTypeCreateUpdatePage" element={<ExpenseTypeCreateUpdatePage />}/>}/>
+                        <Route exact path="/ExpenseTypeListPage" element={<ExpenseTypeListPage />}/>}/>
 
                         <Route exact path="/ExpenseCreateUpdatePage" element={<ExpenseCreateUpdatePage />}/>}/>
                         <Route exact path="/ExpenseListPage" element={<ExpenseListPage />}/>}/>
