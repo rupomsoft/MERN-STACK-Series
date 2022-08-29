@@ -13,7 +13,7 @@ const SalesReportService= async (Request) => {
                     Total:[{
                         $group:{
                             _id:0,
-                            TotalAmount:{$sum:"$GrandTotal"}
+                            TotalAmount:{$sum:"$Total"}
                         }
                     }],
                     Rows:[

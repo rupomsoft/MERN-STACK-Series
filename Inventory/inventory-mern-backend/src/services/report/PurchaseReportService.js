@@ -1,6 +1,7 @@
 const PurchaseProductsModel = require("../../models/Purchases/PurchaseProductsModel");
 const PurchasesReportService= async (Request) => {
     try{
+
         let UserEmail=Request.headers['email'];
         let FormDate=  Request.body['FormDate']
         let ToDate=  Request.body['ToDate']
@@ -12,7 +13,7 @@ const PurchasesReportService= async (Request) => {
                     Total:[{
                         $group:{
                             _id:0,
-                            TotalAmount:{$sum:"$GrandTotal"}
+                            TotalAmount:{$sum:"$Total"}
                         }
                     }],
                     Rows:[

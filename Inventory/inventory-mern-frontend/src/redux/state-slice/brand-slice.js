@@ -14,7 +14,5 @@ export const brandSlice=createSlice({
         }
     }
 })
-
-
 export  const {SetBrandList}=brandSlice.actions;
 export default  brandSlice.reducer;
