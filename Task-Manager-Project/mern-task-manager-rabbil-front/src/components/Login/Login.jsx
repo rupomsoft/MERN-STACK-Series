@@ -1,7 +1,9 @@
 import React, {Fragment, useRef} from 'react';
-import {Link} from "react-router-dom";
+import {Link,NavLink,BrowserRouter,HashRouter} from "react-router-dom";
 import {ErrorToast, IsEmail, IsEmpty} from "../../helper/FormHelper";
-import {LoginRequest} from "../../APIRequest/APIRequest";
+
+
+
 const Login = () => {
     let passRef,emailRef=useRef();
 
@@ -20,6 +22,8 @@ const Login = () => {
                     window.location.href="/"
                 }
             })
+
+    
         }
     }
 

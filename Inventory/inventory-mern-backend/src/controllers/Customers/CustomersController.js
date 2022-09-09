@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const CheckAssociateService = require("../../services/common/CheckAssociateService");
 const SalesModel = require("../../models/Sales/SalesModel");
 const DeleteService = require("../../services/common/DeleteService");
+const DetailsByIDService = require("../../services/common/DetailsByIDService");
 
 exports.CreateCustomers=async (req, res) => {
     let Result= await CreateService(req,DataModel)
@@ -30,6 +31,10 @@ exports.CustomersDropDown=async (req, res) => {
     res.status(200).json(Result)
 }
 
+exports.CustomersDetailsByID=async (req, res) => {
+    let Result= await DetailsByIDService(req,DataModel)
+    res.status(200).json(Result)
+}
 
 exports.DeleteCustomer=async (req, res) => {
     let DeleteID=req.params.id;

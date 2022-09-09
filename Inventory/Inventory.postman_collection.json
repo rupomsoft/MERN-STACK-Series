@@ -1,0 +1,1547 @@
+{
+	"info": {
+		"_postman_id": "2aaa9deb-1ecb-4ac6-af01-7728d0b722d1",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9518923"
+	},
+	"item": [
+		{
+			"name": "User Profile",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\":\"rabbilidlc@gmail.com\",\r\n    \"firstName\":\"Rabbil\",\r\n    \"lastName\":\"Hasan\",\r\n    \"mobile\":\"01785388919\",\r\n    \"password\":\"1234\",\r\n    \"photo\":\"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/Registration",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"Registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"rabbilidlc@gmail.com\",\r\n    \"password\":\"1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/Login",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProfileUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"photo\":\" data:image/jpeg;base64,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\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/ProfileUpdate",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ProfileUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecoverVerifyEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/RecoverVerifyEmail/rabbilidlc@gmail.com",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"RecoverVerifyEmail",
+								"rabbilidlc@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecoverVerifyOTP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/RecoverVerifyOTP/rabbilidlc@gmail.com/789214",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"RecoverVerifyOTP",
+								"rabbilidlc@gmail.com",
+								"789214"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecoverResetPass",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"email\":\"rabbilidlc@gmail.com\",\r\n    \"OTP\":\"445911\",\r\n    \"password\":\"1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/RecoverResetPass",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"RecoverResetPass"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProfileDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ProfileDetails",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ProfileDetails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "CreateBrand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"H\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateBrand",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateBrand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBrand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"SSSSSS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateBrand/62f65345940d891b8ba3fc04",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateBrand",
+								"62f65345940d891b8ba3fc04"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrandList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/BrandList/1/10/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"BrandList",
+								"1",
+								"10",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrandDropDown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/BrandDropDown",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"BrandDropDown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BrandDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/BrandDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"BrandDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBrand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteBrand/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteBrand",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "CreateCategories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"dfhdfh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateCategories",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateCategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCategories",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"sdfsdfsdfsdfsdfsdf\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateCategories/62f65bb7bd399d6e113e4ef1",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateCategories",
+								"62f65bb7bd399d6e113e4ef1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoriesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CategoriesList/1/5/Book",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CategoriesList",
+								"1",
+								"5",
+								"Book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoriesDropDown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CategoriesDropDown",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CategoriesDropDown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteCategories/62dd69733075f0a9e3d6f406",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteCategories",
+								"62dd69733075f0a9e3d6f406"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoriesDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CategoriesDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CategoriesDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "CreateCustomers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerName\":\"Rabbil Hasan\",\r\n    \"Phone\":\"098154853169\",\r\n    \"Email\":\"rabbilIDLC@gmail.com\",\r\n    \"Address\":\" Shekhertek 8,Mohammadpur, Adabor, Dhaka-1207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateCustomers",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateCustomers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCustomers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerName\":\"Rabbil Rabbil\",\r\n    \"Phone\":\"01785388919\",\r\n    \"Email\":\"rabbilIDLC@gmail.com\",\r\n    \"Address\":\" Shekhertek 8,Mohammadpur, Adabor, Dhaka-1207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateCustomers/62dd992c21f5eaa37a14ecda",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateCustomers",
+								"62dd992c21f5eaa37a14ecda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomersList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CustomersList/1/5/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CustomersList",
+								"1",
+								"5",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomersDropDown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CustomersDropDown",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CustomersDropDown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteCustomer/62dd997d21f5eaa37a14ed06",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteCustomer",
+								"62dd997d21f5eaa37a14ed06"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomersDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/CustomersDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CustomersDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suppliers",
+			"item": [
+				{
+					"name": "CreateSuppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Rabbil Hasan\",\r\n    \"Phone\":\"152375483372\",\r\n    \"Email\":\"rabbilIDLC@gmail.com\",\r\n    \"Address\":\" Shekhertek 8,Mohammadpur, Adabor, Dhaka-1207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateSuppliers",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateSuppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSuppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Salif\",\r\n    \"Phone\":\"01785388919\",\r\n    \"Email\":\"rabbilIDLC@gmail.com\",\r\n    \"Address\":\" Shekhertek 8,Mohammadpur, Adabor, Dhaka-1207\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateSuppliers/62ddab7c3f9f2b0b4967cb50",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateSuppliers",
+								"62ddab7c3f9f2b0b4967cb50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuppliersList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/SuppliersList/1/5/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SuppliersList",
+								"1",
+								"5",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuppliersDropDown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/SuppliersDropDown",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SuppliersDropDown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSupplier",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteSupplier/62ddab513f9f2b0b4967cb34",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteSupplier",
+								"62ddab513f9f2b0b4967cb34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuppliersDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/SuppliersDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SuppliersDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expense Types",
+			"item": [
+				{
+					"name": "CreateExpenseTypes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Tea asfsavs Cost\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateExpenseTypes",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateExpenseTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateExpenseTypes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\":\"Apple Apple Apple Apple\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateExpenseTypes/62de628df60ebaf6f04df2ae",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateExpenseTypes",
+								"62de628df60ebaf6f04df2ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExpenseTypesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ExpenseTypesList/1/100/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpenseTypesList",
+								"1",
+								"100",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExpenseTypesDropDown",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ExpenseTypesDropDown",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpenseTypesDropDown"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteExpenseTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteExpenseTypes/62e2dcd291386f7c4b3b5085",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteExpenseTypes",
+								"62e2dcd291386f7c4b3b5085"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExpenseTypesDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ExpenseTypesDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpenseTypesDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Expenses",
+			"item": [
+				{
+					"name": "CreateExpenses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TypeID\":\"62e6960be6f71207ad68f302\",\r\n    \"Amount\":100000,\r\n    \"Note\":\"Demo Note\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateExpenses",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateExpenses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateExpenses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"TypeID\":\"62de86d4f79925aa18ab5c69\",\r\n    \"Amount\":100000,\r\n    \"Note\":\"Note Note\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateExpenses/62e158e267570b60188c7769",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateExpenses",
+								"62e158e267570b60188c7769"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExpensesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ExpensesList/1/5/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpensesList",
+								"1",
+								"5",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteExpense",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteExpense/62e2dd3191386f7c4b3b508c",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteExpense",
+								"62e2dd3191386f7c4b3b508c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExpenseDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ExpenseDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpenseDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "CreateProducts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CategoryID\":\"62dd69733075f0a9e3d6f406\",\r\n    \"BrandID\":\"62dd64b22d50a3b7cf901703\",\r\n    \"Name\":\"Product\",\r\n    \"Unit\":\"Kg\",\r\n    \"Details\":\"Demo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateProducts",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateProducts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProducts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CategoryID\":\"62dd69733075f0a9e3d6f406\",\r\n    \"BrandID\":\"62dd64aa2d50a3b7cf901701\",\r\n    \"Name\":\"Product\",\r\n    \"Price\":100000,\r\n    \"Unit\":\"Pound\",\r\n    \"Details\":\"Demo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/UpdateProducts/62f6e04647c56c84da572378",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"UpdateProducts",
+								"62f6e04647c56c84da572378"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ProductsList/1/500/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ProductsList",
+								"1",
+								"500",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/DeleteProduct/62e398cb36ca3ec81e0814fe",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"DeleteProduct",
+								"62e398cb36ca3ec81e0814fe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductsDetailsByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ProductsDetailsByID/62dd64bb2d50a3b7cf901707",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ProductsDetailsByID",
+								"62dd64bb2d50a3b7cf901707"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchases",
+			"item": [
+				{
+					"name": "CreatePurchases",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"Parent\":{\r\n        \"SupplierID\":\"62ddab513f9f2b0b4967cb34\",\r\n        \"VatTax\":100,\r\n        \"Discount\":0,\r\n        \"OtherCost\":100,\r\n        \"ShippingCost\":100,\r\n        \"GrandTotal\":7000,\r\n        \"Note\":\"Note\"\r\n    },\r\n    \"Childs\":[\r\n        { \"ProductID\":\"62e398c536ca3ec81e0814f2\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c736ca3ec81e0814f4\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c836ca3ec81e0814f6\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreatePurchases",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreatePurchases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PurchasesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/PurchasesList/1/5/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"PurchasesList",
+								"1",
+								"5",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PurchasesDelete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/PurchasesDelete/62fa0f957021a686bc955097",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"PurchasesDelete",
+								"62fa0f957021a686bc955097"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "CreateSales",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"Parent\":{\r\n        \"CustomerID\":\"62dd993321f5eaa37a14ecde\",\r\n        \"VatTax\":100,\r\n        \"Discount\":0,\r\n        \"OtherCost\":100,\r\n        \"ShippingCost\":100,\r\n        \"GrandTotal\":5000,\r\n        \"Note\":\"Note\"\r\n    },\r\n    \"Childs\":[\r\n        { \"ProductID\":\"62e398c536ca3ec81e0814f2\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c736ca3ec81e0814f4\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c836ca3ec81e0814f6\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateSales",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateSales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SalesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/SalesList/1/100/salif",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SalesList",
+								"1",
+								"100",
+								"salif"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaleDelete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/SaleDelete/62e6de40de585923758bc79d",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SaleDelete",
+								"62e6de40de585923758bc79d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Returns",
+			"item": [
+				{
+					"name": "CreateReturns",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"Parent\":{\r\n        \"CustomerID\":\"62dd993321f5eaa37a14ecde\",\r\n        \"VatTax\":100,\r\n        \"Discount\":0,\r\n        \"OtherCost\":100,\r\n        \"ShippingCost\":100,\r\n        \"GrandTotal\":5000,\r\n        \"Note\":\"Note\"\r\n    },\r\n    \"Childs\":[\r\n        { \"ProductID\":\"62e398c536ca3ec81e0814f2\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c736ca3ec81e0814f4\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        },\r\n        { \"ProductID\":\"62e398c836ca3ec81e0814f6\",\r\n          \"Qty\":1,\r\n          \"UnitCost\":100,\r\n          \"Total\":100\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/CreateReturns",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"CreateReturns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReturnsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ReturnsList/1/100/0",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ReturnsList",
+								"1",
+								"100",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReturnDelete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseURL}}/ReturnDelete/62fa0f9c7021a686bc9550af",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ReturnDelete",
+								"62fa0f9c7021a686bc9550af"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "ExpensesByDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/ExpensesByDate",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpensesByDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReturnByDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/ReturnByDate",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ReturnByDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PurchaseByDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/PurchaseByDate",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"PurchaseByDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SalesByDate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/SalesByDate",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SalesByDate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Summary",
+			"item": [
+				{
+					"name": "ExpensesSummary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/ExpensesSummary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ExpensesSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReturnSummary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/ReturnSummary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"ReturnSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PurchaseSummary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/PurchaseSummary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"PurchaseSummary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SalesSummary",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"FormDate\":\"2022-07-28T00:00:00.000+00:00\",\r\n    \"ToDate\":\"2022-08-28T18:48:00.000+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseURL}}/SalesSummary",
+							"host": [
+								"{{BaseURL}}"
+							],
+							"path": [
+								"SalesSummary"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{token}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjI4MzYyMTAsImRhdGEiOiJyYWJiaWxpZGxjQGdtYWlsLmNvbSIsImlhdCI6MTY2Mjc0OTgxMH0.usRNZSRSw73Loam0TmSXOca4vyQUPRvU_nWU_5_-w2g",
+			"type": "string"
+		},
+		{
+			"key": "BaseURL",
+			"value": "http://localhost:4000/api/v1",
+			"type": "string"
+		}
+	]
+}

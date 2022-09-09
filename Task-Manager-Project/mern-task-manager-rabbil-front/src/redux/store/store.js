@@ -5,11 +5,5 @@ import summaryReducer from "../state-slice/summary-slice";
 import profileReducer from "../state-slice/profile-slice";
 
 export default configureStore({
-    reducer:{
-        settings:settingsReducer,
-        task:taskReducer,
-        summary:summaryReducer,
-        profile:profileReducer
-
-    }
+    reducer:{settings:settingsReducer, task:taskReducer,summary:summaryReducer,profile:profileReducer}
 })

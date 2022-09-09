@@ -9,8 +9,12 @@ import {SetProfile} from "../redux/state-slice/profile-slice";
 const BaseURL="https://mern-task-manager-rabbil.herokuapp.com/api/v1"
 
 const AxiosHeader={headers:{"token":getToken()}}
+
 export function NewTaskRequest(title,description){
+
+    
     store.dispatch(ShowLoader())
+    
     let URL=BaseURL+"/createTask";
     let PostBody={"title":title,"description":description,status:"New"}
 
@@ -30,9 +34,9 @@ export function NewTaskRequest(title,description){
         store.dispatch(HideLoader())
         return false;
     })
-
-
 }
+
+
 export function LoginRequest(email,password){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/login";
@@ -55,6 +59,7 @@ export function LoginRequest(email,password){
         return false;
     });
 }
+
 export function RegistrationRequest(email,firstName,lastName,mobile,password,photo){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/registration";
@@ -213,9 +218,6 @@ export function ProfileUpdateRequest(email,firstName,lastName,mobile,password,ph
         return false;
     });
 }
-
-
-
 
 // Recover Password Step 01 Send OTP
 export function RecoverVerifyEmailRequest(email){

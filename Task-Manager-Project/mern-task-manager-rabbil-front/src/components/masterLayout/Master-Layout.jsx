@@ -35,8 +35,6 @@ const MasterLayout = (props) => {
 
 
 
-
-
     return (
         <Fragment>
             <Navbar  className="fixed-top px-0 shadow-sm ">

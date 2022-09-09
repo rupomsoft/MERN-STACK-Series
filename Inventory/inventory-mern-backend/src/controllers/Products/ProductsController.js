@@ -8,6 +8,7 @@ const SaleProductsModel = require("../../models/Sales/SaleProductsModel");
 const PurchaseProductsModel = require("../../models/Purchases/PurchaseProductsModel");
 const ReturnProductsModel = require("../../models/Returns/ReturnProductsModel");
 const DeleteService = require("../../services/common/DeleteService");
+const DetailsByIDService = require("../../services/common/DetailsByIDService");
 
 
 exports.CreateProducts=async (req, res) => {
@@ -26,6 +27,12 @@ exports.ProductsList=async (req, res) => {
     let JoinStage2= {$lookup: {from: "categories", localField: "CategoryID", foreignField: "_id", as: "categories"}};
     let SearchArray=[{Name: SearchRgx},{Unit: SearchRgx},{Details: SearchRgx},{'brands.Name':SearchRgx},{'categories.Name':SearchRgx}]
     let Result=await ListTwoJoinService(req,DataModel,SearchArray,JoinStage1,JoinStage2);
+    res.status(200).json(Result)
+}
+
+
+exports.ProductsDetailsByID=async (req, res) => {
+    let Result= await DetailsByIDService(req,DataModel)
     res.status(200).json(Result)
 }
 
