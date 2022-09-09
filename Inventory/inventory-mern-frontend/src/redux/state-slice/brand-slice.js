@@ -10,9 +10,9 @@ export const brandSlice=createSlice({
             state.List=action.payload
         },
         SetBrandListTotal:(state,action)=>{
-            state.List=action.payload
+            state.ListTotal=action.payload
         }
     }
 })
-export  const {SetBrandList}=brandSlice.actions;
+export  const {SetBrandList,SetBrandListTotal}=brandSlice.actions;
 export default  brandSlice.reducer;

@@ -2,14 +2,18 @@ import {createSlice} from "@reduxjs/toolkit";
 export const customerSlice=createSlice({
     name:'customer',
     initialState:{
-        List:[]
+        List:[],
+        ListTotal:0,
     },
     reducers:{
-        SetList:(state,action)=>{
+        SetCustomerList:(state,action)=>{
             state.List=action.payload
+        },
+        SetCustomerListTotal:(state,action)=>{
+            state.ListTotal=action.payload
         }
     }
 })
 
-export  const {SetList}=customerSlice.actions;
+export  const {SetCustomerList,SetCustomerListTotal}=customerSlice.actions;
 export default  customerSlice.reducer;

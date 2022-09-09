@@ -36,10 +36,9 @@ const  Login = () => {
                                 <input ref={(input)=>passRef=input} placeholder="User Password" className="form-control" type="password"/>
                                 <br/>
                                 <button onClick={SubmitLogin} className="btn btn-success w-100 animated ">Next</button>
-
                                 <div className="float-end mt-3">
                                     <span>
-                                        <Link className="text-center ms-3 h6" to="/Registration">Sign Up </Link>
+                                        <Link className="text-center ms-3 h6" to="/Registration">Sign Up</Link>
                                         <span className="ms-1">|</span>
                                         <Link className="text-center ms-3 h6" to="/SendOTP">Forget Password</Link>
                                     </span>

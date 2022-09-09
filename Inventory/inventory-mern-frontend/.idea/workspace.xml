@@ -1,83 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="545a917a-ce29-4d5b-8e63-31c102c9968f" name="Changes" comment="" />
+    <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/inventory-mern-backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/BrandAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/BrandAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/CategoryAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/CategoryAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/CustomerAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/CustomerAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ExpenseTypeAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ExpenseTypeAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ProductAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ProductAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/PurchaseAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/PurchaseAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ReturnAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ReturnAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/SummaryAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SummaryAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/SupplierAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SupplierAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/UsersAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/UsersAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Brand/BrandList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Brand/BrandList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Category/CategoryList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/CategoryList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Customer/CustomerList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Customer/CustomerList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Expense/ExpenseList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expense/ExpenseList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MasterLayout/MasterLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MasterLayout/MasterLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Purchase/PurchaseList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Purchase/PurchaseList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Return/ReturnList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Return/ReturnList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sales/SalesList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sales/SalesList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Supplier/SupplierList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Supplier/SupplierList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/VerifyOTP.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/VerifyOTP.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Brand/BrandCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Brand/BrandCreateUpdatePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Brand/BrandListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Brand/BrandListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Category/CategoryListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category/CategoryListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Customer/CustomerListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Customer/CustomerListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Dashboard/DashboardPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Dashboard/DashboardPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Expense/ExpenseListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Expense/ExpenseListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ExpenseType/ExpenseTypeListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExpenseType/ExpenseTypeListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Purchase/PurchaseListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Purchase/PurchaseListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Return/ReturnListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Return/ReturnListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Sales/SalesListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sales/SalesListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Supplier/SupplierListPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Supplier/SupplierListPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/brand-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/brand-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/category-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/category-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/customer-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/customer-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/expense-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/expense-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/expensetype-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/expensetype-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/product-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/product-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/purchase-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/purchase-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/return-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/return-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/supplier-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/supplier-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="2CX3pN2TEYNxmsRFCHnXIKbD8QW" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EXtdLHdMUCuQ8ckvsIBxQehCYV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/APIRequest" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/APIRequest" />
-      <recent name="$PROJECT_DIR$/src/redux/state-slice" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\redux\state-slice\dashboard" />
-      <recent name="H:\VIGO\MERN-STACK-Series\Inventory\inventory-mern-frontend\src\assets\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/redux/state-slice" />
-    </key>
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="545a917a-ce29-4d5b-8e63-31c102c9968f" name="Changes" comment="" />
-      <created>1658935304497</created>
+      <changelist id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="" />
+      <created>1662753842312</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1658935304497</updated>
-      <workItem from="1658935306690" duration="7000" />
-      <workItem from="1661279129419" duration="2337000" />
-      <workItem from="1661281532714" duration="1630000" />
-      <workItem from="1661342672611" duration="8553000" />
-      <workItem from="1661434934426" duration="12867000" />
-      <workItem from="1661490194877" duration="7903000" />
-      <workItem from="1661506803851" duration="4627000" />
-      <workItem from="1661520231188" duration="1252000" />
-      <workItem from="1661522792640" duration="2481000" />
-      <workItem from="1661534115455" duration="1365000" />
-      <workItem from="1661549489760" duration="1681000" />
-      <workItem from="1661551578561" duration="7316000" />
-      <workItem from="1661581622187" duration="2642000" />
-      <workItem from="1661617660712" duration="584000" />
-      <workItem from="1661620363132" duration="611000" />
-      <workItem from="1661887956369" duration="219000" />
+      <updated>1662753842312</updated>
+      <workItem from="1662753843473" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

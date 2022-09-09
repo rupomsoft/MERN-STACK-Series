@@ -5,10 +5,9 @@ import {RecoverVerifyOTPRequest} from "../../APIRequest/UsersAPIRequest";
 import {getEmail} from "../../helper/SessionHelper";
 import {useNavigate} from "react-router-dom";
 
-
 const VerifyOTP = () => {
-    let navigate=useNavigate();
 
+    let navigate=useNavigate();
     let  defaultInputStyle= {
             fontFamily: "monospace",
             MozAppearance: "textfield",
@@ -24,7 +23,6 @@ const VerifyOTP = () => {
             backgroundColor: "white",
             borderColor: "lightgrey"
         }
-
 
     let [OTP,SetOTP]=useState("")
 
@@ -59,5 +57,4 @@ const VerifyOTP = () => {
         </Fragment>
     );
 };
-
 export default VerifyOTP;

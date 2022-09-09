@@ -56,7 +56,7 @@ const Registration = () => {
                                     </div>
                                     <div className="col-md-4 text-start p-2">
                                         <label>Mobile Number</label>
-                                        <input ref={(input)=>mobileRef=input} placeholder="Mobile" className="form-control" type="mobile"/>
+                                        <input ref={(input)=>mobileRef=input} placeholder="Mobile" className="form-control" type="tel"/>
                                     </div>
                                     <div className="col-md-4 text-start p-2">
                                         <label>Password</label>

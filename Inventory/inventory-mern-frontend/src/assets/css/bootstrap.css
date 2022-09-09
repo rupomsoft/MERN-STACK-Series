@@ -2914,9 +2914,9 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-    border-color: #e293d3;
+    border-color: var(--bs-success);
     outline: 0;
-    box-shadow: 0 0 0 2px #e9aede;
+    box-shadow: 0 0 0 2px var(--bs-success);
 }
 
 .form-select[multiple],
@@ -3016,8 +3016,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type="checkbox"]:indeterminate {
-    background-color: #cb0c9f;
-    border-color: #cb0c9f;
+    background-color: var(--bs-success);
+    border-color:var(--bs-success);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 
@@ -5906,7 +5906,7 @@ fieldset:disabled .btn {
 .page-link {
     position: relative;
     display: block;
-    color: #cb0c9f;
+    color: var(--bs-green);
     background-color: #fff;
     border: 1px solid #dee2e6;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5920,17 +5920,17 @@ fieldset:disabled .btn {
 
 .page-link:hover {
     z-index: 2;
-    color: #830866;
+    color:var(--bs-green);
     background-color: #e9ecef;
     border-color: #dee2e6;
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #830866;
+    color: var(--bs-green);
     background-color: #e9ecef;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(203, 12, 159, 0.25);
+    box-shadow: 0 0 0 0.2rem var(--bs-success);
 }
 
 .page-item:not(:first-child) .page-link {
@@ -5940,8 +5940,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #cb0c9f;
-    border-color: #cb0c9f;
+    background-color: var(--bs-green);
+    border-color: var(--bs-green);
 }
 
 .page-item.disabled .page-link {

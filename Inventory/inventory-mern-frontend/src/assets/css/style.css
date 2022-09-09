@@ -26,3 +26,22 @@ a {
   font-size: 10px;
   font-family: 'Poppins', sans-serif !important;
 }
+
+.table-section{
+  height: 55vh!important;
+  overflow-y: auto;
+  scrollbar-color: var(--bs-gray-500) var(--bs-light) !important;
+  scrollbar-width: thin !important;
+}
+
+table {
+  width: 100%;
+}
+td {
+  white-space: nowrap;
+}
+td div {
+  white-space: normal;
+  word-break: break-all;
+  display: block;
+}
