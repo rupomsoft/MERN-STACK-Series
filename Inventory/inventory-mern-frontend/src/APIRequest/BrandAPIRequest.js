@@ -17,7 +17,6 @@ export async function BrandListRequest(pageNo, perPage, searchKeyword) {
             if (result.data['data'][0]['Rows'].length > 0) {
                 store.dispatch(SetBrandList(result.data['data'][0]['Rows']))
                 store.dispatch(SetBrandListTotal(result.data['data'][0]['Total'][0]['count']))
-                debugger;
             } else {
                 store.dispatch(SetBrandList([]))
                 store.dispatch(SetBrandListTotal(0))

@@ -246,6 +246,7 @@ const MasterLayout = (props) => {
       ],
     },
   ];
+
   const onLogout=()=>{
     removeSessions();
   }
