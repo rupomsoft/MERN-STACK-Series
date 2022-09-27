@@ -33,10 +33,12 @@ export async function CustomerListRequest(pageNo, perPage, searchKeyword) {
 }
 
 
-export async function CreateCustomer(PostBody) {
+
+
+export async function CreateCustomerRequest(PostBody) {
     try {
         store.dispatch(ShowLoader())
-        let URL = BaseURL+"/CreateCustomers";
+        let URL = BaseURL+"/CreateCustomers"
         const result = await axios.post(URL,PostBody,AxiosHeader)
         store.dispatch(HideLoader())
         if (result.status === 200 && result.data['status'] === "success") {
@@ -50,7 +52,6 @@ export async function CreateCustomer(PostBody) {
         store.dispatch(HideLoader())
     }
 }
-
 
 
 

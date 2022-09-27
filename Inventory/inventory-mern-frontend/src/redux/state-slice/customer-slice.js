@@ -23,6 +23,7 @@ export const customerSlice=createSlice({
             state.FormValue[`${action.payload.Name}`]=action.payload.Value;
         }
 
+
     }
 })
 

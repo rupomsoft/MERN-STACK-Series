@@ -1,15 +1,14 @@
 import React, {Fragment} from 'react';
 import {useSelector} from "react-redux";
-import {OnChangeCustomerInput} from "../../redux/state-slice/customer-slice";
 import store from "../../redux/store/store";
-import {CreateCustomer} from "../../APIRequest/CustomerAPIRequest";
-
+import {OnChangeCustomerInput} from "../../redux/state-slice/customer-slice";
+import {CreateCustomerRequest} from "../../APIRequest/CustomerAPIRequest";
 const CustomerCreateUpdate = () => {
 
-    let FormValue=useSelector((state)=>(state.customer.FormValue));
+    let FormValue=useSelector((state)=>(state.customer.FormValue))
 
     const SaveChange = async () => {
-       await CreateCustomer(FormValue)
+       await CreateCustomerRequest(FormValue)
     }
 
 
@@ -21,7 +20,7 @@ const CustomerCreateUpdate = () => {
                         <div className="card">
                             <div className="card-body">
                                 <div className="row">
-                                    <h5 >New Customer</h5>
+                                    <h5 >Save Customer</h5>
                                     <hr className="bg-light"/>
                                     <div className="col-4 p-2">
                                         <label className="form-label">Customer Name</label>
@@ -37,7 +36,7 @@ const CustomerCreateUpdate = () => {
                                     </div>
                                     <div className="col-12 p-2">
                                         <label className="form-label">Address</label>
-                                        <textarea onChange={(e)=>{store.dispatch(OnChangeCustomerInput({Name:"Address",Value:e.target.value}))}} value={FormValue.Address} className="form-control form-control-sm" rows={4}/>
+                                        <textarea onChange={(e)=>{store.dispatch(OnChangeCustomerInput({Name:"Address",Value:e.target.value}))}} value={FormValue.Address}  className="form-control form-control-sm" rows={4}/>
                                     </div>
                                 </div>
                                 <div className="row">

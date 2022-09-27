@@ -23,6 +23,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -44,6 +46,7 @@
       <workItem from="1662756002100" duration="2667000" />
       <workItem from="1663692665483" duration="767000" />
       <workItem from="1663775662301" duration="597000" />
+      <workItem from="1664306241954" duration="1997000" />
     </task>
     <servers />
   </component>
