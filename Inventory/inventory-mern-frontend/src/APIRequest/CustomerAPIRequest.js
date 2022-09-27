@@ -1,7 +1,7 @@
 import store from "../redux/store/store";
 import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import axios from "axios";
-import {ErrorToast} from "../helper/FormHelper";
+import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import {getToken} from "../helper/SessionHelper";
 import {SetCustomerList, SetCustomerListTotal} from "../redux/state-slice/customer-slice";
 import {BaseURL} from "../helper/config";
@@ -31,3 +31,27 @@ export async function CustomerListRequest(pageNo, perPage, searchKeyword) {
         store.dispatch(HideLoader())
     }
 }
+
+
+export async function CreateCustomer(PostBody) {
+    try {
+        store.dispatch(ShowLoader())
+        let URL = BaseURL+"/CreateCustomers";
+        const result = await axios.post(URL,PostBody,AxiosHeader)
+        store.dispatch(HideLoader())
+        if (result.status === 200 && result.data['status'] === "success") {
+            SuccessToast("Request Successful")
+        } else {
+            ErrorToast("Request Fail ! Try Again")
+        }
+    }
+    catch (e) {
+        ErrorToast("Something Went Wrong")
+        store.dispatch(HideLoader())
+    }
+}
+
+
+
+
+
