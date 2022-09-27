@@ -42,14 +42,17 @@ export async function CreateCustomerRequest(PostBody) {
         const result = await axios.post(URL,PostBody,AxiosHeader)
         store.dispatch(HideLoader())
         if (result.status === 200 && result.data['status'] === "success") {
-            SuccessToast("Request Successful")
+            SuccessToast("Request Successful");
+            return  true;
         } else {
             ErrorToast("Request Fail ! Try Again")
+            return false;
         }
     }
     catch (e) {
         ErrorToast("Something Went Wrong")
         store.dispatch(HideLoader())
+        return  false
     }
 }
 

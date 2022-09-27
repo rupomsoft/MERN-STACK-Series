@@ -3,12 +3,28 @@ import {useSelector} from "react-redux";
 import store from "../../redux/store/store";
 import {OnChangeCustomerInput} from "../../redux/state-slice/customer-slice";
 import {CreateCustomerRequest} from "../../APIRequest/CustomerAPIRequest";
+import {ErrorToast, IsEmail, IsEmpty} from "../../helper/FormHelper";
+import {useNavigate} from "react-router-dom";
 const CustomerCreateUpdate = () => {
 
-    let FormValue=useSelector((state)=>(state.customer.FormValue))
+    let FormValue=useSelector((state)=>(state.customer.FormValue));
+    let navigate=useNavigate();
 
     const SaveChange = async () => {
-       await CreateCustomerRequest(FormValue)
+        if(IsEmpty(FormValue.CustomerName)){
+            ErrorToast("Customer Name Required !")
+        }
+        else if(IsEmpty(FormValue.Phone)){
+            ErrorToast("Customer Phone  Number Required !")
+        }
+        else if(IsEmail(FormValue.Email)){
+            ErrorToast("Valid Email Address Required !")
+        }
+        else {
+            if(await CreateCustomerRequest(FormValue)){
+                navigate("/CustomerListPage")
+            }
+        }
     }
 
 
