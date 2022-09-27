@@ -8,8 +8,10 @@ const  Login = () => {
     let passRef,emailRef=useRef();
 
     const SubmitLogin=async () => {
+        debugger;
         let email = emailRef.value;
         let pass = passRef.value;
+        debugger;
         if (IsEmail(email)) {
             ErrorToast("Invalid Email Address")
         } else if (IsEmpty(pass)) {

@@ -20,6 +20,8 @@ exports.UpdateBrand=async (req, res) => {
     res.status(200).json(Result)
 }
 
+
+
 exports.BrandList=async (req, res) => {
     let SearchRgx = {"$regex": req.params.searchKeyword, "$options": "i"}
     let SearchArray=[{Name: SearchRgx}]
