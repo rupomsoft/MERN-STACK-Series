@@ -1,11 +1,11 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {CustomerListRequest} from "../../APIRequest/CustomerAPIRequest";
+import {CustomerListRequest, DeleteCustomerRequest} from "../../APIRequest/CustomerAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import ReactPaginate from "react-paginate";
-import moment from "moment/moment";
-import Swal from "sweetalert2";
+import {DeleteAlert} from "../../helper/DeleteAlert";
+
 
 const CustomerList = () => {
     let [searchKeyword,setSearchKeyword]=useState("0");
@@ -44,21 +44,15 @@ const CustomerList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
-        Swal.fire({
-            html:`
-                <ul class="list-group text-start list-group-flush">
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Name :</b> ${item.CustomerName}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Phone :</b> ${item.Phone} </span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Email :</b> ${item.Email}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Address: </b> ${item.Address}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Created Date</b> ${moment(item.CreatedDate).format('MMMM Do YYYY')}</span></li>
-                </ul>
-                `,
-            showCloseButton: true,
-            showConfirmButton: false,
-            focusCancel: false,
-        })
+
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+           let DeleteResult= await DeleteCustomerRequest(id)
+            if(DeleteResult){
+                await CustomerListRequest(1,perPage,searchKeyword);
+            }
+        }
     }
 
     return (
@@ -120,8 +114,8 @@ const CustomerList = () => {
                                                                     <Link to={`/CustomerCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
-                                                                    <button onClick={DetailsPopUp.bind(this,item)} className="btn btn-outline-light text-success p-2 mb-0 btn-sm ms-2">
-                                                                        <AiOutlineEye size={15} />
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
                                                                     </button>
                                                                 </td>
                                                             </tr>

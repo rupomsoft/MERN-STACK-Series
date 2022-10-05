@@ -39,7 +39,7 @@ const CreateParentChildsService= async (Request, ParentModel, ChildsModel,JoinPr
         // Roll Back Transaction if Fail
         await session.abortTransaction();
         session.endSession();
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=CreateParentChildsService

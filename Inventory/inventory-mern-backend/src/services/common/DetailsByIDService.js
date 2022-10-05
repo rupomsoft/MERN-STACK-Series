@@ -17,7 +17,7 @@ const DetailsByIDService= async (Request,DataModel) => {
         return {status: "success", data: data}
     }
     catch (error) {
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=DetailsByIDService

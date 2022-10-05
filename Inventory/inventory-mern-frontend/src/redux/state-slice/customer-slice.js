@@ -21,11 +21,13 @@ export const customerSlice=createSlice({
         },
         OnChangeCustomerInput:(state,action)=>{
             state.FormValue[`${action.payload.Name}`]=action.payload.Value;
+        },
+        ResetFormValue:(state,action)=>{
+            Object.keys(state.FormValue).forEach((i) => state.FormValue[i] = "");
         }
-
 
     }
 })
 
-export  const {SetCustomerList,SetCustomerListTotal,OnChangeCustomerInput}=customerSlice.actions;
+export  const {SetCustomerList,SetCustomerListTotal,OnChangeCustomerInput,ResetFormValue}=customerSlice.actions;
 export default  customerSlice.reducer;

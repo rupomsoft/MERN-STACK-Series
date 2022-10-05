@@ -41,7 +41,7 @@ const DeleteParentChildsService= async (Request, ParentModel,ChildsModel,JoinPro
         // Roll Back Transaction
         await session.abortTransaction();
         session.endSession();
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=DeleteParentChildsService

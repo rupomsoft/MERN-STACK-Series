@@ -13,7 +13,7 @@ const DeleteService= async (Request, Model) => {
 
     }
     catch (error) {
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=DeleteService

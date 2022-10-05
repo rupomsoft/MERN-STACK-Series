@@ -37,7 +37,7 @@ const ListOneJoinService= async (Request, DataModel, SearchArray, JoinStage) => 
         return {status: "success", data: data}
     }
     catch (error) {
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=ListOneJoinService

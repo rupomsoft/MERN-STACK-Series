@@ -1,14 +1,28 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {useSelector} from "react-redux";
 import store from "../../redux/store/store";
 import {OnChangeCustomerInput} from "../../redux/state-slice/customer-slice";
-import {CreateCustomerRequest} from "../../APIRequest/CustomerAPIRequest";
+import {CreateCustomerRequest, FillCustomerFormRequest} from "../../APIRequest/CustomerAPIRequest";
 import {ErrorToast, IsEmail, IsEmpty} from "../../helper/FormHelper";
 import {useNavigate} from "react-router-dom";
 const CustomerCreateUpdate = () => {
 
     let FormValue=useSelector((state)=>(state.customer.FormValue));
     let navigate=useNavigate();
+    let [ObjectID,SetObjectID]=useState(0);
+
+    useEffect(()=>{
+        let params= new URLSearchParams(window.location.search);
+        let id=params.get('id');
+        if(id!==null){
+            SetObjectID(id);
+            (async () => {
+                await FillCustomerFormRequest(id);
+            })();
+        }
+    },[])
+
+
 
     const SaveChange = async () => {
         if(IsEmpty(FormValue.CustomerName)){
@@ -21,7 +35,7 @@ const CustomerCreateUpdate = () => {
             ErrorToast("Valid Email Address Required !")
         }
         else {
-            if(await CreateCustomerRequest(FormValue)){
+            if(await CreateCustomerRequest(FormValue,ObjectID)){
                 navigate("/CustomerListPage")
             }
         }
@@ -38,6 +52,7 @@ const CustomerCreateUpdate = () => {
                                 <div className="row">
                                     <h5 >Save Customer</h5>
                                     <hr className="bg-light"/>
+
                                     <div className="col-4 p-2">
                                         <label className="form-label">Customer Name</label>
                                         <input onChange={(e)=>{store.dispatch(OnChangeCustomerInput({Name:"CustomerName",Value:e.target.value}))}} value={FormValue.CustomerName} className="form-control form-control-sm" type="text"/>

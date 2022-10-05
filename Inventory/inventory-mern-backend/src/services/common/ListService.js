@@ -38,7 +38,7 @@ const ListService= async (Request,DataModel,SearchArray) => {
         return {status: "success", data: data}
     }
     catch (error) {
-        return {status: "fail", data: error.toString()}
+        return {status: "fail", data: error}
     }
 }
 module.exports=ListService
