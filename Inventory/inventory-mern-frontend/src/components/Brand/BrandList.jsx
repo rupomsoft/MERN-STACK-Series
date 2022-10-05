@@ -1,10 +1,11 @@
 import React, {useEffect, useState,Fragment} from 'react';
-import {BrandListRequest} from "../../APIRequest/BrandAPIRequest";
+import {BrandListRequest, DeleteBrandRequest} from "../../APIRequest/BrandAPIRequest";
 import {useSelector} from "react-redux";
 import ReactPaginate from "react-paginate";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import moment from 'moment';
+import {DeleteAlert} from "../../helper/DeleteAlert";
 const BrandList = () => {
 
     let [searchKeyword,setSearchKeyword]=useState("0");
@@ -44,6 +45,18 @@ const BrandList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
+
+
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+            let DeleteResult= await DeleteBrandRequest(id)
+            if(DeleteResult){
+                await BrandListRequest(1,perPage,searchKeyword);
+            }
+        }
+    }
+
 
     return (
         <Fragment>
@@ -101,6 +114,9 @@ const BrandList = () => {
                                                                     <Link to={`/BrandCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
+                                                                    </button>
                                                                 </td>
                                                             </tr>
                                                         )

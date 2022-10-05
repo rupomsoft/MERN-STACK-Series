@@ -1,10 +1,11 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {ExpenseTypeListRequest} from "../../APIRequest/ExpenseTypeAPIRequest";
+import {DeleteExpenseTypeRequest, ExpenseTypeListRequest} from "../../APIRequest/ExpenseTypeAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import ReactPaginate from "react-paginate";
 import moment from "moment/moment";
+import {DeleteAlert} from "../../helper/DeleteAlert";
 
 const ExpenseTypeList = () => {
     let [searchKeyword,setSearchKeyword]=useState("0");
@@ -43,9 +44,17 @@ const ExpenseTypeList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
 
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+            let DeleteResult= await DeleteExpenseTypeRequest(id)
+            if(DeleteResult){
+                await ExpenseTypeListRequest(1,perPage,searchKeyword);
+            }
+        }
     }
+
 
     return (
         <Fragment>
@@ -103,6 +112,9 @@ const ExpenseTypeList = () => {
                                                                     <Link to={`/ExpenseTypeCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
+                                                                    </button>
                                                                 </td>
                                                             </tr>
                                                         )

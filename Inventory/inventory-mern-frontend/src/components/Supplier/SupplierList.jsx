@@ -1,12 +1,13 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {BrandListRequest} from "../../APIRequest/BrandAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import ReactPaginate from "react-paginate";
-import {SupplierListRequest} from "../../APIRequest/SupplierAPIRequest";
+import {DeleteSupplierRequest, SupplierListRequest} from "../../APIRequest/SupplierAPIRequest";
+import {DeleteAlert} from "../../helper/DeleteAlert";
 
 const SupplierList = () => {
+
     let [searchKeyword,setSearchKeyword]=useState("0");
     let [perPage,setPerPage]=useState(20);
 
@@ -22,13 +23,16 @@ const SupplierList = () => {
     const handlePageClick = async (event) => {
         await SupplierListRequest(event.selected + 1, perPage, searchKeyword)
     };
+
     const searchData=async () => {
         await SupplierListRequest(1, perPage, searchKeyword)
     }
+
     const perPageOnChange=async (e) => {
         setPerPage(parseInt(e.target.value))
         await SupplierListRequest(1, e.target.value, searchKeyword)
     }
+
     const searchKeywordOnChange=async (e) => {
         setSearchKeyword(e.target.value)
         if ((e.target.value).length === 0) {
@@ -43,8 +47,16 @@ const SupplierList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
 
+
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+            let DeleteResult= await DeleteSupplierRequest(id)
+            if(DeleteResult){
+                await SupplierListRequest(1,perPage,searchKeyword);
+            }
+        }
     }
 
     return (
@@ -101,13 +113,12 @@ const SupplierList = () => {
                                                                 <td><p className="text-xs text-start">{item.Name}</p></td>
                                                                 <td><p className="text-xs text-start">{item.Phone}</p></td>
                                                                 <td><p className="text-xs text-start">{item.Email}</p></td>
-
                                                                 <td>
                                                                     <Link to={`/SupplierCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
-                                                                    <button onClick={DetailsPopUp.bind(this,item)} className="btn btn-outline-light text-success p-2 mb-0 btn-sm ms-2">
-                                                                        <AiOutlineEye size={15} />
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
                                                                     </button>
                                                                 </td>
                                                             </tr>

@@ -4,6 +4,9 @@ export const brandSlice=createSlice({
     initialState:{
         List:[],
         ListTotal:0,
+        FormValue:{
+            Name:""
+        }
     },
     reducers:{
         SetBrandList:(state,action)=>{
@@ -11,8 +14,15 @@ export const brandSlice=createSlice({
         },
         SetBrandListTotal:(state,action)=>{
             state.ListTotal=action.payload
+        },
+        OnChangeBrandInput:(state,action)=>{
+            state.FormValue[`${action.payload.Name}`]=action.payload.Value;
+        },
+        ResetBrandFormValue:(state,action)=>{
+            Object.keys(state.FormValue).forEach((i) => state.FormValue[i] = "");
         }
     }
 })
-export  const {SetBrandList,SetBrandListTotal}=brandSlice.actions;
+
+export  const {SetBrandList,SetBrandListTotal,OnChangeBrandInput,ResetBrandFormValue}=brandSlice.actions;
 export default  brandSlice.reducer;

@@ -3,13 +3,9 @@ import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import axios from "axios";
 import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import {getToken} from "../helper/SessionHelper";
-import {
-    OnChangeCustomerInput,
-    ResetFormValue,
-    SetCustomerList,
-    SetCustomerListTotal
-} from "../redux/state-slice/customer-slice";
+import {OnChangeCustomerInput, ResetFormValue, SetCustomerList, SetCustomerListTotal} from "../redux/state-slice/customer-slice";
 import {BaseURL} from "../helper/config";
+
 const AxiosHeader={headers:{"token":getToken()}}
 
 export async function CustomerListRequest(pageNo, perPage, searchKeyword) {
@@ -51,7 +47,6 @@ export async function CreateCustomerRequest(PostBody,ObjectID) {
             SuccessToast("Request Successful");
             store.dispatch(ResetFormValue())
             return  true;
-
         }
         else if(result.status === 200 && result.data['status'] === "fail") {
             if(result.data['data']['keyPattern']['Phone']===1){
@@ -79,17 +74,11 @@ export async function FillCustomerFormRequest(ObjectID) {
         const result = await axios.get(URL,AxiosHeader)
         store.dispatch(HideLoader())
         if (result.status === 200 && result.data['status'] === "success") {
-
             let FormValue=result.data['data'][0];
-
             store.dispatch(OnChangeCustomerInput({Name:"CustomerName",Value:FormValue['CustomerName']}));
             store.dispatch(OnChangeCustomerInput({Name:"Phone",Value:FormValue['Phone']}));
             store.dispatch(OnChangeCustomerInput({Name:"Email",Value:FormValue['Email']}));
             store.dispatch(OnChangeCustomerInput({Name:"Address",Value:FormValue['Address']}));
-
-            debugger;
-
-
             return  true;
         } else {
             debugger;
@@ -104,7 +93,6 @@ export async function FillCustomerFormRequest(ObjectID) {
         return  false
     }
 }
-
 
 
 export async function DeleteCustomerRequest(ObjectID) {
@@ -132,12 +120,5 @@ export async function DeleteCustomerRequest(ObjectID) {
         return  false
     }
 }
-
-
-
-
-
-
-
 
 
