@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/inventory-mern-backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/BrandAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/BrandAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/CategoryAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/CategoryAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/CustomerAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/CustomerAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/ExpenseTypeAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ExpenseTypeAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/SupplierAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SupplierAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Brand/BrandCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Brand/BrandCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Brand/BrandList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Brand/BrandList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/CategoryCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/CategoryCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/CategoryList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/CategoryList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExpenseType/ExpenseTypeList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Supplier/SupplierCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Supplier/SupplierCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Supplier/SupplierList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Supplier/SupplierList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Category/CategoryCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Category/CategoryCreateUpdatePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ExpenseType/ExpenseTypeCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ExpenseType/ExpenseTypeCreateUpdatePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Supplier/SupplierCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Supplier/SupplierCreateUpdatePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/brand-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/brand-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/category-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/category-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/expensetype-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/expensetype-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/supplier-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/supplier-slice.js" afterDir="false" />
-    </list>
+    <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,17 +19,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/helper" />
@@ -85,6 +58,10 @@
       <workItem from="1664967928332" duration="3934000" />
       <workItem from="1664978789577" duration="3753000" />
       <workItem from="1664986499374" duration="1595000" />
+      <workItem from="1665156394248" duration="17000" />
+      <workItem from="1665215975287" duration="2648000" />
+      <workItem from="1665242319728" duration="6879000" />
+      <workItem from="1665324396743" duration="613000" />
     </task>
     <servers />
   </component>
@@ -101,6 +78,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

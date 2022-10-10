@@ -1,10 +1,12 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {ExpenseListRequest} from "../../APIRequest/ExpenseAPIRequest";
+import {DeleteExpenseRequest, ExpenseListRequest} from "../../APIRequest/ExpenseAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import ReactPaginate from "react-paginate";
 import CurrencyFormat from "react-currency-format";
+import {DeleteAlert} from "../../helper/DeleteAlert";
+import {BrandListRequest, DeleteBrandRequest} from "../../APIRequest/BrandAPIRequest";
 
 const ExpenseList = () => {
     let [searchKeyword,setSearchKeyword]=useState("0");
@@ -20,8 +22,11 @@ const ExpenseList = () => {
     let Total=useSelector((state)=>(state.expense.ListTotal))
 
     const handlePageClick = async (event) => {
+        debugger;
         await ExpenseListRequest(event.selected + 1, perPage, searchKeyword)
     };
+
+
     const searchData=async () => {
         await ExpenseListRequest(1, perPage, searchKeyword)
     }
@@ -29,6 +34,7 @@ const ExpenseList = () => {
         setPerPage(parseInt(e.target.value))
         await ExpenseListRequest(1, e.target.value, searchKeyword)
     }
+
     const searchKeywordOnChange=async (e) => {
         setSearchKeyword(e.target.value)
         if ((e.target.value).length === 0) {
@@ -43,9 +49,18 @@ const ExpenseList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
 
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+            let DeleteResult= await DeleteExpenseRequest(id)
+            if(DeleteResult){
+                await ExpenseListRequest(1,perPage,searchKeyword);
+            }
+        }
     }
+
+
 
     return (
         <Fragment>
@@ -98,7 +113,7 @@ const ExpenseList = () => {
                                                         DataList.map((item,i)=>
                                                             <tr>
                                                                 <td><p className="text-xs text-start">{i+1}</p></td>
-                                                                <td><p className="text-xs text-start">{item.Type[0]['Name']}</p></td>
+                                                                <td><p className="text-xs text-start">{item.Type[0]?item.Type[0]['Name']:""}</p></td>
                                                                 <td><p className="text-xs text-start">
                                                                     <CurrencyFormat value={item.Amount} displayType={'text'} thousandSeparator={true} prefix={'$'} />
                                                                 </p></td>
@@ -107,11 +122,13 @@ const ExpenseList = () => {
                                                                     <Link to={`/ExpenseCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
+                                                                    </button>
                                                                 </td>
                                                             </tr>
                                                         )
                                                     }
-
                                                     </tbody>
                                                 </table>
                                             </div>

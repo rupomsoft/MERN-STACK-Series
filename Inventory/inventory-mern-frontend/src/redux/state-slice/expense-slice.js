@@ -4,6 +4,12 @@ export const expenseSlice=createSlice({
     initialState:{
         List:[],
         ListTotal:0,
+        ExpenseTypeDropDown:[],
+        FormValue:{
+            TypeID:"",
+            Amount:"",
+            Note:""
+        }
     },
     reducers:{
         SetExpenseList:(state,action)=>{
@@ -11,9 +17,18 @@ export const expenseSlice=createSlice({
         },
         SetExpenseListTotal:(state,action)=>{
             state.ListTotal=action.payload
+        },
+        SetExpenseTypeDropDown:(state,action)=>{
+            state.ExpenseTypeDropDown=action.payload
+        },
+        OnChangeExpenseInput:(state,action)=>{
+            state.FormValue[`${action.payload.Name}`]=action.payload.Value;
+        },
+        ResetExpenseFormValue:(state,action)=>{
+            Object.keys(state.FormValue).forEach((i) => state.FormValue[i] = "");
         }
     }
 })
 
-export  const {SetExpenseList,SetExpenseListTotal}=expenseSlice.actions;
+export  const {SetExpenseList,SetExpenseListTotal,OnChangeExpenseInput,SetExpenseTypeDropDown,ResetExpenseFormValue}=expenseSlice.actions;
 export default  expenseSlice.reducer;
