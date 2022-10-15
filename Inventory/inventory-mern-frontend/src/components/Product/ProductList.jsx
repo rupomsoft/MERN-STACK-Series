@@ -1,11 +1,12 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import {ProductListRequest} from "../../APIRequest/ProductAPIRequest";
+import {DeleteProductRequest, ProductListRequest} from "../../APIRequest/ProductAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {DeleteAlert} from "../../helper/DeleteAlert";
+import {DeleteExpenseRequest, ExpenseListRequest} from "../../APIRequest/ExpenseAPIRequest";
 import ReactPaginate from "react-paginate";
-import Swal from "sweetalert2";
-import moment from "moment";
+
 
 const ProductList = () => {
     let [searchKeyword,setSearchKeyword]=useState("0");
@@ -20,16 +21,24 @@ const ProductList = () => {
     let DataList=useSelector((state)=>(state.product.List));
     let Total=useSelector((state)=>(state.product.ListTotal))
 
+
+
     const handlePageClick = async (event) => {
         await ProductListRequest(event.selected + 1, perPage, searchKeyword)
     };
+
+
     const searchData=async () => {
         await ProductListRequest(1, perPage, searchKeyword)
     }
+
+
     const perPageOnChange=async (e) => {
         setPerPage(parseInt(e.target.value))
         await ProductListRequest(1, e.target.value, searchKeyword)
     }
+
+
     const searchKeywordOnChange=async (e) => {
         setSearchKeyword(e.target.value)
         if ((e.target.value).length === 0) {
@@ -44,23 +53,17 @@ const ProductList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
-        Swal.fire({
-            html:`
-                <ul class="list-group text-start list-group-flush">
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Name :</b> ${item.Name}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Unit :</b> ${item.Unit} </span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Details :</b> ${item.Details}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Created Date</b> ${moment(item.CreatedDate).format('MMMM Do YYYY')}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Brand :</b> ${item.brands[0]['Name']}</span></li>
-                     <li class="list-group-item"><span class="text-xs text-start"><b>Category :</b> ${item.categories[0]['Name']}</span></li>
-                </ul>
-                `,
-            showCloseButton: true,
-            showConfirmButton: false,
-            focusCancel: false,
-        })
+
+    const DeleteItem = async (id) => {
+        let Result = await DeleteAlert();
+        if(Result.isConfirmed){
+            let DeleteResult= await DeleteProductRequest(id)
+            if(DeleteResult){
+                await ProductListRequest(1,perPage,searchKeyword);
+            }
+        }
     }
+
 
     return (
         <Fragment>
@@ -105,6 +108,7 @@ const ProductList = () => {
                                                         <td className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Unit</td>
                                                         <td className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Brand</td>
                                                         <td className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Categories</td>
+                                                        <td className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Details</td>
                                                         <td className="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</td>
                                                     </tr>
                                                     </thead>
@@ -114,14 +118,15 @@ const ProductList = () => {
                                                             <tr>
                                                                 <td><p className="text-xs text-start">{item.Name}</p></td>
                                                                 <td><p className="text-xs text-start">{item.Unit}</p></td>
-                                                                <td><p className="text-xs text-start">{item.brands[0]['Name']}</p></td>
-                                                                <td><p className="text-xs text-start">{item.categories[0]['Name']}</p></td>
+                                                                <td><p className="text-xs text-start">{item.brands[0]?item.brands[0]['Name']:""}</p></td>
+                                                                <td><p className="text-xs text-start">{item.categories[0]?item.categories[0]['Name']:""}</p></td>
+                                                                <td><p className="text-xs text-start">{item.Details}</p></td>
                                                                 <td>
                                                                     <Link to={`/ProductCreateUpdatePage?id=${item._id}`} className="btn text-info btn-outline-light p-2 mb-0 btn-sm">
                                                                         <AiOutlineEdit size={15} />
                                                                     </Link>
-                                                                    <button onClick={DetailsPopUp.bind(this,item)} className="btn btn-outline-light text-success p-2 mb-0 btn-sm ms-2">
-                                                                        <AiOutlineEye size={15} />
+                                                                    <button onClick={DeleteItem.bind(this,item._id)} className="btn btn-outline-light text-danger p-2 mb-0 btn-sm ms-2">
+                                                                        <AiOutlineDelete size={15} />
                                                                     </button>
                                                                 </td>
                                                             </tr>

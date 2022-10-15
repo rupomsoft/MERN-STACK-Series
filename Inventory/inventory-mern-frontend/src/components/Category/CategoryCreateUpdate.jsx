@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import store from "../../redux/store/store";
 import {useSelector} from "react-redux";
 import {useNavigate} from "react-router-dom";
-import {CreateBrandRequest} from "../../APIRequest/BrandAPIRequest";
 import {ErrorToast, IsEmpty} from "../../helper/FormHelper";
 import {CreateCategoryRequest, FillCategoryFormRequest} from "../../APIRequest/CategoryAPIRequest";
 import {OnChangeCategoryInput} from "../../redux/state-slice/category-slice";

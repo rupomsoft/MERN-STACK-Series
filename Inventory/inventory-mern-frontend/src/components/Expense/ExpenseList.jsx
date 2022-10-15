@@ -50,6 +50,7 @@ const ExpenseList = () => {
         })
     }
 
+
     const DeleteItem = async (id) => {
         let Result = await DeleteAlert();
         if(Result.isConfirmed){
@@ -59,7 +60,6 @@ const ExpenseList = () => {
             }
         }
     }
-
 
 
     return (
