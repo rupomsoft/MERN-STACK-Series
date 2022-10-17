@@ -11,7 +11,6 @@ import {
     SetExpenseTypeDropDown
 } from "../redux/state-slice/expense-slice";
 import {BaseURL} from "../helper/config";
-import {OnChangeCustomerInput} from "../redux/state-slice/customer-slice";
 const AxiosHeader={headers:{"token":getToken()}}
 
 export async function ExpenseListRequest(pageNo, perPage, searchKeyword) {

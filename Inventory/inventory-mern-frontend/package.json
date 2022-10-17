@@ -7,6 +7,7 @@
     "axios": "^0.22.0",
     "bootstrap": "^5.1.0",
     "cogo-toast": "^4.2.3",
+    "export-from-json": "^1.7.0",
     "moment": "^2.29.4",
     "react": "18.0.0",
     "react-bootstrap": "^2.0.0-beta.6",
@@ -14,13 +15,13 @@
     "react-currency-format": "^1.1.0",
     "react-dom": "18.0.0",
     "react-icons": "^4.2.0",
+    "react-paginate": "^8.1.3",
     "react-redux": "^8.0.2",
     "react-router-dom": "6.3.0",
     "react-scripts": "4.0.0",
     "recharts": "^2.1.11",
     "redux": "^4.2.0",
-    "sweetalert2": "^11.4.14",
-    "react-paginate": "^8.1.3"
+    "sweetalert2": "^11.4.14"
   },
   "scripts": {
     "start": "react-scripts start",

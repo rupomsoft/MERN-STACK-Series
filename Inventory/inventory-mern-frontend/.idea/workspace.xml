@@ -3,13 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/ProductAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ProductAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Category/CategoryCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Category/CategoryCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Expense/ExpenseList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Expense/ExpenseList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Product/ProductCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/ProductCreateUpdatePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/product-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/product-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/ReportAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ReportAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Report/ExpenseReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/ExpenseReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Report/PurchaseReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/PurchaseReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Report/ReturnReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/ReturnReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Report/SaleReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/SaleReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Report/ExpenseReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/ExpenseReportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Report/PurchaseReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/PurchaseReportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Report/ReturnReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/ReturnReportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Report/SaleReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/SaleReportPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +82,9 @@
       <workItem from="1665410871411" duration="4195000" />
       <workItem from="1665514051584" duration="434000" />
       <workItem from="1665514499028" duration="595000" />
+      <workItem from="1665849001735" duration="648000" />
+      <workItem from="1666015252411" duration="632000" />
+      <workItem from="1666017799542" duration="10002000" />
     </task>
     <servers />
   </component>

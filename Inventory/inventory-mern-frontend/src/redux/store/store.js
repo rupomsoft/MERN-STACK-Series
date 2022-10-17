@@ -14,6 +14,7 @@ import reportReducer from "../state-slice/report-slice";
 import returnReducer from "../state-slice/return-slice"
 import saleReducer from "../state-slice/sale-slice"
 
+
 export default configureStore({
     reducer:{
         settings:settingsReducer,
