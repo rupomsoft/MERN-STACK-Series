@@ -23,16 +23,13 @@ const SalesCreateUpdate = () => {
             <div className="container-fluid">
                 <div className="row">
 
-                    <div className="col-12 mb-3">
+                    <div className="col-12 col-md-4 col-lg-4 mb-3">
                         <div className="card">
                             <div className="card-body">
                                 <div className="row">
                                     <h5 >Create Sales</h5>
                                     <hr className="bg-light"/>
-
-
-
-                                    <div className="col-4 p-2">
+                                    <div className="col-12 p-1">
                                         <label className="form-label">Customer</label>
                                         <select  className="form-select form-select-sm">
                                             <option value="">Select Type</option>
@@ -44,33 +41,33 @@ const SalesCreateUpdate = () => {
                                         </select>
                                     </div>
 
-                                    <div className="col-4 p-2">
+                                    <div className="col-12 p-1">
                                         <label className="form-label">Vat/Tax</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
 
-                                    <div className="col-4 p-2">
+                                    <div className="col-12 p-1">
                                         <label className="form-label">Discount</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
 
-                                    <div className="col-4 p-2">
-                                        <label className="form-label">OtherCost</label>
+                                    <div className="col-12 p-1">
+                                        <label className="form-label">Other Cost</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
 
-                                    <div className="col-4 p-2">
-                                        <label className="form-label">ShippingCost</label>
+                                    <div className="col-12 p-1">
+                                        <label className="form-label">Shipping Cost</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
 
-                                    <div className="col-4 p-2">
-                                        <label className="form-label">GrandTotal</label>
+                                    <div className="col-12 p-1">
+                                        <label className="form-label">Grand Total</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
 
 
-                                    <div className="col-4 p-2">
+                                    <div className="col-12 p-1">
                                         <label className="form-label">Note</label>
                                         <input  className="form-control form-control-sm" type="number"/>
                                     </div>
