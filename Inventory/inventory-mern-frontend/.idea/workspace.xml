@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/utility/CreateToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/utility/CreateToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ExpenseAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/ReportAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/ReportAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Report/ExpenseReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/ExpenseReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Report/PurchaseReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/PurchaseReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Report/ReturnReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/ReturnReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Report/SaleReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Report/SaleReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Report/ExpenseReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/ExpenseReportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Report/PurchaseReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/PurchaseReportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Report/ReturnReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/ReturnReportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Report/SaleReportPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Report/SaleReportPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/report-slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Sales/SalesCreateUpdatePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Sales/SalesCreateUpdatePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +76,10 @@
       <workItem from="1665849001735" duration="648000" />
       <workItem from="1666015252411" duration="632000" />
       <workItem from="1666017799542" duration="10002000" />
+      <workItem from="1666181671748" duration="2000" />
+      <workItem from="1666192658700" duration="687000" />
+      <workItem from="1666195102837" duration="2000" />
+      <workItem from="1666717945024" duration="1962000" />
     </task>
     <servers />
   </component>
