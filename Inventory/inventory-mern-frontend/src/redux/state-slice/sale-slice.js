@@ -5,6 +5,7 @@ export const saleSlice=createSlice({
         List:[],
         ListTotal:0,
         CustomerDropDown:[],
+        ProductDropDown:[],
         SaleFormValue:{
             CustomerID:"",
             VatTax:"",
@@ -26,11 +27,20 @@ export const saleSlice=createSlice({
         SetCustomerDropDown:(state,action)=>{
             state.CustomerDropDown=action.payload
         },
+        SetProductDropDown:(state,action)=>{
+            state.ProductDropDown=action.payload
+        },
         OnChangeSaleInput:(state,action)=>{
             state.SaleFormValue[`${action.payload.Name}`]=action.payload.Value;
+        },
+        SetSaleItemList:(state,action)=>{
+            state.SaleItemList.push(action.payload)
+        },
+        RemoveSaleItem:(state,action)=>{
+            state.SaleItemList.splice(action.payload,1)
         },
     }
 })
 
-export  const {SetSaleList,SetSaleListTotal,SetCustomerDropDown}=saleSlice.actions;
+export  const {RemoveSaleItem,SetSaleList,SetProductDropDown,SetSaleItemList,SetSaleListTotal,SetCustomerDropDown}=saleSlice.actions;
 export default  saleSlice.reducer;

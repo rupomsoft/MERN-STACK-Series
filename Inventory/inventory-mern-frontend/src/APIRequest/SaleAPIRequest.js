@@ -3,9 +3,8 @@ import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import axios from "axios";
 import {ErrorToast} from "../helper/FormHelper";
 import {getToken} from "../helper/SessionHelper";
-import {SetCustomerDropDown, SetSaleList, SetSaleListTotal} from "../redux/state-slice/sale-slice";
+import {SetCustomerDropDown, SetProductDropDown, SetSaleList, SetSaleListTotal} from "../redux/state-slice/sale-slice";
 import {BaseURL} from "../helper/config";
-import {SetProductBrandDropDown} from "../redux/state-slice/product-slice";
 const AxiosHeader={headers:{"token":getToken()}}
 
 export async function SaleListRequest(pageNo, perPage, searchKeyword) {
@@ -59,15 +58,15 @@ export async function CustomerDropDownRequest() {
 export async function ProductDropDownRequest() {
     try {
         store.dispatch(ShowLoader());
-        let URL = BaseURL+"/CustomersDropDown";
+        let URL = BaseURL+"/ProductsDropDown";
         const result = await axios.get(URL,AxiosHeader)
         store.dispatch(HideLoader())
         if (result.status === 200 && result.data['status'] === "success") {
             if (result.data['data'].length > 0) {
-                store.dispatch(SetCustomerDropDown(result.data['data']))
+                store.dispatch(SetProductDropDown(result.data['data']))
             } else {
-                store.dispatch(SetCustomerDropDown([]));
-                ErrorToast("No Customer Found");
+                store.dispatch(SetProductDropDown([]));
+                ErrorToast("No Product Found");
             }
         } else {
             ErrorToast("Something Went Wrong")

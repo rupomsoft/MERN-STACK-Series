@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/controllers/Products/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/controllers/Products/ProductsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,9 @@
       <workItem from="1666181671748" duration="2000" />
       <workItem from="1666192658700" duration="687000" />
       <workItem from="1666195102837" duration="2000" />
-      <workItem from="1666717945024" duration="3023000" />
+      <workItem from="1666717945024" duration="3618000" />
+      <workItem from="1666790032721" duration="3060000" />
+      <workItem from="1666808421001" duration="2064000" />
     </task>
     <servers />
   </component>

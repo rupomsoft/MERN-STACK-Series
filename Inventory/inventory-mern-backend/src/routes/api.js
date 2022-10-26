@@ -88,6 +88,7 @@ router.post("/UpdateProducts/:id",AuthVerifyMiddleware,ProductsController.Update
 router.get("/ProductsList/:pageNo/:perPage/:searchKeyword",AuthVerifyMiddleware,ProductsController.ProductsList);
 router.get("/DeleteProduct/:id",AuthVerifyMiddleware,ProductsController.DeleteProduct);
 router.get("/ProductsDetailsByID/:id",AuthVerifyMiddleware,ProductsController.ProductsDetailsByID);
+router.get("/ProductsDropDown",AuthVerifyMiddleware,ProductsController.ProductsDropDown);
 
 
 //Purchases
