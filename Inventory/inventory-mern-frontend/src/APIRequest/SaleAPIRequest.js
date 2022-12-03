@@ -5,7 +5,6 @@ import {ErrorToast, SuccessToast} from "../helper/FormHelper";
 import {getToken} from "../helper/SessionHelper";
 import {SetCustomerDropDown, SetProductDropDown, SetSaleList, SetSaleListTotal} from "../redux/state-slice/sale-slice";
 import {BaseURL} from "../helper/config";
-import {ResetBrandFormValue} from "../redux/state-slice/brand-slice";
 const AxiosHeader={headers:{"token":getToken()}}
 
 export async function SaleListRequest(pageNo, perPage, searchKeyword) {

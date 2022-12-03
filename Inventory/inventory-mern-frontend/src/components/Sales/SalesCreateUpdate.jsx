@@ -60,7 +60,7 @@ const SalesCreateUpdate = () => {
 
 
     const CreateNewSale=async () => {
-        // Apply Validation 
+        // Apply Validation
        let res= await CreateSaleRequest(SaleFormValue, SaleItemList);
        alert(res);
     }
