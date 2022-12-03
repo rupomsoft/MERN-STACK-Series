@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/controllers/Products/ProductsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/controllers/Products/ProductsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/SaleAPIRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sales/SalesCreateUpdate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state-slice/sale-slice.js" afterDir="false" />
-    </list>
+    <list default="true" id="b9de4a2d-56d1-49bc-ab67-5e45b1158f68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,16 +19,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/helper" />
@@ -82,6 +78,7 @@
       <workItem from="1666717945024" duration="3618000" />
       <workItem from="1666790032721" duration="3060000" />
       <workItem from="1666808421001" duration="2064000" />
+      <workItem from="1670092811343" duration="2698000" />
     </task>
     <servers />
   </component>
