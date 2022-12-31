@@ -1,15 +1,16 @@
 import React, {Fragment, useEffect, useRef} from 'react';
-import {CustomerDropDownRequest, ProductDropDownRequest} from "../../APIRequest/SaleAPIRequest";
+import {CreateSaleRequest, CustomerDropDownRequest, ProductDropDownRequest} from "../../APIRequest/SaleAPIRequest";
 import {useSelector} from "react-redux";
 import {BsCartCheck, BsTrash} from "react-icons/all";
 import {ErrorToast, IsEmpty} from "../../helper/FormHelper";
 import store from "../../redux/store/store";
-import {RemoveSaleItem, SetSaleItemList} from "../../redux/state-slice/sale-slice";
+import {OnChangeSaleInput, RemoveSaleItem, SetSaleItemList} from "../../redux/state-slice/sale-slice";
+
 
 
 const SalesCreateUpdate = () => {
 
-    let productRef,qtyRef,unitPriceRef,noteRef,grandTotalRef, shippingCostRef, otherCostRef, discountRef, vatRef, customerRef=useRef();
+    let productRef,qtyRef,unitPriceRef=useRef();
 
     useEffect(()=>{
         (async () => {
@@ -22,7 +23,7 @@ const SalesCreateUpdate = () => {
     let CustomerDropDown=useSelector((state)=>(state.sale.CustomerDropDown));
     let ProductDropDown=useSelector((state)=>(state.sale.ProductDropDown));
     let SaleItemList=useSelector((state)=>(state.sale.SaleItemList));
-
+    let SaleFormValue=useSelector((state)=>(state.sale.SaleFormValue));
 
     const OnAddCart = () => {
        let productValue=productRef.value;
@@ -58,6 +59,15 @@ const SalesCreateUpdate = () => {
     }
 
 
+    const CreateNewSale=async () => {
+        // Apply Validation
+       let res= await CreateSaleRequest(SaleFormValue, SaleItemList);
+       alert(res);
+    }
+
+
+
+
     return (
         <Fragment>
             <div className="container-fluid">
@@ -70,7 +80,7 @@ const SalesCreateUpdate = () => {
                                     <hr className="bg-light"/>
                                     <div className="col-12 p-1">
                                         <label className="form-label">Customer</label>
-                                        <select ref={(input)=>customerRef=input} className="form-select form-select-sm">
+                                        <select onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"CustomerID",Value:e.target.value}))}} className="form-select form-select-sm">
                                             <option value="">Select Customer</option>
                                             {
                                                 CustomerDropDown.map((item,i)=>{
@@ -82,40 +92,40 @@ const SalesCreateUpdate = () => {
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Vat/Tax</label>
-                                        <input ref={(input)=>vatRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"VatTax",Value:e.target.value}))}} className="form-control form-control-sm" type="number"/>
                                     </div>
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Discount</label>
-                                        <input ref={(input)=>discountRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"Discount",Value:e.target.value}))}} className="form-control form-control-sm" type="number"/>
                                     </div>
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Other Cost</label>
-                                        <input ref={(input)=>otherCostRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input  onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"OtherCost",Value:e.target.value}))}} className="form-control form-control-sm" type="number"/>
                                     </div>
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Shipping Cost</label>
-                                        <input ref={(input)=>shippingCostRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"ShippingCost",Value:e.target.value}))}}  className="form-control form-control-sm" type="number"/>
                                     </div>
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Grand Total</label>
-                                        <input ref={(input)=>grandTotalRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"GrandTotal",Value:e.target.value}))}}  className="form-control form-control-sm" type="number"/>
                                     </div>
 
 
                                     <div className="col-12 p-1">
                                         <label className="form-label">Note</label>
-                                        <input ref={(input)=>noteRef=input} className="form-control form-control-sm" type="number"/>
+                                        <input  onChange={(e)=>{store.dispatch(OnChangeSaleInput({Name:"Note",Value:e.target.value}))}}  className="form-control form-control-sm" type="number"/>
                                     </div>
 
 
                                 </div>
                                 <div className="row">
                                     <div className="col-4 p-2">
-                                        <button  className="btn btn-sm my-3 btn-success">Create</button>
+                                        <button onClick={CreateNewSale} className="btn btn-sm my-3 btn-success">Create</button>
                                     </div>
                                 </div>
                             </div>

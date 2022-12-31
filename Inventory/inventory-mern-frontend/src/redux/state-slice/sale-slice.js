@@ -42,5 +42,5 @@ export const saleSlice=createSlice({
     }
 })
 
-export  const {RemoveSaleItem,SetSaleList,SetProductDropDown,SetSaleItemList,SetSaleListTotal,SetCustomerDropDown}=saleSlice.actions;
+export  const {RemoveSaleItem,SetSaleList,SetProductDropDown,SetSaleItemList,SetSaleListTotal,SetCustomerDropDown,OnChangeSaleInput}=saleSlice.actions;
 export default  saleSlice.reducer;
