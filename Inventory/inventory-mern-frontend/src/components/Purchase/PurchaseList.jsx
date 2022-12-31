@@ -43,7 +43,7 @@ const PurchaseList = () => {
             row.style.display = (row.innerText.includes(e.target.value)) ? '' : 'none'
         })
     }
-    const DetailsPopUp = (item) => {
+    const DetailsPopUp = () => {
 
     }
 
@@ -98,7 +98,7 @@ const PurchaseList = () => {
                                                     </thead>
                                                     <tbody>
                                                     {
-                                                        DataList.map((item,i)=>
+                                                        DataList.map((item)=>
                                                             <tr>
                                                                 <td>
                                                                     <p className="text-xs text-start">{item.suppliers[0]['Name']}</p>

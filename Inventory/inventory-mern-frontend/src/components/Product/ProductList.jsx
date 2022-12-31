@@ -2,9 +2,8 @@ import React, {Fragment, useEffect, useState} from 'react';
 import {DeleteProductRequest, ProductListRequest} from "../../APIRequest/ProductAPIRequest";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-import {AiOutlineDelete, AiOutlineEdit, AiOutlineEye} from "react-icons/all";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/all";
 import {DeleteAlert} from "../../helper/DeleteAlert";
-import {DeleteExpenseRequest, ExpenseListRequest} from "../../APIRequest/ExpenseAPIRequest";
 import ReactPaginate from "react-paginate";
 
 
@@ -114,7 +113,7 @@ const ProductList = () => {
                                                     </thead>
                                                     <tbody>
                                                     {
-                                                        DataList.map((item,i)=>
+                                                        DataList.map((item)=>
                                                             <tr>
                                                                 <td><p className="text-xs text-start">{item.Name}</p></td>
                                                                 <td><p className="text-xs text-start">{item.Unit}</p></td>

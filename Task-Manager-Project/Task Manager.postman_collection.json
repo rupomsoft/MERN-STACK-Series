@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "093903f0-773d-456e-8150-ac9d2306a771",
+		"_postman_id": "9aa79862-ad7b-46f0-a419-7582888d70ee",
 		"name": "Task Manager",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "9518923"
@@ -39,7 +39,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"rabbil@rabbil.com\",\r\n    \"password\":\"1234\"\r\n}",
+					"raw": "{\r\n    \"email\":\"rabbilidlc@gmail.com\",\r\n    \"password\":\"123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -134,12 +134,11 @@
 					}
 				],
 				"url": {
-					"raw": "{{BaseURL}}//updateTaskStatus/62b7582fac0007cc76c29b53/Progress",
+					"raw": "{{BaseURL}}/updateTaskStatus/62b7582fac0007cc76c29b53/Progress",
 					"host": [
 						"{{BaseURL}}"
 					],
 					"path": [
-						"",
 						"updateTaskStatus",
 						"62b7582fac0007cc76c29b53",
 						"Progress"
@@ -217,15 +216,44 @@
 			"name": "RecoverVerifyOTP",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/RecoverVerifyOTP/rabbilidlc@gmail.com/3344",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"RecoverVerifyOTP",
+						"rabbilidlc@gmail.com",
+						"3344"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "RecoverResetPass",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"\",\r\n    \"OTP\":\"\",\r\n    \"password\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/RecoverResetPass",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"RecoverResetPass"
+					]
+				}
 			},
 			"response": []
 		}
@@ -253,7 +281,7 @@
 	"variable": [
 		{
 			"key": "BaseURL",
-			"value": "https://mern-task-manager-rabbil.herokuapp.com/api/v1",
+			"value": "https://task.teamrabbil.com/api/v1",
 			"type": "string"
 		},
 		{
