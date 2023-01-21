@@ -12,9 +12,9 @@ const AxiosHeader={headers:{"token":getToken()}}
 
 export function NewTaskRequest(title,description){
 
-    
+
     store.dispatch(ShowLoader())
-    
+
     let URL=BaseURL+"/createTask";
     let PostBody={"title":title,"description":description,status:"New"}
 
@@ -92,6 +92,19 @@ export function RegistrationRequest(email,firstName,lastName,mobile,password,pho
         return false;
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function TaskListByStatus(Status){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/listTaskByStatus/"+Status;
@@ -120,6 +133,35 @@ export function TaskListByStatus(Status){
         store.dispatch(HideLoader())
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function SummaryRequest(){
     store.dispatch(ShowLoader())
     let URL=BaseURL+"/taskStatusCount";

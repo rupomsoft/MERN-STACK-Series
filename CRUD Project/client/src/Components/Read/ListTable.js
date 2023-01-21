@@ -8,6 +8,7 @@ const ListTable = (props) => {
     let [DataList,SetDataList]=useState([]);
 
     useEffect(()=>{
+
         Read().then((Result)=>{
             SetDataList(Result)
         })
@@ -54,6 +55,7 @@ const ListTable = (props) => {
                                     <tbody>
                                     {
                                         DataList.map((item,i)=>{
+                                            debugger;
                                             return(
                                                 <tr>
                                                     <td>

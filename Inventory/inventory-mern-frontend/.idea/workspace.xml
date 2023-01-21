@@ -1,62 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dca8776-aeae-4870-b10d-3d80fba1b79d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/inventory-mern-backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="9a6fc238-a557-4664-9304-9b3ad406bdcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/Demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inventory-mern-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inventory-mern-frontend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Purchase/PurchaseList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Purchase/PurchaseList.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2IPpqpV5Iob41ZWPIgDcbAM8usD" />
+  <component name="ProjectId" id="2JrxebekfRfrT6Q9uz2S7VEkGiS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1dca8776-aeae-4870-b10d-3d80fba1b79d" name="Changes" comment="" />
-      <created>1670093265719</created>
+      <changelist id="9a6fc238-a557-4664-9304-9b3ad406bdcb" name="Default Changelist" comment="" />
+      <created>1672850099690</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1670093265719</updated>
-      <workItem from="1670093267542" duration="697000" />
-      <workItem from="1670426430437" duration="1165000" />
-      <workItem from="1670512839535" duration="596000" />
+      <updated>1672850099690</updated>
+      <workItem from="1672850101905" duration="573000" />
+      <workItem from="1672932260668" duration="6000" />
     </task>
     <servers />
   </component>
@@ -73,5 +74,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="649" y="101" key="SettingsEditor" timestamp="1672850151083">
+      <screen x="0" y="0" width="2293" height="912" />
+    </state>
+    <state x="649" y="101" key="SettingsEditor/0.0.2293.912@0.0.2293.912" timestamp="1672850151083" />
   </component>
 </project>

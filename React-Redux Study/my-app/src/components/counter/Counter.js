@@ -2,8 +2,11 @@ import React, {useRef} from 'react';
 import {useSelector,useDispatch} from "react-redux";
 import {decrement, increment, setCustom} from "../../redux/state/counter/counterSlice";
 const Counter = () => {
+
+
     const myNumber=useRef();
-    const  count= useSelector((state)=>state.counter.value);
+
+    const count= useSelector((state)=>state.counter.value);
     const dispatch= useDispatch();
 
 
