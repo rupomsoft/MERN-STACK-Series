@@ -1,0 +1,12 @@
+.data-table {
+    height: 450px !important;
+    overflow: auto;
+    scrollbar-color: #CCCCCC #F5F5F5;
+    scrollbar-width: thin;
+}
+.data-table-head {
+    height: 450px !important;
+    overflow: auto;
+    scrollbar-color: #CCCCCC #F5F5F5;
+    scrollbar-width: thin;
+}

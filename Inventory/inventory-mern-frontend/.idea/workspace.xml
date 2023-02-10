@@ -20,9 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a6fc238-a557-4664-9304-9b3ad406bdcb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/Demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inventory-mern-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inventory-mern-frontend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/mern-task-manager-combine.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/controllers/TasksController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/controllers/UsersController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/middleware/AuthVerifyMiddleware.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/OTPModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/TasksModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/UsersModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/routes/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/utility/SendEmailUtility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil-front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil-front/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +75,7 @@
       <updated>1672850099690</updated>
       <workItem from="1672850101905" duration="573000" />
       <workItem from="1672932260668" duration="6000" />
+      <workItem from="1675528615712" duration="1695000" />
     </task>
     <servers />
   </component>

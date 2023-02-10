@@ -23,6 +23,10 @@ export function Create(ProductName,ProductCode,Img,UnitPrice,Qty,TotalPrice){
     });
 }
 
+
+
+
+
 export function Read(){
   let URL="/api/v1/ReadProduct";
   return axios.get(URL).then((res)=>{
@@ -37,6 +41,10 @@ export function Read(){
         return false;
     });
 }
+
+
+
+
 
 export function ReadByID(id){
     let URL="/api/v1/ReadProductByID/"+id;
@@ -69,6 +77,10 @@ export function Delete(id){
         return false;
     });
 }
+
+
+
+
 
 export function Update(id,ProductName,ProductCode,Img,UnitPrice,Qty,TotalPrice){
     let URL="/api/v1/UpdateProduct/"+id;

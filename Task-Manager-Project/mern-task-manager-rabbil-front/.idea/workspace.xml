@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,21 +23,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="044e6d61-5161-488f-b16f-06bd3facaf2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/Demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/inventory-mern-frontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/inventory-mern-frontend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/components/counter/Counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/components/counter/Counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/redux/state/counter/counterSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../React-Redux Study/my-app/src/redux/state/counter/counterSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/APIRequest/APIRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/mern-task-manager-combine.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/controllers/TasksController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/controllers/UsersController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/middleware/AuthVerifyMiddleware.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/OTPModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/TasksModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/UsersModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/routes/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/utility/SendEmailUtility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JxWKeQ6OX6eKhHYw0PVI6D5YYS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,12 +65,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +89,11 @@
       <workItem from="1673020152948" duration="260000" />
       <workItem from="1673021386914" duration="787000" />
       <workItem from="1673451302206" duration="390000" />
+      <workItem from="1674920930904" duration="226000" />
+      <workItem from="1674921394723" duration="612000" />
+      <workItem from="1674923648610" duration="5000" />
+      <workItem from="1675871598976" duration="1531000" />
+      <workItem from="1675874048094" duration="1000" />
     </task>
     <servers />
   </component>
@@ -75,6 +110,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
