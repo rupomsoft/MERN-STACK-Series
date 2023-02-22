@@ -28,15 +28,22 @@ export function Create(ProductName,ProductCode,Img,UnitPrice,Qty,TotalPrice){
 
 
 export function Read(){
+
+  debugger;
   let URL="/api/v1/ReadProduct";
-  return axios.get(URL).then((res)=>{
+    debugger;
+    return axios.get(URL).then((res)=>{
+        debugger;
         if(res.status===200){
+            debugger;
             return res.data['data'];
         }
         else{
+            debugger;
             return false;
         }
     }).catch((err)=>{
+        debugger;
         console.log(err);
         return false;
     });

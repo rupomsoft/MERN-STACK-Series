@@ -23,26 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="044e6d61-5161-488f-b16f-06bd3facaf2b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inventory/inventory-mern-frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/mern-task-manager-combine.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/controllers/TasksController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/controllers/UsersController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/middleware/AuthVerifyMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/OTPModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/TasksModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/models/UsersModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/routes/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mern-task-manager-combine/src/utility/SendEmailUtility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/CRUD Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inventory/inventory-mern-backend/src/services/common/DeleteParentChildsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inventory/inventory-mern-backend/src/services/common/DeleteParentChildsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +81,8 @@
       <workItem from="1674923648610" duration="5000" />
       <workItem from="1675871598976" duration="1531000" />
       <workItem from="1675874048094" duration="1000" />
+      <workItem from="1676734116909" duration="12000" />
+      <workItem from="1676734671563" duration="29000" />
     </task>
     <servers />
   </component>
