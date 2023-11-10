@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,50 +23,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a6fc238-a557-4664-9304-9b3ad406bdcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/client/src/APIServices/CRUDServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CRUD Project/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CRUD Project/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/mern-task-manager-combine.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/controllers/TasksController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/controllers/UsersController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/middleware/AuthVerifyMiddleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/OTPModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/TasksModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/models/UsersModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/routes/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-combine/src/utility/SendEmailUtility.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil-front/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task-Manager-Project/mern-task-manager-rabbil-front/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/progress.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/inventory-mern-backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventory-mern-backend/src/services/common/ListTwoJoinService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-mern-backend/src/services/common/ListTwoJoinService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.2.5/bin/php" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2JrxebekfRfrT6Q9uz2S7VEkGiS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="vue.rearranger.settings.migration" value="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/rabbilhasan/Documents/GitHub/MERN-STACK-Series/Inventory/inventory-mern-frontend/src/assets/css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/css" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,6 +88,7 @@
       <workItem from="1672850101905" duration="573000" />
       <workItem from="1672932260668" duration="6000" />
       <workItem from="1675528615712" duration="1695000" />
+      <workItem from="1699597825599" duration="1150000" />
     </task>
     <servers />
   </component>
@@ -92,7 +105,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="649" y="101" key="SettingsEditor" timestamp="1672850151083">

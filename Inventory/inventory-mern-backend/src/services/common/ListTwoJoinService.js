@@ -9,7 +9,7 @@ const ListTwoJoinService= async (Request, DataModel, SearchArray, JoinStage1,Joi
         if (searchValue!=="0") {
             data = await DataModel.aggregate([
                 {$match: {UserEmail:UserEmail}},
-                JoinStage1,JoinStage2￼,
+                JoinStage1,JoinStage2,
                 {$match: {$or: SearchArray}},
                 {
                     $facet:{
