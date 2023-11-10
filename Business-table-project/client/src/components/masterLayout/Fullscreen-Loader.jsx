@@ -7,6 +7,7 @@ const FullscreenLoader = () => {
             <div  className={settings + " LoadingOverlay"}>
                 <div className="Line-Progress">
                     <div className="indeterminate"></div>
+                    
                 </div>
             </div>
         </Fragment>

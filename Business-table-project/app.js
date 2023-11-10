@@ -1,9 +1,17 @@
 // Basic Lib Import
 const express =require('express');
+const mongoose =require('mongoose');
+const bodyParser=require('body-parser')
 const router =require('./src/routes/api');
 const app= new express();
-const bodyParser =require('body-parser');
-const path= require('path');
+
+
+
+
+
+
+const path= require('path')
+
 
 // Security Middleware Lib Import
 const rateLimit =require('express-rate-limit');
@@ -14,12 +22,11 @@ const hpp =require('hpp');
 const cors =require('cors');
 
 // Database Lib Import
-const mongoose =require('mongoose');
+
 app.use(express.static('client/build'));
 
 // Security Middleware Implement
 app.use(cors())
-app.use(helmet())
 app.use(mongoSanitize())
 app.use(xss())
 app.use(hpp())
@@ -33,7 +40,7 @@ app.use(limiter)
 
 
 // Mongo DB Database Connection
-let URI="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/CRUD?retryWrites=true&w=majority";
+let URI="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/businesstable";
 let OPTION={user:'testuser7777',pass:'testuser7777',autoIndex:true}
 mongoose.connect(URI,OPTION,(error)=>{
     console.log("Connection Success")

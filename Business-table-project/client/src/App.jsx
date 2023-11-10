@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, {Fragment} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
 import ProductList from "./pages/Product-List";
@@ -7,7 +7,7 @@ const App = () => {
             <Fragment>
                 <BrowserRouter>
                     <Routes>
-                            <Route exact path="/" element={<ProductList  />}  />}/>
+                        <Route exact path="/" element={<ProductList  />}  />/>
                     </Routes>
                 </BrowserRouter>
                 <FullscreenLoader/>

@@ -1,8 +1,10 @@
-import axios from "axios";
+
 import store from "../redux/store/store";
 import {HideLoader, ShowLoader} from "../redux/state-slice/settings-slice";
 import {SetALLProduct, SetTotal} from "../redux/state-slice/product-slice";
-const BaseURL="http://localhost:5000/api/v1"
+import axios from "axios";
+const BaseURL="http://localhost:5020/api/v1"
+
 
 
 

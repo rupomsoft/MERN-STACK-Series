@@ -2,8 +2,6 @@ import Swal from "sweetalert2";
 import store from "../../redux/store/store";
 import {EditTodo} from "../../redux/state/todo/todoSlice";
 
-
-
 export function TodoEditAlert(i,item){
 
     Swal.fire({
@@ -12,7 +10,12 @@ export function TodoEditAlert(i,item){
         inputValue:item,
         inputValidator:(value)=>{
             if(value){
-                store.dispatch(EditTodo({index:i,task:value}))
+                store.dispatch(EditTodo(
+                    {
+                        index:i,
+                        task:value
+                    }
+                ))
             }
         }
     })

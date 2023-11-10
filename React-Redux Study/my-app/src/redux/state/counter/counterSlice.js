@@ -16,7 +16,6 @@ export  const counterSlice=createSlice({
             state.value=action.payload;
         }
     }
-
 })
 
 export const {increment,decrement,setCustom}=counterSlice.actions;
